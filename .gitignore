@@ -34,3 +34,8 @@ yarn-error.log*
 
 # large raw datasets (regenerate with `npm run prepare:data`)
 data/raw/
+
+# scraper scratch: intermediate matches-YYYY-MM-DD.json dumps.
+# lib/data/generated/matches.json IS committed (it is the build snapshot).
+lib/data/generated/matches-*.json
+

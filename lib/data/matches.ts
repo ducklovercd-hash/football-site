@@ -9,6 +9,7 @@ import type {
   TeamStats,
 } from "@/lib/types";
 import { COMPETITION_BY_CODE, TEAMS_BY_COMPETITION, TEAM_BY_ID, VENUES } from "./teams";
+import { getSnapshot } from "./snapshot";
 
 /* ------------------------------------------------------------------ */
 /* Deterministic name pools for generated lineups                      */
@@ -321,9 +322,19 @@ function buildMatch(plan: FixturePlan, now: Date): Match {
   };
 }
 
-/** All matches for "today", reconstructed for the given instant. */
+/**
+ * All matches for "today".
+ *
+ * Prefers real scraped data when a snapshot is present (committed by
+ * `npm run prepare:matches`, or supplied via the FOOTBALL_SNAPSHOT env var).
+ * Otherwise falls back to the deterministic demo fixtures, so the site always
+ * renders something.
+ */
 export function getMatches(now: Date = new Date()): Match[] {
-  return PLAN.map((plan) => buildMatch(plan, now)).sort(
+  const scraped = getSnapshot().matches;
+  const source = scraped.length > 0 ? scraped : PLAN.map((plan) => buildMatch(plan, now));
+
+  return [...source].sort(
     (a, b) => new Date(a.kickoff).getTime() - new Date(b.kickoff).getTime(),
   );
 }
