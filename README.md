@@ -1,7 +1,7 @@
 # PitchSide
 
 Near-live football scores, Poisson-model predictions, player statistics and
-model-implied odds — Next.js 16 (App Router) + Tailwind CSS 4, deployed on
+model-implied odds, Next.js 16 (App Router) + Tailwind CSS 4, deployed on
 Vercel.
 
 Rebuilt from the original Streamlit prototype (`footballapp`). The theme is
@@ -37,8 +37,8 @@ The shell follows the TailAdmin convention (MIT, `TailAdmin/free-nextjs-admin-da
 
 ```
 components/
-├── layout/     sidebar.tsx, header.tsx      — app shell + breadcrumb
-├── ui/         panel-card, badge, form-pills — shared primitives
+├── layout/     sidebar.tsx, header.tsx    , app shell + breadcrumb
+├── ui/         panel-card, badge, form-pills, shared primitives
 ├── formation-pitch.tsx, standings-board.tsx
 ├── player-table.tsx, match-card.tsx, live-board.tsx
 └── ...
@@ -125,10 +125,10 @@ npm run dev
 
 `lib/data/snapshot.ts` resolves data in this order and never throws:
 
-1. `FOOTBALL_SNAPSHOT` env var (JSON string) — lets you refresh scores in
+1. `FOOTBALL_SNAPSHOT` env var (JSON string), lets you refresh scores in
    Vercel without a redeploy.
-2. `lib/data/generated/matches.json` — the committed snapshot.
-3. Demo fixtures — the deterministic generator, if both above are empty.
+2. `lib/data/generated/matches.json`, the committed snapshot.
+3. Demo fixtures, the deterministic generator, if both above are empty.
 
 A malformed value logs a warning and falls through, so bad data can never break
 a build. `/api/live` reports which path is live via its `source` field
@@ -144,14 +144,14 @@ request-time provider.
 3. Set `export const revalidate = 30` and send
    `Cache-Control: public, s-maxage=30, stale-while-revalidate=120` so every
    viewer shares one upstream call per window.
-4. Map the provider payload to the `Match` type in `lib/types.ts` — the UI needs
+4. Map the provider payload to the `Match` type in `lib/types.ts`, the UI needs
    no changes.
 
 Quota reality check (verified against provider docs):
 
-- **football-data.org free** — 10 calls/min, 12 competitions, **live scores are
+- **football-data.org free**, 10 calls/min, 12 competitions, **live scores are
   delayed**, no lineups/stats/odds. Non-commercial use only.
-- **API-Football free** — ~100 calls/day. Real-time, but unusable for public
+- **API-Football free**, ~100 calls/day. Real-time, but unusable for public
   traffic without aggressive caching.
 - Vercel **Hobby crons run once per day only**, so live data must be refreshed
   on demand via ISR or the snapshot variable, not by cron.
@@ -170,7 +170,7 @@ That writes `data/players.json` in the shape the app already consumes. Then
 import it in `lib/data/players.ts` instead of the `ROWS` array.
 
 Important: `player_profiles.csv` contains **biographical** data only (age,
-height, foot, club, contract). It has **no goals, assists or ratings** — those
+height, foot, club, contract). It has **no goals, assists or ratings**, those
 columns come out as `0` and must be joined from a stats provider.
 
 ## Deploy
@@ -193,7 +193,7 @@ Then, under **Project → Settings → Environment Variables** (all optional):
 | `API_FOOTBALL_KEY` | No | Only if you switch to a request-time provider |
 | `DATA_MODE` | No | `demo` (default) or `live` |
 
-Never prefix these with `NEXT_PUBLIC_` — that would expose them to the browser.
+Never prefix these with `NEXT_PUBLIC_`, that would expose them to the browser.
 
 To refresh data without a redeploy:
 

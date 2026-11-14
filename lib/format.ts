@@ -1,7 +1,7 @@
 /**
  * All date formatting is pinned to a single timezone so the server render and
  * the client hydration always produce identical strings. (Vercel functions run
- * in UTC; the browser does not — an unpinned formatter causes hydration errors.)
+ * in UTC; the browser does not, an unpinned formatter causes hydration errors.)
  */
 export const DISPLAY_TZ = "Europe/London";
 export const DISPLAY_TZ_LABEL = "UK";
@@ -47,7 +47,7 @@ export function formatOdds(value: number): string {
   return value.toFixed(2);
 }
 
-/** "just now" / "42s ago" / "3m ago" — used for the data freshness stamp. */
+/** "just now" / "42s ago" / "3m ago", used for the data freshness stamp. */
 export function formatAgo(iso: string, now: number): string {
   const seconds = Math.max(0, Math.round((now - new Date(iso).getTime()) / 1000));
   if (seconds < 10) return "just now";

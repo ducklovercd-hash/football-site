@@ -14,9 +14,9 @@ export async function generateMetadata({
 }) {
   const { slug } = await params;
   const player = getPlayerBySlug(slug);
-  if (!player) return { title: "Player not found — PitchSide" };
+  if (!player) return { title: "Player not found | PitchSide" };
   return {
-    title: `${player.name} — PitchSide`,
+    title: `${player.name} | PitchSide`,
     description: `${player.name}, ${player.position} at ${player.club}. ${player.goals} goals and ${player.assists} assists this season.`,
   };
 }

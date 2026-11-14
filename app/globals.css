@@ -1,7 +1,7 @@
 @import "tailwindcss";
 
 /* ============================================================
-   PITCHSIDE — black & yellow design tokens
+   PITCHSIDE, black & yellow design tokens
    Yellow is an accent (~5% of surface). Surfaces stay near-black.
    ============================================================ */
 @theme {
@@ -13,7 +13,7 @@
   --color-pitch-700: #26262b;
   --color-pitch-600: #3a3a42;
 
-  /* Brand — electric yellow */
+  /* Brand, electric yellow */
   --color-brand-300: #fef08a;
   --color-brand-400: #fde047;
   --color-brand-500: #ffd60a;
@@ -25,7 +25,8 @@
   --color-finished: #71717a;
   --color-fg: #f4f4f5;
   --color-fg-muted: #a1a1aa;
-  --color-fg-dim: #71717a;
+  /* 7.31:1 on the page, 6.82:1 on the raised card surface. Measured, not guessed. */
+  --color-fg-dim: #9a9aa4;
 
   --font-display: "Geist", "Inter", ui-sans-serif, system-ui, -apple-system,
     "Segoe UI", Roboto, sans-serif;
@@ -51,6 +52,46 @@
     color: #000;
   }
 
+  /* R-39: every enabled control advertises that it is clickable, set once here
+     rather than repeated across components. Disabled controls say so too. */
+  a[href],
+  button,
+  select,
+  summary,
+  label[for],
+  input[type="checkbox"],
+  input[type="radio"],
+  [role="button"],
+  [role="tab"] {
+    cursor: pointer;
+  }
+
+  button:disabled,
+  select:disabled,
+  input:disabled,
+  [aria-disabled="true"] {
+    cursor: not-allowed;
+  }
+
+  /* R-32: one visible focus indicator for keyboard users everywhere. */
+  :focus-visible {
+    outline: 2px solid var(--color-brand-500);
+    outline-offset: 2px;
+    border-radius: 4px;
+  }
+
+  /* R-39: non-essential motion stops when the OS asks for less of it. */
+  @media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+      scroll-behavior: auto !important;
+    }
+  }
+
   /* Tabular numbers everywhere scores appear, so digits don't jitter */
   .tnum {
     font-variant-numeric: tabular-nums;
@@ -74,7 +115,7 @@
 }
 
 /* ============================================================
-   Component primitives (plain CSS — no @apply, zero ambiguity)
+   Component primitives (plain CSS, no @apply, zero ambiguity)
    ============================================================ */
 
 .card {
@@ -115,7 +156,10 @@
   animation: pulse-live 1.6s ease-in-out infinite;
 }
 
-/* Subtle pitch-line texture for hero surfaces */
+/* Subtle pitch-line texture for hero surfaces.
+   Reason (R-07): the band reads as the floodlit half of a pitch, so it signals
+   "matchday" at the top of a page. It is confined to one hero surface per page,
+   never used as a page-wide background pattern. */
 .pitch-texture {
   background-image: radial-gradient(
       circle at 20% 0%,

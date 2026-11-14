@@ -6,7 +6,7 @@ import { PanelCard } from "@/components/ui/panel-card";
 export const dynamic = "force-dynamic";
 
 export const metadata = {
-  title: "Odds — PitchSide",
+  title: "Odds | PitchSide",
   description: "Model-implied 1X2, over/under and BTTS odds.",
 };
 
@@ -61,8 +61,8 @@ export default function OddsPage() {
         </h1>
         <p className="mt-1.5 max-w-2xl text-sm text-fg-muted">
           Decimal odds derived from the model&apos;s probabilities with a 6%
-          overround applied — the same margin structure a bookmaker uses. These
-          are model-implied prices, not live market prices.
+          overround applied. That is the same margin structure a bookmaker
+          uses. These are model-implied prices, not live market prices.
         </p>
       </div>
 

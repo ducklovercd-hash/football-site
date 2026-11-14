@@ -10,7 +10,7 @@ const POLL_MS = 15_000;
 /**
  * Client-side polling against our own cached route handler.
  *
- * The browser never talks to the upstream provider — /api/live is cached on
+ * The browser never talks to the upstream provider. /api/live is cached on
  * the server, so 10,000 viewers still cost one upstream request per interval.
  */
 export function LiveBoard({
@@ -25,20 +25,26 @@ export function LiveBoard({
   const [autoRefresh, setAutoRefresh] = useState(true);
   const [now, setNow] = useState(() => Date.parse(initialUpdatedAt));
   const [loading, setLoading] = useState(false);
+  const [failed, setFailed] = useState(false);
 
   const refresh = useCallback(async () => {
     setLoading(true);
     try {
       const response = await fetch("/api/live", { cache: "no-store" });
-      if (!response.ok) return;
+      if (!response.ok) {
+        setFailed(true);
+        return;
+      }
       const data = (await response.json()) as {
         matches: Match[];
         updatedAt: string;
       };
       setMatches(data.matches);
       setUpdatedAt(data.updatedAt);
+      setFailed(false);
     } catch {
-      // Keep the last good snapshot on a transient network error.
+      // Keep the last good snapshot on a transient network error, but say so.
+      setFailed(true);
     } finally {
       setLoading(false);
     }
@@ -90,6 +96,25 @@ export function LiveBoard({
           </button>
         </div>
       </div>
+
+      {failed ? (
+        <div
+          role="alert"
+          className="mb-3 flex flex-wrap items-center justify-between gap-2 rounded-lg border border-live/40 bg-live/10 px-3 py-2"
+        >
+          <span className="text-[11px] font-semibold text-fg">
+            Could not refresh. Showing the last good snapshot from{" "}
+            {formatAgo(updatedAt, now)}.
+          </span>
+          <button
+            type="button"
+            onClick={refresh}
+            className="rounded border border-pitch-700 px-2 py-1 text-[11px] font-semibold text-fg hover:border-brand-700"
+          >
+            Retry
+          </button>
+        </div>
+      ) : null}
 
       {matches.length === 0 ? (
         <div className="card p-8 text-center">

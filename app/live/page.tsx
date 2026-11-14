@@ -4,7 +4,7 @@ import { getLiveMatches } from "@/lib/data/matches";
 export const dynamic = "force-dynamic";
 
 export const metadata = {
-  title: "Live scores — PitchSide",
+  title: "Live scores | PitchSide",
 };
 
 export default function LivePage() {

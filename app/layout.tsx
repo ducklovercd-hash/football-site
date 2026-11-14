@@ -4,7 +4,7 @@ import { Sidebar } from "@/components/layout/sidebar";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "PitchSide — Live Football Scores, Predictions & Player Stats",
+  title: "PitchSide | Live Football Scores, Predictions and Player Stats",
   description:
     "Near-live scores, Poisson-model predictions, player statistics and odds intelligence across Europe's top five leagues.",
 };
@@ -28,7 +28,7 @@ export default function RootLayout({
             <footer className="border-t border-pitch-800">
               <div className="mx-auto flex max-w-6xl flex-col gap-2 px-4 py-6 text-[11px] text-fg-dim sm:flex-row sm:items-center sm:justify-between">
                 <p>
-                  PitchSide — built with Next.js &amp; Tailwind CSS, deployed on
+                  PitchSide, built with Next.js &amp; Tailwind CSS, deployed on
                   Vercel.
                 </p>
                 <p>

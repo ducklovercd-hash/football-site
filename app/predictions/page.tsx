@@ -8,7 +8,7 @@ import { predictMatch } from "@/lib/model/poisson";
 export const dynamic = "force-dynamic";
 
 export const metadata = {
-  title: "Predictions — PitchSide",
+  title: "Predictions | PitchSide",
   description:
     "Poisson-model win/draw/loss probabilities, expected goals and scoreline forecasts.",
 };
@@ -34,7 +34,7 @@ export default function PredictionsPage() {
           Predictions
         </h1>
         <p className="mt-1.5 max-w-2xl text-sm text-fg-muted">
-          Every probability below is produced by one Poisson scoreline model —
+          Every probability below is produced by one Poisson scoreline model,
           not a random number generator. Predictions and odds share the same
           maths, so they can never disagree.
         </p>

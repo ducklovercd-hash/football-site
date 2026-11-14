@@ -28,9 +28,9 @@ export async function generateMetadata({
 }) {
   const { id } = await params;
   const match = getMatchById(id);
-  if (!match) return { title: "Match not found — PitchSide" };
+  if (!match) return { title: "Match not found | PitchSide" };
   return {
-    title: `${match.home.name} vs ${match.away.name} — PitchSide`,
+    title: `${match.home.name} vs ${match.away.name} | PitchSide`,
     description: `${match.competition.name} match stats, timeline and prediction.`,
   };
 }
@@ -64,6 +64,12 @@ export default async function MatchPage({
           </span>
           <StatusBadge status={match.status} minute={match.minute} />
         </div>
+
+        {/* One h1 per document (R-39). Visually the scoreboard carries the
+            hierarchy, so the heading is screen-reader only. */}
+        <h1 className="sr-only">
+          {match.home.name} versus {match.away.name}, {match.competition.name}
+        </h1>
 
         <div className="mt-5 grid grid-cols-[1fr_auto_1fr] items-center gap-3">
           <div className="flex flex-col items-center gap-2 text-center">

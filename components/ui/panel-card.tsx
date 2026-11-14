@@ -1,7 +1,7 @@
 import type { ReactNode } from "react";
 
 /**
- * Card with a header row — the TailAdmin "card with title/actions" pattern,
+ * Card with a header row, the TailAdmin "card with title/actions" pattern,
  * restyled for the black & yellow theme.
  */
 export function PanelCard({

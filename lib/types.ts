@@ -48,7 +48,7 @@ export interface LineupPlayer {
 }
 
 export interface TeamLineup {
-  /** e.g. "4-3-3" — drives the formation pitch grid. */
+  /** e.g. "4-3-3", drives the formation pitch grid. */
   formation: string;
   players: LineupPlayer[];
 }
@@ -68,7 +68,7 @@ export interface Match {
   events: MatchEvent[];
   lineups: { home: TeamLineup; away: TeamLineup };
   form: { home: FormResult[]; away: FormResult[] };
-  /** Model inputs — attack/defence multipliers around 1.0 */
+  /** Model inputs, attack/defence multipliers around 1.0 */
   strength: {
     home: { attack: number; defence: number };
     away: { attack: number; defence: number };

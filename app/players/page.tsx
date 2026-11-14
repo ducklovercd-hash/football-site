@@ -3,7 +3,7 @@ import { PanelCard } from "@/components/ui/panel-card";
 import { PLAYERS, getTopRated, getTopScorers } from "@/lib/data/players";
 
 export const metadata = {
-  title: "Players — PitchSide",
+  title: "Players | PitchSide",
   description: "Searchable player statistics across Europe's top five leagues.",
 };
 
@@ -19,8 +19,8 @@ export default function PlayersPage() {
         </h1>
         <p className="mt-1.5 max-w-2xl text-sm text-fg-muted">
           Search, filter and sort the squad database. This table is fed by the
-          same dataset as the original Streamlit app — currently a curated
-          sample, ready to be swapped for the full 92,671-row file.
+          same dataset as the original Streamlit app. It currently holds a
+          curated sample, ready to be swapped for the full 92,671-row file.
         </p>
       </div>
 

@@ -2,7 +2,7 @@ import { StandingsBoard } from "@/components/standings-board";
 import { getAllStandings } from "@/lib/data/standings";
 
 export const metadata = {
-  title: "Standings — PitchSide",
+  title: "Standings | PitchSide",
   description: "League tables for Europe's top five leagues.",
 };
 

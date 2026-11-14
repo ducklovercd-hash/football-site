@@ -6,12 +6,12 @@ import snapshot from "./generated/matches.json";
  *
  * Two delivery paths, checked in order:
  *
- * 1. `FOOTBALL_SNAPSHOT` — the same JSON as a string. Lets you push fresh
+ * 1. `FOOTBALL_SNAPSHOT`, the same JSON as a string. Lets you push fresh
  *    scores straight into Vercel (Project → Settings → Environment Variables)
  *    without a rebuild. Environment variables cap out at 64 KB on Vercel, so
  *    this only holds a small window of fixtures.
  *
- * 2. `generated/matches.json` — committed alongside the code by
+ * 2. `generated/matches.json`, committed alongside the code by
  *    `npm run prepare:matches`. No size limit, refreshed on each deploy.
  *
  * Never throws: a malformed snapshot degrades to "no real data" so the site
@@ -31,7 +31,7 @@ const EMPTY: Snapshot = { generatedAt: null, source: null, matches: [] };
  *
  * The UI renders lineups as `{ formation, players }`. An older scraper build
  * (or a hand-edited snapshot) may still emit a flat array, which would crash
- * the formation grid. Rather than trust the producer, normalise here — the
+ * the formation grid. Rather than trust the producer, normalise here, the
  * snapshot is the boundary between untrusted data and the app.
  */
 function normaliseLineup(value: unknown, fallbackFormation = "4-3-3") {
@@ -84,7 +84,7 @@ function fromEnv(): Snapshot | null {
     if (!isSnapshot(parsed)) return null;
     return parsed;
   } catch {
-    console.warn("[snapshot] FOOTBALL_SNAPSHOT is not valid JSON — ignoring it");
+    console.warn("[snapshot] FOOTBALL_SNAPSHOT is not valid JSON, ignoring it");
     return null;
   }
 }

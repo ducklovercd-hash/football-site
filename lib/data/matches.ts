@@ -89,7 +89,7 @@ function buildStrength(teamId: number) {
 }
 
 /* ------------------------------------------------------------------ */
-/* Fixture plan — kickoffs are anchored to "now" so the demo always    */
+/* Fixture plan, kickoffs are anchored to "now" so the demo always    */
 /* has live, finished and upcoming matches regardless of the hour.     */
 /* ------------------------------------------------------------------ */
 
@@ -344,7 +344,7 @@ function buildMatch(plan: FixturePlan, now: Date): Match {
   const homeStrength = buildStrength(plan.home);
   const awayStrength = buildStrength(plan.away);
 
-  // How far through the match we are — used to scale cumulative stats.
+  // How far through the match we are, used to scale cumulative stats.
   const elapsedMinutes =
     status === "SCHEDULED" ? 0 : status === "FT" ? 90 : (minute ?? 0);
   const fraction = Math.min(1, elapsedMinutes / 90);
