@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
+import { FormationPitch } from "@/components/formation-pitch";
 import { PredictionPanel } from "@/components/prediction-panel";
 import { StatBar } from "@/components/stat-bar";
 import { StatusBadge } from "@/components/status-badge";
@@ -199,15 +200,39 @@ export default async function MatchPage({
         />
       </div>
 
+      <div className="mt-4 grid gap-3 lg:grid-cols-2">
+        <div className="card p-4">
+          <h2 className="mb-3 text-xs font-bold uppercase tracking-wider text-fg-muted">
+            Formation &amp; ratings
+          </h2>
+          <FormationPitch
+            lineup={match.lineups.home}
+            teamName={match.home.name}
+            teamColor={match.home.color}
+          />
+        </div>
+
+        <div className="card p-4">
+          <h2 className="mb-3 text-xs font-bold uppercase tracking-wider text-fg-muted">
+            Formation &amp; ratings
+          </h2>
+          <FormationPitch
+            lineup={match.lineups.away}
+            teamName={match.away.name}
+            teamColor={match.away.color}
+          />
+        </div>
+      </div>
+
       <div className="mt-4 grid gap-3 sm:grid-cols-2">
         {(["home", "away"] as const).map((side) => (
           <div key={side} className="card p-4">
             <h2 className="mb-3 flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-fg-muted">
               <TeamCrest team={match[side]} size={20} />
-              {match[side].name} lineup
+              {match[side].name} squad
             </h2>
             <ul className="space-y-1">
-              {match.lineups[side].map((player) => (
+              {match.lineups[side].players.map((player) => (
                 <li
                   key={`${side}-${player.number}`}
                   className="flex items-center gap-2 text-xs"
@@ -219,6 +244,18 @@ export default async function MatchPage({
                     {player.position}
                   </span>
                   <span className="truncate text-fg-muted">{player.name}</span>
+                  <span className="ml-auto shrink-0 text-[11px] font-semibold text-fg-dim">
+                    {player.nationality}
+                  </span>
+                  <span
+                    className={`tnum shrink-0 rounded px-1 py-0.5 text-[10px] font-bold ${
+                      player.rating >= 7.2
+                        ? "bg-brand-500/15 text-brand-500"
+                        : "bg-pitch-800 text-fg-muted"
+                    }`}
+                  >
+                    {player.rating > 0 ? player.rating.toFixed(1) : "–"}
+                  </span>
                 </li>
               ))}
             </ul>
@@ -228,3 +265,4 @@ export default async function MatchPage({
     </div>
   );
 }
+

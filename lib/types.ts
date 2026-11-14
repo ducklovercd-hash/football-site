@@ -42,6 +42,15 @@ export interface LineupPlayer {
   number: number;
   name: string;
   position: Position;
+  /** Match rating out of 10, derived from performance (see buildMatch). */
+  rating: number;
+  nationality: string;
+}
+
+export interface TeamLineup {
+  /** e.g. "4-3-3" — drives the formation pitch grid. */
+  formation: string;
+  players: LineupPlayer[];
 }
 
 export interface Match {
@@ -57,7 +66,7 @@ export interface Match {
   venue: string;
   stats: TeamStats;
   events: MatchEvent[];
-  lineups: { home: LineupPlayer[]; away: LineupPlayer[] };
+  lineups: { home: TeamLineup; away: TeamLineup };
   form: { home: FormResult[]; away: FormResult[] };
   /** Model inputs — attack/defence multipliers around 1.0 */
   strength: {
@@ -65,6 +74,21 @@ export interface Match {
     away: { attack: number; defence: number };
   };
 }
+
+export interface StandingRow {
+  position: number;
+  team: Team;
+  played: number;
+  won: number;
+  drawn: number;
+  lost: number;
+  goalsFor: number;
+  goalsAgainst: number;
+  goalDifference: number;
+  points: number;
+  form: FormResult[];
+}
+
 
 export interface Player {
   id: number;

@@ -9,6 +9,7 @@ import type {
   TeamStats,
 } from "@/lib/types";
 import { COMPETITION_BY_CODE, TEAMS_BY_COMPETITION, TEAM_BY_ID, VENUES } from "./teams";
+import type { TeamLineup } from "@/lib/types";
 import { getSnapshot } from "./snapshot";
 
 /* ------------------------------------------------------------------ */
@@ -32,10 +33,20 @@ const POSITION_PLAN: Position[] = [
   "GK", "DF", "DF", "DF", "DF", "MF", "MF", "MF", "FW", "FW", "FW",
 ];
 
-function buildLineup(teamId: number): LineupPlayer[] {
+const FORMATIONS = ["4-3-3", "4-2-3-1", "3-5-2", "4-4-2"];
+
+const NATIONS = [
+  "England", "Spain", "France", "Germany", "Italy", "Portugal", "Brazil",
+  "Argentina", "Netherlands", "Belgium", "Croatia", "Norway", "Sweden",
+  "Denmark", "Uruguay", "Nigeria", "Japan", "Morocco", "Serbia", "Poland",
+];
+
+export function buildLineup(teamId: number): TeamLineup {
   const rand = mulberry32(seedFor("lineup", teamId));
   const used = new Set<string>();
-  return POSITION_PLAN.map((position, index) => {
+  const formation = pick(rand, FORMATIONS);
+
+  const players = POSITION_PLAN.map((position, index) => {
     let name = `${pick(rand, FIRST_NAMES)} ${pick(rand, LAST_NAMES)}`;
     let guard = 0;
     while (used.has(name) && guard < 40) {
@@ -43,8 +54,20 @@ function buildLineup(teamId: number): LineupPlayer[] {
       guard += 1;
     }
     used.add(name);
-    return { number: index + 1, name, position };
+    return {
+      number: index + 1,
+      name,
+      position,
+      rating: 0,
+      nationality: pick(rand, NATIONS),
+    };
   });
+
+  return { formation, players };
+}
+
+export function allLineupPlayers(teamId: number) {
+  return buildLineup(teamId).players;
 }
 
 function buildForm(teamId: number): FormResult[] {
@@ -243,8 +266,64 @@ function buildStats(
 }
 
 /* ------------------------------------------------------------------ */
-/* Public API                                                          */
+/* Player ratings, derived from what happened in the match             */
 /* ------------------------------------------------------------------ */
+
+function rateLineup(
+  lineup: TeamLineup,
+  visibleGoals: Goal[],
+  cards: MatchEvent[],
+  side: "home" | "away",
+  goalsFor: number,
+  goalsAgainst: number,
+  started: boolean,
+  fixtureId: string,
+): TeamLineup {
+  const scoredBy = new Map<string, number>();
+  for (const goal of visibleGoals) {
+    if (goal.side !== side) continue;
+    scoredBy.set(goal.player, (scoredBy.get(goal.player) ?? 0) + 1);
+  }
+
+  const carded = new Set(
+    cards
+      .filter((event) => event.side === side && event.type !== "SUB")
+      .map((event) => event.player),
+  );
+
+  const resultBonus =
+    goalsFor > goalsAgainst ? 0.3 : goalsFor === goalsAgainst ? 0 : -0.3;
+
+  const players = lineup.players.map((player) => {
+    // Per-player spread so a clean 6.5 baseline doesn't make every
+    // non-scorer look identical on the grid. Seeded, so it is stable.
+    const noise =
+      (mulberry32(seedFor("rating", fixtureId, side, player.number))() - 0.5) *
+      0.9;
+
+    let rating = 6.5 + resultBonus + noise;
+
+    // Goals are the dominant signal.
+    rating += (scoredBy.get(player.name) ?? 0) * 1.1;
+    // Keepers are rewarded for clean sheets, defenders partially.
+    if (player.position === "GK") {
+      rating += goalsAgainst === 0 ? 0.7 : -goalsAgainst * 0.18;
+    } else if (player.position === "DF") {
+      rating += goalsAgainst === 0 ? 0.35 : -goalsAgainst * 0.08;
+    }
+    // A booking is a small negative.
+    if (carded.has(player.name)) rating -= 0.2;
+    // Nothing has happened yet before kick-off.
+    if (!started) rating = 0;
+
+    return {
+      ...player,
+      rating: Number(Math.min(9.9, Math.max(4, rating)).toFixed(1)),
+    };
+  });
+
+  return { formation: lineup.formation, players };
+}
 
 function buildMatch(plan: FixturePlan, now: Date): Match {
   const id = `${plan.comp}-${plan.home}-${plan.away}`;
@@ -259,8 +338,8 @@ function buildMatch(plan: FixturePlan, now: Date): Match {
 
   const homeLineup = buildLineup(plan.home);
   const awayLineup = buildLineup(plan.away);
-  const goals = buildGoals(id, homeLineup, awayLineup);
-  const incidents = buildCardsAndSubs(id, homeLineup, awayLineup);
+  const goals = buildGoals(id, homeLineup.players, awayLineup.players);
+  const incidents = buildCardsAndSubs(id, homeLineup.players, awayLineup.players);
 
   const homeStrength = buildStrength(plan.home);
   const awayStrength = buildStrength(plan.away);
@@ -303,6 +382,10 @@ function buildMatch(plan: FixturePlan, now: Date): Match {
     .filter((event) => event.minute <= elapsedMinutes)
     .sort((a, b) => b.minute - a.minute);
 
+  const started = status !== "SCHEDULED";
+  const homeGoals = score.home ?? 0;
+  const awayGoals = score.away ?? 0;
+
   return {
     id,
     competition,
@@ -316,7 +399,28 @@ function buildMatch(plan: FixturePlan, now: Date): Match {
     venue: VENUES[plan.home] ?? "Stadium",
     stats: buildStats(id, fraction, homeStrength.attack, awayStrength.attack),
     events,
-    lineups: { home: homeLineup, away: awayLineup },
+    lineups: {
+      home: rateLineup(
+        homeLineup,
+        visibleGoals,
+        incidents,
+        "home",
+        homeGoals,
+        awayGoals,
+        started,
+        id,
+      ),
+      away: rateLineup(
+        awayLineup,
+        visibleGoals,
+        incidents,
+        "away",
+        awayGoals,
+        homeGoals,
+        started,
+        id,
+      ),
+    },
     form: { home: buildForm(plan.home), away: buildForm(plan.away) },
     strength: { home: homeStrength, away: awayStrength },
   };

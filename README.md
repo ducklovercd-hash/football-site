@@ -23,12 +23,47 @@ progress while you watch: minutes tick, scores climb, stats accumulate.
 |---|---|
 | `/` | Today's matches, grouped by league, filterable via `?comps=PL,SA` |
 | `/live` | Live matches, auto-refreshing every 15s, with a freshness stamp |
-| `/matches/[id]` | Score, stats bars, timeline, prediction, both lineups |
+| `/standings` | Full league tables for all five leagues, with zone markers + form |
+| `/matches/[id]` | Score, stats bars, timeline, prediction, formation grid + ratings |
 | `/predictions` | 1X2 probabilities, xG, likely scorelines for every fixture |
-| `/players` | Searchable / filterable / sortable player table |
+| `/players` | Searchable table: league / nationality / position filters, column sorting, pagination |
 | `/players/[slug]` | Player profile with per-90 metrics |
 | `/odds` | Model-implied 1X2, over/under 2.5 and BTTS odds |
 | `/api/live` | JSON feed polled by the live board |
+
+## Layout
+
+The shell follows the TailAdmin convention (MIT, `TailAdmin/free-nextjs-admin-dashboard`):
+
+```
+components/
+├── layout/     sidebar.tsx, header.tsx      — app shell + breadcrumb
+├── ui/         panel-card, badge, form-pills — shared primitives
+├── formation-pitch.tsx, standings-board.tsx
+├── player-table.tsx, match-card.tsx, live-board.tsx
+└── ...
+```
+
+Persistent left sidebar with grouped nav (Matchday / Analysis), sticky header with
+breadcrumb, mobile nav rail under the header. All restyled to the black & yellow
+token set rather than copying TailAdmin's blue-on-white theme.
+
+## Player ratings
+
+Each lineup player gets a match rating (0–10) computed from what actually
+happened, not a fixed number:
+
+```
+rating = 6.5 + result bonus (±0.3) + 1.1 per goal
+         + clean-sheet bonus (GK 0.7 / DF 0.35, minus per goal conceded)
+         − 0.2 per booking
+         + seeded per-player variance (±0.45)
+```
+
+Ratings are clamped to 4.0–9.9, show as `–` before kick-off, and feed the
+formation grid. Because the variance is seeded per fixture, the numbers are
+stable across re-renders and hydration.
+
 
 ## Run locally
 
