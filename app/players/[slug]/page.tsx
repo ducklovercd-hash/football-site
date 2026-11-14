@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
+import { PanelCard } from "@/components/ui/panel-card";
 import { PLAYERS, getPlayerBySlug } from "@/lib/data/players";
 
 export function generateStaticParams() {
@@ -85,11 +86,8 @@ export default async function PlayerPage({
       </div>
 
       <div className="mt-4 grid gap-3 sm:grid-cols-2">
-        <div className="card p-4">
-          <h2 className="text-xs font-bold uppercase tracking-wider text-fg-muted">
-            Per 90 minutes
-          </h2>
-          <div className="mt-3 space-y-2 text-sm">
+        <PanelCard title="Per 90 minutes">
+          <div className="space-y-2 text-sm">
             <div className="flex justify-between">
               <span className="text-fg-dim">Goals / 90</span>
               <span className="tnum font-semibold text-fg">
@@ -109,13 +107,10 @@ export default async function PlayerPage({
               </span>
             </div>
           </div>
-        </div>
+        </PanelCard>
 
-        <div className="card p-4">
-          <h2 className="text-xs font-bold uppercase tracking-wider text-fg-muted">
-            Profile
-          </h2>
-          <div className="mt-3 space-y-2 text-sm">
+        <PanelCard title="Profile">
+          <div className="space-y-2 text-sm">
             <div className="flex justify-between">
               <span className="text-fg-dim">Height</span>
               <span className="tnum font-semibold text-fg">
@@ -133,7 +128,7 @@ export default async function PlayerPage({
               </span>
             </div>
           </div>
-        </div>
+        </PanelCard>
       </div>
     </div>
   );

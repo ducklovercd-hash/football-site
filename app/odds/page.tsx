@@ -1,6 +1,7 @@
 import { formatKickoff, formatOdds, formatPct } from "@/lib/format";
 import { getMatches } from "@/lib/data/matches";
 import { matchOdds, predictMatch } from "@/lib/model/poisson";
+import { PanelCard } from "@/components/ui/panel-card";
 
 export const dynamic = "force-dynamic";
 
@@ -74,25 +75,18 @@ export default function OddsPage() {
           );
 
           return (
-            <div key={match.id} className="card p-4">
-              <div className="mb-3 flex flex-wrap items-center justify-between gap-2">
-                <div className="flex min-w-0 items-center gap-2">
-                  <span aria-hidden="true" className="text-xs">
-                    {match.competition.flag}
-                  </span>
-                  <span className="truncate text-sm font-bold text-fg">
-                    {match.home.name}
-                    <span className="mx-1.5 text-pitch-600">vs</span>
-                    {match.away.name}
-                  </span>
-                </div>
+            <PanelCard
+              key={match.id}
+              title={`${match.home.name} vs ${match.away.name}`}
+              subtitle={match.competition.name}
+              actions={
                 <span className="tnum text-[11px] text-fg-dim">
                   {match.status === "SCHEDULED"
                     ? formatKickoff(match.kickoff)
                     : `${match.status} ${match.score.home ?? 0}-${match.score.away ?? 0}`}
                 </span>
-              </div>
-
+              }
+            >
               <div className="grid gap-2 sm:grid-cols-3">
                 <OddsBox
                   label={`${match.home.short} win`}
@@ -136,7 +130,7 @@ export default function OddsPage() {
                   probability={1 - prediction.btts}
                 />
               </div>
-            </div>
+            </PanelCard>
           );
         })}
       </div>

@@ -1,30 +1,9 @@
 import Link from "next/link";
 import { formatKickoff } from "@/lib/format";
-import type { FormResult, Match } from "@/lib/types";
+import type { Match } from "@/lib/types";
+import { FormPills } from "./ui/form-pills";
 import { StatusBadge } from "./status-badge";
 import { TeamCrest } from "./team-crest";
-
-function FormPills({ form }: { form: FormResult[] }) {
-  return (
-    <span className="flex items-center gap-1">
-      {form.map((result, index) => (
-        <span
-          key={index}
-          className={[
-            "flex h-4 w-4 items-center justify-center rounded-[3px] text-[9px] font-bold",
-            result === "W"
-              ? "bg-emerald-500/20 text-emerald-400"
-              : result === "D"
-                ? "bg-pitch-700 text-fg-muted"
-                : "bg-live/20 text-live",
-          ].join(" ")}
-        >
-          {result}
-        </span>
-      ))}
-    </span>
-  );
-}
 
 export function MatchCard({ match }: { match: Match }) {
   const isScheduled = match.status === "SCHEDULED";

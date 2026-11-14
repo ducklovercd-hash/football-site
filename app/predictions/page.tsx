@@ -1,5 +1,6 @@
 import { PredictionPanel } from "@/components/prediction-panel";
 import { TeamCrest } from "@/components/team-crest";
+import { PanelCard } from "@/components/ui/panel-card";
 import { getMatches } from "@/lib/data/matches";
 import { formatKickoff } from "@/lib/format";
 import { predictMatch } from "@/lib/model/poisson";
@@ -66,43 +67,22 @@ export default function PredictionsPage() {
 
       <div className="grid gap-3 lg:grid-cols-2">
         {analysed.map(({ match, prediction }) => (
-          <div key={match.id} className="card p-4">
-            <div className="mb-3 flex items-center justify-between gap-2">
-              <span className="flex items-center gap-1.5 text-[10px] font-semibold uppercase tracking-wider text-fg-dim">
-                <span aria-hidden="true">{match.competition.flag}</span>
-                {match.competition.name}
-              </span>
-              <span className="tnum text-[11px] text-fg-dim">
-                {match.status === "SCHEDULED"
-                  ? formatKickoff(match.kickoff)
-                  : match.status}
-              </span>
-            </div>
-
-            <div className="mb-3 flex items-center justify-center gap-3">
-              <div className="flex min-w-0 flex-1 items-center justify-end gap-2">
-                <span className="truncate text-sm font-bold text-fg">
-                  {match.home.name}
-                </span>
-                <TeamCrest team={match.home} size={28} />
-              </div>
-              <span className="text-[10px] font-bold uppercase text-pitch-600">
-                vs
-              </span>
-              <div className="flex min-w-0 flex-1 items-center gap-2">
-                <TeamCrest team={match.away} size={28} />
-                <span className="truncate text-sm font-bold text-fg">
-                  {match.away.name}
-                </span>
-              </div>
-            </div>
-
+          <PanelCard
+            key={match.id}
+            title={`${match.home.name} vs ${match.away.name}`}
+            subtitle={`${match.competition.name} · ${
+              match.status === "SCHEDULED"
+                ? formatKickoff(match.kickoff)
+                : match.status
+            }`}
+            actions={<TeamCrest team={match.home} size={18} />}
+          >
             <PredictionPanel
               prediction={prediction}
               homeLabel={match.home.short}
               awayLabel={match.away.short}
             />
-          </div>
+          </PanelCard>
         ))}
       </div>
 

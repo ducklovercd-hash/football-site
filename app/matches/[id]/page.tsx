@@ -2,6 +2,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { FormationPitch } from "@/components/formation-pitch";
 import { PredictionPanel } from "@/components/prediction-panel";
+import { PanelCard } from "@/components/ui/panel-card";
 import { StatBar } from "@/components/stat-bar";
 import { StatusBadge } from "@/components/status-badge";
 import { TeamCrest } from "@/components/team-crest";
@@ -112,10 +113,7 @@ export default async function MatchPage({
       </section>
 
       <div className="mt-4 grid gap-3 lg:grid-cols-2">
-        <div className="card p-4">
-          <h2 className="mb-3 text-xs font-bold uppercase tracking-wider text-fg-muted">
-            Match statistics
-          </h2>
+        <PanelCard title="Match statistics">
           <div className="space-y-3">
             <StatBar
               label="Possession"
@@ -155,12 +153,9 @@ export default async function MatchPage({
               away={match.stats.xg[1]}
             />
           </div>
-        </div>
+        </PanelCard>
 
-        <div className="card p-4">
-          <h2 className="mb-3 text-xs font-bold uppercase tracking-wider text-fg-muted">
-            Timeline
-          </h2>
+        <PanelCard title="Timeline">
           {match.events.length === 0 ? (
             <p className="py-6 text-center text-xs text-fg-dim">
               No events yet.
@@ -186,51 +181,42 @@ export default async function MatchPage({
               ))}
             </ul>
           )}
-        </div>
+        </PanelCard>
       </div>
 
-      <div className="card mt-4 p-4">
-        <h2 className="mb-3 text-xs font-bold uppercase tracking-wider text-fg-muted">
-          Model prediction
-        </h2>
+      <PanelCard title="Model prediction" className="mt-4">
         <PredictionPanel
           prediction={prediction}
           homeLabel={match.home.short}
           awayLabel={match.away.short}
         />
-      </div>
+      </PanelCard>
 
       <div className="mt-4 grid gap-3 lg:grid-cols-2">
-        <div className="card p-4">
-          <h2 className="mb-3 text-xs font-bold uppercase tracking-wider text-fg-muted">
-            Formation &amp; ratings
-          </h2>
+        <PanelCard title="Formation & ratings">
           <FormationPitch
             lineup={match.lineups.home}
             teamName={match.home.name}
             teamColor={match.home.color}
           />
-        </div>
+        </PanelCard>
 
-        <div className="card p-4">
-          <h2 className="mb-3 text-xs font-bold uppercase tracking-wider text-fg-muted">
-            Formation &amp; ratings
-          </h2>
+        <PanelCard title="Formation & ratings">
           <FormationPitch
             lineup={match.lineups.away}
             teamName={match.away.name}
             teamColor={match.away.color}
           />
-        </div>
+        </PanelCard>
       </div>
 
       <div className="mt-4 grid gap-3 sm:grid-cols-2">
         {(["home", "away"] as const).map((side) => (
-          <div key={side} className="card p-4">
-            <h2 className="mb-3 flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-fg-muted">
-              <TeamCrest team={match[side]} size={20} />
-              {match[side].name} squad
-            </h2>
+          <PanelCard
+            key={side}
+            title={`${match[side].name} squad`}
+            actions={<TeamCrest team={match[side]} size={20} />}
+          >
             <ul className="space-y-1">
               {match.lineups[side].players.map((player) => (
                 <li
@@ -259,7 +245,7 @@ export default async function MatchPage({
                 </li>
               ))}
             </ul>
-          </div>
+          </PanelCard>
         ))}
       </div>
     </div>

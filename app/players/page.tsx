@@ -1,4 +1,5 @@
 import { PlayerTable } from "@/components/player-table";
+import { PanelCard } from "@/components/ui/panel-card";
 import { PLAYERS, getTopRated, getTopScorers } from "@/lib/data/players";
 
 export const metadata = {
@@ -24,11 +25,8 @@ export default function PlayersPage() {
       </div>
 
       <div className="mb-6 grid gap-3 sm:grid-cols-2">
-        <div className="card p-4">
-          <p className="text-[10px] font-bold uppercase tracking-wider text-brand-500">
-            Top scorers
-          </p>
-          <ul className="mt-2 space-y-1.5">
+        <PanelCard title="Top scorers">
+          <ul className="space-y-1.5">
             {topScorers.map((player, index) => (
               <li
                 key={player.id}
@@ -51,13 +49,10 @@ export default function PlayersPage() {
               </li>
             ))}
           </ul>
-        </div>
+        </PanelCard>
 
-        <div className="card p-4">
-          <p className="text-[10px] font-bold uppercase tracking-wider text-brand-500">
-            Highest rated
-          </p>
-          <ul className="mt-2 space-y-1.5">
+        <PanelCard title="Highest rated">
+          <ul className="space-y-1.5">
             {topRated.map((player, index) => (
               <li
                 key={player.id}
@@ -80,7 +75,7 @@ export default function PlayersPage() {
               </li>
             ))}
           </ul>
-        </div>
+        </PanelCard>
       </div>
 
       <PlayerTable players={PLAYERS} />
