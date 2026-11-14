@@ -61,10 +61,48 @@ weakness of the Streamlit version, where each tab invented its own numbers.
 
 ## Connecting a real provider
 
-`app/api/live/route.ts` is the single choke point. The browser only ever talks
-to that route, never to an upstream API — so traffic does not scale API usage.
+There are two supported data paths.
 
-When wiring a provider:
+### A. SofaScore scraper (implemented)
+
+The `sofascore-scraper` project produces a JSON snapshot of matches, which this
+site reads at runtime. Nothing is fetched from a third party during a request,
+so viewer traffic can never consume a quota.
+
+```
+matches-YYYY-MM-DD.json  ->  npm run prepare:matches
+                         ->  lib/data/generated/matches.json   (committed)
+                         ->  lib/data/snapshot.ts              (runtime loader)
+                         ->  getMatches() / /api/live
+```
+
+```bash
+# 1. scrape (in the scraper repo; needs a sofa_captcha cookie)
+python -m sofascore_scraper.cli --date today
+
+# 2. normalise + validate into the committed snapshot
+cd ../football-site
+npm run prepare:matches
+
+# 3. rebuild
+npm run dev
+```
+
+`lib/data/snapshot.ts` resolves data in this order and never throws:
+
+1. `FOOTBALL_SNAPSHOT` env var (JSON string) — lets you refresh scores in
+   Vercel without a redeploy.
+2. `lib/data/generated/matches.json` — the committed snapshot.
+3. Demo fixtures — the deterministic generator, if both above are empty.
+
+A malformed value logs a warning and falls through, so bad data can never break
+a build. `/api/live` reports which path is live via its `source` field
+(`sofascore-snapshot` or `demo`).
+
+### B. Football-data / API-Football providers
+
+`app/api/live/route.ts` is the natural choke point if you later add a
+request-time provider.
 
 1. Put the key in `.env.local` (never `NEXT_PUBLIC_`). See `.env.example`.
 2. Fetch inside the route handler / server component, not in a client component.
@@ -81,7 +119,8 @@ Quota reality check (verified against provider docs):
 - **API-Football free** — ~100 calls/day. Real-time, but unusable for public
   traffic without aggressive caching.
 - Vercel **Hobby crons run once per day only**, so live data must be refreshed
-  on demand via ISR, not by cron.
+  on demand via ISR or the snapshot variable, not by cron.
+
 
 ## Swapping in the full player dataset
 
@@ -101,11 +140,35 @@ columns come out as `0` and must be joined from a stats provider.
 
 ## Deploy
 
+The repo is ready for Vercel. No environment variables are required.
+
 ```bash
-git remote add origin https://github.com/ducklovercd-hash/football-site.git
-git push -u origin main
+# already pushed to https://github.com/ducklovercd-hash/football-site
 ```
 
-Then import the repo at vercel.com — the framework is detected automatically.
-Add `FOOTBALL_DATA_KEY` / `API_FOOTBALL_KEY` under Project → Settings →
-Environment Variables when you move off demo data.
+Import it at vercel.com: **Add New → Project → import `football-site`**. The
+framework is detected as Next.js; accept the defaults and deploy.
+
+Then, under **Project → Settings → Environment Variables** (all optional):
+
+| Variable | Required | Purpose |
+| --- | --- | --- |
+| `FOOTBALL_SNAPSHOT` | No | One-line match JSON to refresh scores without a redeploy (64 KB cap) |
+| `FOOTBALL_DATA_KEY` | No | Only if you switch to a request-time provider |
+| `API_FOOTBALL_KEY` | No | Only if you switch to a request-time provider |
+| `DATA_MODE` | No | `demo` (default) or `live` |
+
+Never prefix these with `NEXT_PUBLIC_` — that would expose them to the browser.
+
+To refresh data without a redeploy:
+
+```bash
+cd ../football-site
+npm run prepare:matches
+cat lib/data/generated/matches.json | python3 -c 'import json,sys; print(json.dumps(json.load(sys.stdin), separators=(",",":")))'
+```
+
+Paste the output into `FOOTBALL_SNAPSHOT` and redeploy the environment
+(Vercel → Deployments → ⋯ → Redeploy, or just save the variable and
+re-trigger). Invalid JSON is ignored with a warning, so a bad paste degrades to
+the committed snapshot rather than a broken site.
