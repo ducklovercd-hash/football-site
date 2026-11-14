@@ -9,7 +9,6 @@ import type {
   TeamStats,
 } from "@/lib/types";
 import { COMPETITION_BY_CODE, TEAMS_BY_COMPETITION, TEAM_BY_ID, VENUES } from "./teams";
-import { MATCHES as SCRAPED } from "./generated/matches.generated";
 
 /* ------------------------------------------------------------------ */
 /* Deterministic name pools for generated lineups                      */
@@ -324,14 +323,6 @@ function buildMatch(plan: FixturePlan, now: Date): Match {
 
 /** All matches for "today", reconstructed for the given instant. */
 export function getMatches(now: Date = new Date()): Match[] {
-  // Prefer real scraped data (written by scripts/prepare-matches.mjs).
-  // If the generated module is empty, fall back to the deterministic PRNG
-  // fixture generator so the site always renders something.
-  if (SCRAPED.length > 0) {
-    return [...SCRAPED].sort(
-      (a, b) => new Date(a.kickoff).getTime() - new Date(b.kickoff).getTime(),
-    );
-  }
   return PLAN.map((plan) => buildMatch(plan, now)).sort(
     (a, b) => new Date(a.kickoff).getTime() - new Date(b.kickoff).getTime(),
   );
