@@ -26,6 +26,48 @@ export interface Snapshot {
 
 const EMPTY: Snapshot = { generatedAt: null, source: null, matches: [] };
 
+/**
+ * Coerces a scraped match into the shape the UI expects.
+ *
+ * The UI renders lineups as `{ formation, players }`. An older scraper build
+ * (or a hand-edited snapshot) may still emit a flat array, which would crash
+ * the formation grid. Rather than trust the producer, normalise here — the
+ * snapshot is the boundary between untrusted data and the app.
+ */
+function normaliseLineup(value: unknown, fallbackFormation = "4-3-3") {
+  if (Array.isArray(value)) {
+    return { formation: fallbackFormation, players: value };
+  }
+  if (value && typeof value === "object") {
+    const candidate = value as { formation?: unknown; players?: unknown };
+    if (Array.isArray(candidate.players)) {
+      return {
+        formation:
+          typeof candidate.formation === "string"
+            ? candidate.formation
+            : fallbackFormation,
+        players: candidate.players,
+      };
+    }
+  }
+  return { formation: fallbackFormation, players: [] };
+}
+
+function normaliseMatch(match: Match): Match {
+  const lineups = (match.lineups ?? {}) as unknown as {
+    home?: unknown;
+    away?: unknown;
+  };
+
+  return {
+    ...match,
+    lineups: {
+      home: normaliseLineup(lineups.home),
+      away: normaliseLineup(lineups.away),
+    },
+  };
+}
+
 function isSnapshot(value: unknown): value is Snapshot {
   return (
     typeof value === "object" &&
@@ -54,12 +96,16 @@ export function getSnapshot(): Snapshot {
 
   const env = fromEnv();
   if (env && env.matches.length > 0) {
-    cached = { ...env, source: "env:FOOTBALL_SNAPSHOT" };
+    cached = {
+      ...env,
+      matches: env.matches.map(normaliseMatch),
+      source: "env:FOOTBALL_SNAPSHOT",
+    };
     return cached;
   }
 
   if (isSnapshot(snapshot) && snapshot.matches.length > 0) {
-    cached = snapshot;
+    cached = { ...snapshot, matches: snapshot.matches.map(normaliseMatch) };
     return cached;
   }
 
