@@ -9,22 +9,32 @@ function readableText(hex: string): string {
   return luminance > 0.6 ? "#0a0a0a" : "#ffffff";
 }
 
-/** Crest stand-in: initials on the club's own colour. */
 export function TeamCrest({ team, size = 34 }: { team: Team; size?: number }) {
   return (
     <span
-      aria-hidden="true"
-      className="inline-flex shrink-0 items-center justify-center rounded-full font-bold tracking-tight"
-      style={{
-        width: size,
-        height: size,
-        fontSize: Math.max(9, size * 0.29),
-        backgroundColor: team.color,
-        color: readableText(team.color),
-        boxShadow: "0 0 0 1px rgba(255,255,255,0.08)",
-      }}
+      className="relative inline-flex shrink-0 items-center justify-center"
+      style={{ width: size, height: size }}
     >
-      {team.short.slice(0, 3)}
+      <span
+        aria-hidden="true"
+        className="absolute inset-0 inline-flex items-center justify-center rounded-full font-bold tracking-tight"
+        style={{
+          fontSize: Math.max(9, size * 0.29),
+          backgroundColor: team.color,
+          color: readableText(team.color),
+          boxShadow: "0 0 0 1px rgba(255,255,255,0.08)",
+        }}
+      >
+        {team.short.slice(0, 3)}
+      </span>
+      <img
+        src={`/crests/${team.id}.png`}
+        alt={`${team.name} club crest`}
+        width={size}
+        height={size}
+        decoding="async"
+        className="relative h-full w-full object-contain"
+      />
     </span>
   );
 }
