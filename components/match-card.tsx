@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { formatKickoff } from "@/lib/format";
 import type { Match } from "@/lib/types";
-import { FormPills } from "./ui/form-pills";
+import { FormPills } from "@/components/primitives/form-pills";
 import { StatusBadge } from "./status-badge";
 import { TeamCrest } from "./team-crest";
 

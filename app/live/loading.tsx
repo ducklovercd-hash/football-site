@@ -1,4 +1,4 @@
-import { LoadingState } from "@/components/ui/data-states";
+import { LoadingState } from "@/components/primitives/data-states";
 
 /**
  * R-27: the streaming fallback while the fixture list is prepared, so the page

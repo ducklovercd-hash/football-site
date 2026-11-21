@@ -1,5 +1,5 @@
 import { PlayerTable } from "@/components/player-table";
-import { PanelCard } from "@/components/ui/panel-card";
+import { PanelCard } from "@/components/primitives/panel-card";
 import { PLAYERS, getTopRated, getTopScorers } from "@/lib/data/players";
 
 export const metadata = {

@@ -1,4 +1,8 @@
 @import "tailwindcss";
+@import "tw-animate-css";
+@import "shadcn/tailwind.css";
+
+@custom-variant dark (&:is(.dark *));
 
 /* ============================================================
    PITCHSIDE, black & yellow design tokens
@@ -38,6 +42,7 @@
 @layer base {
   html {
     color-scheme: dark;
+    @apply font-sans;
   }
 
   body {
@@ -45,6 +50,7 @@
     color: var(--color-fg);
     font-family: var(--font-display);
     -webkit-font-smoothing: antialiased;
+    @apply bg-background text-foreground;
   }
 
   ::selection {
@@ -112,6 +118,12 @@
   ::-webkit-scrollbar-thumb:hover {
     background: var(--color-pitch-600);
   }
+  * {
+    @apply border-border outline-ring/50;
+  }
+  button:not(:disabled), [role="button"]:not(:disabled) {
+    cursor: pointer;
+  }
 }
 
 /* ============================================================
@@ -177,4 +189,84 @@
 .no-scrollbar {
   -ms-overflow-style: none;
   scrollbar-width: none;
+}
+
+@theme inline {
+  --font-heading: var(--font-display);
+  --font-sans: var(--font-display);
+  --color-sidebar-ring: var(--sidebar-ring);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar: var(--sidebar);
+  --color-chart-5: var(--chart-5);
+  --color-chart-4: var(--chart-4);
+  --color-chart-3: var(--chart-3);
+  --color-chart-2: var(--chart-2);
+  --color-chart-1: var(--chart-1);
+  --color-ring: var(--ring);
+  --color-input: var(--input);
+  --color-border: var(--border);
+  --color-destructive: var(--destructive);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-accent: var(--accent);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-muted: var(--muted);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-secondary: var(--secondary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-primary: var(--primary);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-popover: var(--popover);
+  --color-card-foreground: var(--card-foreground);
+  --color-card: var(--card);
+  --color-foreground: var(--foreground);
+  --color-background: var(--background);
+  --radius-sm: calc(var(--radius) * 0.6);
+  --radius-md: calc(var(--radius) * 0.8);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) * 1.4);
+  --radius-2xl: calc(var(--radius) * 1.8);
+  --radius-3xl: calc(var(--radius) * 2.2);
+  --radius-4xl: calc(var(--radius) * 2.6);
+}
+
+:root {
+  /* PitchSide palette mapped onto the shadcn tokens. Single dark theme by
+     design (DESIGN.md R-21): no .dark block, no light mode. */
+  --background: #050505;
+  --foreground: #f4f4f5;
+  --card: #0b0b0c;
+  --card-foreground: #f4f4f5;
+  --popover: #101012;
+  --popover-foreground: #f4f4f5;
+  --primary: #ffd60a;
+  --primary-foreground: #0a0a0a;
+  --secondary: #17171a;
+  --secondary-foreground: #f4f4f5;
+  --muted: #17171a;
+  --muted-foreground: #a1a1aa;
+  --accent: #26262b;
+  --accent-foreground: #f4f4f5;
+  --destructive: #ff3b30;
+  --border: #26262b;
+  --input: #26262b;
+  --ring: #ffd60a;
+  --chart-1: #ffd60a;
+  --chart-2: #fde047;
+  --chart-3: #a1a1aa;
+  --chart-4: #3a3a42;
+  --chart-5: #71717a;
+  --radius: 0.625rem;
+  --sidebar: #0b0b0c;
+  --sidebar-foreground: #f4f4f5;
+  --sidebar-primary: #ffd60a;
+  --sidebar-primary-foreground: #0a0a0a;
+  --sidebar-accent: #17171a;
+  --sidebar-accent-foreground: #f4f4f5;
+  --sidebar-border: #26262b;
+  --sidebar-ring: #ffd60a;
 }

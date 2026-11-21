@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { PanelCard } from "@/components/ui/panel-card";
+import { PanelCard } from "@/components/primitives/panel-card";
 import { PLAYERS, getPlayerBySlug } from "@/lib/data/players";
 
 export function generateStaticParams() {

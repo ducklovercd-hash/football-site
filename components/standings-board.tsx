@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { FormPills } from "@/components/ui/form-pills";
+import { FormPills } from "@/components/primitives/form-pills";
 import { TeamCrest } from "@/components/team-crest";
 import { COMPETITIONS } from "@/lib/data/teams";
 import type { StandingRow } from "@/lib/types";

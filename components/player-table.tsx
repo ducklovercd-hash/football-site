@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { useMemo, useState } from "react";
-import { Badge } from "@/components/ui/badge";
+import { Badge } from "@/components/primitives/badge";
 import { COMPETITIONS } from "@/lib/data/teams";
 import type { Player, Position } from "@/lib/types";
 

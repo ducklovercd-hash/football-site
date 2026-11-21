@@ -1,4 +1,4 @@
-import { LoadingState } from "@/components/ui/data-states";
+import { LoadingState } from "@/components/primitives/data-states";
 
 export default function Loading() {
   return (
