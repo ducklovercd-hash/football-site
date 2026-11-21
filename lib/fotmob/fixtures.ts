@@ -1,4 +1,5 @@
 import type { Match, MatchStatus, Team } from "../types";
+import { siteTodayIso } from "../format";
 import {
   DEFAULT_TEAM_COLOR,
   FIXTURES_TTL_S,
@@ -32,11 +33,13 @@ export type FixturesResult =
   | { ok: true; fixtures: FotMobFixture[]; serverDate: string | null }
   | { ok: false; reason: string };
 
+/**
+ * UTC-anchored calendar day: "today" is whatever day it is in Hong Kong, so
+ * the fixture list rolls over at HKT midnight, not the server clock's.
+ */
 function compactDate(now: Date): string {
-  const y = now.getFullYear();
-  const m = String(now.getMonth() + 1).padStart(2, "0");
-  const d = String(now.getDate()).padStart(2, "0");
-  return `${y}${m}${d}`;
+  const iso = siteTodayIso(now);
+  return iso.replaceAll("-", "");
 }
 
 /**

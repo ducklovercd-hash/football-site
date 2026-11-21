@@ -2,6 +2,7 @@
 
 import { useRouter, useSearchParams } from "next/navigation";
 import { useTransition } from "react";
+import { siteTodayIso } from "@/lib/format";
 
 /**
  * Date navigation for the fixture list (?date=YYYY-MM-DD). Pure date-string
@@ -82,12 +83,7 @@ export function DateNav({ date }: { date: string | null }) {
 }
 
 function todayIso(): string {
-  const now = new Date();
-  return [
-    now.getFullYear(),
-    String(now.getMonth() + 1).padStart(2, "0"),
-    String(now.getDate()).padStart(2, "0"),
-  ].join("-");
+  return siteTodayIso();
 }
 
 function shiftIso(iso: string, days: number): string {

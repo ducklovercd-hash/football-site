@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import { DataSourceBadge } from "@/components/data-source-badge";
 
 export const NAV_SECTIONS = [
   {
@@ -77,10 +78,7 @@ export function Sidebar() {
       </nav>
 
       <div className="border-t border-pitch-800 px-4 py-3">
-        <span className="flex items-center gap-1.5 text-[10px] font-semibold uppercase tracking-wider text-fg-dim">
-          <span className="dot-live h-1.5 w-1.5 rounded-full bg-brand-500" />
-          Demo data
-        </span>
+        <DataSourceBadge />
       </div>
     </aside>
   );

@@ -2,9 +2,20 @@
  * All date formatting is pinned to a single timezone so the server render and
  * the client hydration always produce identical strings. (Vercel functions run
  * in UTC; the browser does not, an unpinned formatter causes hydration errors.)
+ * The audience is in Hong Kong, so the site speaks HKT.
  */
-export const DISPLAY_TZ = "Europe/London";
-export const DISPLAY_TZ_LABEL = "UK";
+export const DISPLAY_TZ = "Asia/Hong_Kong";
+export const DISPLAY_TZ_LABEL = "HKT";
+
+/** "2026-11-21" for the site timezone, independent of the host clock. */
+export function siteTodayIso(now: Date = new Date()): string {
+  return new Intl.DateTimeFormat("en-CA", {
+    timeZone: DISPLAY_TZ,
+    year: "numeric",
+    month: "2-digit",
+    day: "2-digit",
+  }).format(now);
+}
 
 const timeFmt = new Intl.DateTimeFormat("en-GB", {
   hour: "2-digit",

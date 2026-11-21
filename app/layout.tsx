@@ -32,9 +32,8 @@ export default function RootLayout({
                   Vercel.
                 </p>
                 <p>
-                  Currently running on{" "}
-                  <span className="text-brand-500">demo data</span>. Live
-                  provider integration pending.
+                  Match data from FotMob, refreshed while you browse. Times
+                  shown in HKT.
                 </p>
               </div>
             </footer>

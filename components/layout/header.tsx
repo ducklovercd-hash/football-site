@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import { DataSourceBadge } from "@/components/data-source-badge";
 import { NAV_SECTIONS } from "./sidebar";
 
 const LABELS: Record<string, string> = Object.fromEntries(
@@ -86,9 +87,8 @@ export function Header() {
           })}
         </nav>
 
-        <span className="ml-auto hidden shrink-0 items-center gap-1.5 rounded-full border border-pitch-700 px-2.5 py-1 text-[10px] font-semibold uppercase tracking-wider text-fg-dim sm:flex">
-          <span className="dot-live h-1.5 w-1.5 rounded-full bg-brand-500" />
-          Demo data
+        <span className="ml-auto hidden shrink-0 sm:block">
+          <DataSourceBadge />
         </span>
       </div>
     </header>
