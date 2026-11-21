@@ -1,30 +1,32 @@
 import { NextResponse } from "next/server";
-import { getLiveMatches } from "@/lib/data/matches";
-import { getSnapshot } from "@/lib/data/snapshot";
+import { getLiveData } from "@/lib/data/live";
 
 /**
  * Live scores endpoint polled by <LiveBoard/>.
  *
- * Serves the scraped snapshot when one exists, otherwise the local demo
- * fixtures. Either way the browser never talks to an upstream API, so viewer
- * traffic cannot consume a provider quota.
+ * Serves matches fetched from FotMob server-side; the browser never talks to
+ * an upstream API, so viewer traffic cannot burn provider quota. The inner
+ * fetches go through the Next Data Cache, so 10,000 viewers still cost at
+ * most one upstream request per revalidation window, and an idle site makes
+ * zero upstream requests.
  *
- * The snapshot is fed by `npm run prepare:matches` (committed JSON) or by the
- * FOOTBALL_SNAPSHOT environment variable, so refreshing scores needs no code
- * change and no extra request path.
+ * When FotMob is unreachable the route degrades to the committed snapshot
+ * (or demo fixtures) and says so in `source`.
  */
 export const dynamic = "force-dynamic";
 
 export async function GET() {
-  const now = new Date();
-  const snapshot = getSnapshot();
-  const usingRealData = snapshot.matches.length > 0;
+  const live = await getLiveData();
+  const matches = live.matches.filter(
+    (m) => m.status === "LIVE" || m.status === "HT",
+  );
 
   return NextResponse.json(
     {
-      matches: getLiveMatches(now),
-      updatedAt: snapshot.generatedAt ?? now.toISOString(),
-      source: usingRealData ? "sofascore-snapshot" : "demo",
+      matches,
+      updatedAt: live.updatedAt,
+      source: live.source,
+      ...(live.reason ? { reason: live.reason } : {}),
     },
     { headers: { "Cache-Control": "no-store" } },
   );

@@ -25,7 +25,7 @@ export default async function TodayPage({
   const selected = parseSelection(params.comps);
 
   const now = new Date();
-  const allMatches = getMatches(now);
+  const allMatches = await getMatches(now);
   const matches = allMatches.filter((match) =>
     selected.includes(match.competition.code),
   );

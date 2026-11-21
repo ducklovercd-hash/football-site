@@ -1,0 +1,1375 @@
+{
+ "general": {
+  "matchId": "5868132",
+  "leagueName": "LaLiga",
+  "homeTeam": {
+   "name": "Athletic Club",
+   "id": 8315
+  },
+  "awayTeam": {
+   "name": "Espanyol",
+   "id": 8558
+  },
+  "teamColors": {
+   "darkMode": {
+    "home": "#E2001A",
+    "away": "#1954B2"
+   },
+   "lightMode": {
+    "home": "#E2001A",
+    "away": "#1954B2"
+   },
+   "fontDarkMode": {
+    "home": "rgba(255, 255, 255, 1.0)",
+    "away": "rgba(255, 255, 255, 1.0)"
+   },
+   "fontLightMode": {
+    "home": "rgba(255, 255, 255, 1.0)",
+    "away": "rgba(255, 255, 255, 1.0)"
+   }
+  }
+ },
+ "header": {
+  "teams": [
+   {
+    "name": "Athletic Club",
+    "id": 8315,
+    "score": 0,
+    "imageUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/8315_small.png",
+    "pageUrl": "/teams/8315/overview/athletic-club"
+   },
+   {
+    "name": "Espanyol",
+    "id": 8558,
+    "score": 1,
+    "imageUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/8558_small.png",
+    "pageUrl": "/teams/8558/overview/espanyol"
+   }
+  ],
+  "status": {
+   "utcTime": "2026-11-20T20:00:00.000Z",
+   "numberOfHomeRedCards": 0,
+   "numberOfAwayRedCards": 0,
+   "halfs": {
+    "firstHalfStarted": "20.11.2026 21:02:34",
+    "firstHalfEnded": "20.11.2026 21:48:13",
+    "secondHalfStarted": "20.11.2026 22:05:03",
+    "secondHalfEnded": "20.11.2026 22:53:35",
+    "firstExtraHalfStarted": "",
+    "secondExtraHalfStarted": "",
+    "gameEnded": "20.11.2026 22:53:35"
+   },
+   "finished": true,
+   "started": true,
+   "cancelled": false,
+   "awarded": false,
+   "scoreStr": "0 - 1",
+   "reason": {
+    "short": "FT",
+    "shortKey": "fulltime_short",
+    "long": "Full-Time",
+    "longKey": "finished"
+   },
+   "whoLostOnPenalties": null,
+   "whoLostOnAggregated": ""
+  },
+  "events": {
+   "homeTeamGoals": {},
+   "awayTeamGoals": {
+    "R. Fernández": [
+     {
+      "reactKey": "1475774366Goal1252373undefinedfalse",
+      "timeStr": 66,
+      "type": "Goal",
+      "time": 66,
+      "overloadTime": null,
+      "eventId": 14757743,
+      "player": {
+       "id": 1252373,
+       "name": "Roberto Fernández",
+       "profileUrl": "/players/1252373/roberto-fernandez"
+      },
+      "homeScore": 0,
+      "awayScore": 0,
+      "profileUrl": "/players/1252373/roberto-fernandez",
+      "overloadTimeStr": false,
+      "isHome": false,
+      "ownGoal": null,
+      "goalDescription": null,
+      "goalDescriptionKey": null,
+      "suffix": null,
+      "suffixKey": null,
+      "isPenaltyShootoutEvent": false,
+      "nameStr": "Roberto Fernández",
+      "firstName": "Roberto",
+      "lastName": "Fernández",
+      "fullName": "Roberto Fernández",
+      "playerId": 1252373,
+      "newScore": [
+       0,
+       1
+      ],
+      "penShootoutScore": null,
+      "shotmapEvent": {
+       "id": 2998840315,
+       "eventType": "Goal",
+       "teamId": 8558,
+       "playerId": 1252373,
+       "playerName": "Roberto Fernández",
+       "x": 98.4385964909,
+       "y": 45.4020382125,
+       "min": 66,
+       "minAdded": null,
+       "isBlocked": false,
+       "isOnTarget": true,
+       "blockedX": null,
+       "blockedY": null,
+       "goalCrossedY": 32.09375,
+       "goalCrossedZ": 0.28252631440000003,
+       "expectedGoals": 0.16595925390720367,
+       "expectedGoalsOnTarget": 0.32906562089920044,
+       "shotType": "RightFoot",
+       "situation": "RegularPlay",
+       "period": "SecondHalf",
+       "isOwnGoal": false,
+       "onGoalShot": {
+        "x": 1.5042989417989419,
+        "y": 0.07474241121693122,
+        "zoomRatio": 1
+       },
+       "isSavedOffLine": false,
+       "isFromInsideBox": true,
+       "keeperId": 660625,
+       "firstName": "Roberto",
+       "lastName": "Fernández",
+       "fullName": "Roberto Fernández",
+       "teamColor": "#1954B2"
+      },
+      "assistStr": "assist by Tyrhys Dolan",
+      "assistProfileUrl": "/players/1181101/tyrhys-dolan",
+      "assistPlayerId": 1181101,
+      "assistKey": "assist_by",
+      "assistInput": "Tyrhys Dolan"
+     }
+    ]
+   },
+   "homeTeamRedCards": {},
+   "awayTeamRedCards": {}
+  }
+ },
+ "content": {
+  "matchFacts": {
+   "events": {
+    "ongoing": false,
+    "events": [
+     {
+      "reactKey": "undefined45HalfNaNundefinedundefined",
+      "timeStr": 45,
+      "type": "Half",
+      "time": 45,
+      "overloadTime": null,
+      "player": {
+       "id": null,
+       "profileUrl": ""
+      },
+      "homeScore": 0,
+      "awayScore": 0,
+      "halfStrShort": "HT",
+      "halfStrKey": "halftime_short"
+     },
+     {
+      "reactKey": "undefined57SubstitutionNaN1181101false",
+      "timeStr": 57,
+      "type": "Substitution",
+      "time": 57,
+      "overloadTime": 0,
+      "player": {
+       "id": null,
+       "profileUrl": ""
+      },
+      "homeScore": 0,
+      "awayScore": 0,
+      "profileUrl": "",
+      "overloadTimeStr": false,
+      "isHome": false,
+      "injuredPlayerOut": false,
+      "swap": [
+       {
+        "name": "Tyrhys Dolan",
+        "id": "1181101",
+        "profileUrl": "/players/1181101/tyrhys-dolan"
+       },
+       {
+        "name": "Pere Milla",
+        "id": "593129",
+        "profileUrl": "/players/593129/pere-milla"
+       }
+      ]
+     },
+     {
+      "reactKey": "1475767258Card604105undefinedtrue",
+      "timeStr": 58,
+      "type": "Card",
+      "time": 58,
+      "overloadTime": null,
+      "eventId": 14757672,
+      "player": {
+       "id": 604105,
+       "name": "Iñaki Williams",
+       "profileUrl": "/players/604105/inaki-williams"
+      },
+      "homeScore": 0,
+      "awayScore": 0,
+      "profileUrl": "/players/604105/inaki-williams",
+      "overloadTimeStr": false,
+      "isHome": true,
+      "nameStr": "Iñaki Williams",
+      "firstName": "Iñaki",
+      "lastName": "Williams",
+      "fullName": "Iñaki Williams",
+      "playerId": 604105,
+      "card": "Yellow",
+      "cardDescription": null,
+      "cardReason": {
+       "localizedKey": "card_desc_foul",
+       "defaultText": "Foul"
+      }
+     },
+     {
+      "reactKey": "undefined61SubstitutionNaN282462true",
+      "timeStr": 61,
+      "type": "Substitution",
+      "time": 61,
+      "overloadTime": 0,
+      "player": {
+       "id": null,
+       "profileUrl": ""
+      },
+      "homeScore": 0,
+      "awayScore": 0,
+      "profileUrl": "",
+      "overloadTimeStr": false,
+      "isHome": true,
+      "injuredPlayerOut": false,
+      "swap": [
+       {
+        "name": "Iñigo Ruiz de Galarreta",
+        "id": "282462",
+        "profileUrl": "/players/282462/inigo-ruiz-de-galarreta"
+       },
+       {
+        "name": "Peio Canales",
+        "id": "1585726",
+        "profileUrl": "/players/1585726/peio-canales"
+       }
+      ]
+     },
+     {
+      "reactKey": "undefined65SubstitutionNaN1427828false",
+      "timeStr": 65,
+      "type": "Substitution",
+      "time": 65,
+      "overloadTime": 0,
+      "player": {
+       "id": null,
+       "profileUrl": ""
+      },
+      "homeScore": 0,
+      "awayScore": 0,
+      "profileUrl": "",
+      "overloadTimeStr": false,
+      "isHome": false,
+      "injuredPlayerOut": false,
+      "swap": [
+       {
+        "name": "Javi Hernández",
+        "id": "1427828",
+        "profileUrl": "/players/1427828/javi-hernandez"
+       },
+       {
+        "name": "Rafel Bauzà",
+        "id": "1609364",
+        "profileUrl": "/players/1609364/rafel-bauza"
+       }
+      ]
+     },
+     {
+      "reactKey": "undefined65SubstitutionNaN1503655false",
+      "timeStr": 65,
+      "type": "Substitution",
+      "time": 65,
+      "overloadTime": 0,
+      "player": {
+       "id": null,
+       "profileUrl": ""
+      },
+      "homeScore": 0,
+      "awayScore": 0,
+      "profileUrl": "",
+      "overloadTimeStr": false,
+      "isHome": false,
+      "injuredPlayerOut": false,
+      "swap": [
+       {
+        "name": "Gabriel Moscardo",
+        "id": "1503655",
+        "profileUrl": "/players/1503655/gabriel-moscardo"
+       },
+       {
+        "name": "Roger Hinojo",
+        "id": "1727689",
+        "profileUrl": "/players/1727689/roger-hinojo"
+       }
+      ]
+     },
+     {
+      "reactKey": "1475774366Goal1252373undefinedfalse",
+      "timeStr": 66,
+      "type": "Goal",
+      "time": 66,
+      "overloadTime": null,
+      "eventId": 14757743,
+      "player": {
+       "id": 1252373,
+       "name": "Roberto Fernández",
+       "profileUrl": "/players/1252373/roberto-fernandez"
+      },
+      "homeScore": 0,
+      "awayScore": 0,
+      "profileUrl": "/players/1252373/roberto-fernandez",
+      "overloadTimeStr": false,
+      "isHome": false,
+      "ownGoal": null,
+      "goalDescription": null,
+      "goalDescriptionKey": null,
+      "suffix": null,
+      "suffixKey": null,
+      "isPenaltyShootoutEvent": false,
+      "nameStr": "Roberto Fernández",
+      "firstName": "Roberto",
+      "lastName": "Fernández",
+      "fullName": "Roberto Fernández",
+      "playerId": 1252373,
+      "newScore": [
+       0,
+       1
+      ],
+      "penShootoutScore": null,
+      "shotmapEvent": {
+       "id": 2998840315,
+       "eventType": "Goal",
+       "teamId": 8558,
+       "playerId": 1252373,
+       "playerName": "Roberto Fernández",
+       "x": 98.4385964909,
+       "y": 45.4020382125,
+       "min": 66,
+       "minAdded": null,
+       "isBlocked": false,
+       "isOnTarget": true,
+       "blockedX": null,
+       "blockedY": null,
+       "goalCrossedY": 32.09375,
+       "goalCrossedZ": 0.28252631440000003,
+       "expectedGoals": 0.16595925390720367,
+       "expectedGoalsOnTarget": 0.32906562089920044,
+       "shotType": "RightFoot",
+       "situation": "RegularPlay",
+       "period": "SecondHalf",
+       "isOwnGoal": false,
+       "onGoalShot": {
+        "x": 1.5042989417989419,
+        "y": 0.07474241121693122,
+        "zoomRatio": 1
+       },
+       "isSavedOffLine": false,
+       "isFromInsideBox": true,
+       "keeperId": 660625,
+       "firstName": "Roberto",
+       "lastName": "Fernández",
+       "fullName": "Roberto Fernández",
+       "teamColor": "#1954B2"
+      },
+      "assistStr": "assist by Tyrhys Dolan",
+      "assistProfileUrl": "/players/1181101/tyrhys-dolan",
+      "assistPlayerId": 1181101,
+      "assistKey": "assist_by",
+      "assistInput": "Tyrhys Dolan"
+     },
+     {
+      "reactKey": "undefined69SubstitutionNaN1425173true",
+      "timeStr": 69,
+      "type": "Substitution",
+      "time": 69,
+      "overloadTime": 0,
+      "player": {
+       "id": null,
+       "profileUrl": ""
+      },
+      "homeScore": 0,
+      "awayScore": 1,
+      "profileUrl": "",
+      "overloadTimeStr": false,
+      "isHome": true,
+      "injuredPlayerOut": false,
+      "swap": [
+       {
+        "name": "Beñat Gerenabarrena",
+        "id": "1425173",
+        "profileUrl": "/players/1425173/benat-gerenabarrena"
+       },
+       {
+        "name": "Beñat Prados",
+        "id": "1229176",
+        "profileUrl": "/players/1229176/benat-prados"
+       }
+      ]
+     },
+     {
+      "reactKey": "undefined69SubstitutionNaN1011117true",
+      "timeStr": 69,
+      "type": "Substitution",
+      "time": 69,
+      "overloadTime": 0,
+      "player": {
+       "id": null,
+       "profileUrl": ""
+      },
+      "homeScore": 0,
+      "awayScore": 1,
+      "profileUrl": "",
+      "overloadTimeStr": false,
+      "isHome": true,
+      "injuredPlayerOut": false,
+      "swap": [
+       {
+        "name": "Robert Navarro",
+        "id": "1011117",
+        "profileUrl": "/players/1011117/robert-navarro"
+       },
+       {
+        "name": "Hugo Rincón",
+        "id": "1427819",
+        "profileUrl": "/players/1427819/hugo-rincon"
+       }
+      ]
+     },
+     {
+      "reactKey": "1475778970Card282462undefinedtrue",
+      "timeStr": 70,
+      "type": "Card",
+      "time": 70,
+      "overloadTime": null,
+      "eventId": 14757789,
+      "player": {
+       "id": 282462,
+       "name": "Iñigo Ruiz de Galarreta",
+       "profileUrl": "/players/282462/inigo-ruiz-de-galarreta"
+      },
+      "homeScore": 0,
+      "awayScore": 1,
+      "profileUrl": "/players/282462/inigo-ruiz-de-galarreta",
+      "overloadTimeStr": false,
+      "isHome": true,
+      "nameStr": "Iñigo Ruiz de Galarreta",
+      "firstName": "Iñigo Ruiz",
+      "lastName": "de Galarreta",
+      "fullName": "Iñigo Ruiz de Galarreta",
+      "playerId": 282462,
+      "card": "Yellow",
+      "cardDescription": null,
+      "cardReason": {
+       "localizedKey": "card_desc_foul",
+       "defaultText": "Foul"
+      }
+     },
+     {
+      "reactKey": "1475787683Card639450undefinedtrue",
+      "timeStr": 83,
+      "type": "Card",
+      "time": 83,
+      "overloadTime": null,
+      "eventId": 14757876,
+      "player": {
+       "id": 639450,
+       "name": "Yeray Álvarez",
+       "profileUrl": "/players/639450/yeray-alvarez"
+      },
+      "homeScore": 0,
+      "awayScore": 1,
+      "profileUrl": "/players/639450/yeray-alvarez",
+      "overloadTimeStr": false,
+      "isHome": true,
+      "nameStr": "Yeray Álvarez",
+      "firstName": "Yeray",
+      "lastName": "Álvarez",
+      "fullName": "Yeray Álvarez",
+      "playerId": 639450,
+      "card": "Yellow",
+      "cardDescription": null,
+      "cardReason": {
+       "localizedKey": "card_desc_foul",
+       "defaultText": "Foul"
+      }
+     },
+     {
+      "reactKey": "undefined85SubstitutionNaN1425769true",
+      "timeStr": 85,
+      "type": "Substitution",
+      "time": 85,
+      "overloadTime": 0,
+      "player": {
+       "id": null,
+       "profileUrl": ""
+      },
+      "homeScore": 0,
+      "awayScore": 1,
+      "profileUrl": "",
+      "overloadTimeStr": false,
+      "isHome": true,
+      "injuredPlayerOut": false,
+      "swap": [
+       {
+        "name": "Alejandro Rego",
+        "id": "1425769",
+        "profileUrl": "/players/1425769/alejandro-rego"
+       },
+       {
+        "name": "Aymeric Laporte",
+        "id": "411617",
+        "profileUrl": "/players/411617/aymeric-laporte"
+       }
+      ]
+     },
+     {
+      "reactKey": "undefined85SubstitutionNaN1899917true",
+      "timeStr": 85,
+      "type": "Substitution",
+      "time": 85,
+      "overloadTime": 0,
+      "player": {
+       "id": null,
+       "profileUrl": ""
+      },
+      "homeScore": 0,
+      "awayScore": 1,
+      "profileUrl": "",
+      "overloadTimeStr": false,
+      "isHome": true,
+      "injuredPlayerOut": false,
+      "swap": [
+       {
+        "name": "Txus Vizcay",
+        "id": "1899917",
+        "profileUrl": "/players/1899917/txus-vizcay"
+       },
+       {
+        "name": "Oihan Sancet",
+        "id": "950545",
+        "profileUrl": "/players/950545/oihan-sancet"
+       }
+      ]
+     },
+     {
+      "reactKey": "undefined85SubstitutionNaN846966false",
+      "timeStr": 85,
+      "type": "Substitution",
+      "time": 85,
+      "overloadTime": 0,
+      "player": {
+       "id": null,
+       "profileUrl": ""
+      },
+      "homeScore": 0,
+      "awayScore": 1,
+      "profileUrl": "",
+      "overloadTimeStr": false,
+      "isHome": false,
+      "injuredPlayerOut": false,
+      "swap": [
+       {
+        "name": "Javi Puado",
+        "id": "846966",
+        "profileUrl": "/players/846966/javi-puado"
+       },
+       {
+        "name": "Quilindschy Hartman",
+        "id": "1393669",
+        "profileUrl": "/players/1393669/quilindschy-hartman"
+       }
+      ]
+     },
+     {
+      "reactKey": "undefined86SubstitutionNaN805352false",
+      "timeStr": 86,
+      "type": "Substitution",
+      "time": 86,
+      "overloadTime": 0,
+      "player": {
+       "id": null,
+       "profileUrl": ""
+      },
+      "homeScore": 0,
+      "awayScore": 1,
+      "profileUrl": "",
+      "overloadTimeStr": false,
+      "isHome": false,
+      "injuredPlayerOut": false,
+      "swap": [
+       {
+        "name": "Unai Núñez",
+        "id": "805352",
+        "profileUrl": "/players/805352/unai-nunez"
+       },
+       {
+        "name": "Alejandro Santiago",
+        "id": "1813700",
+        "profileUrl": "/players/1813700/alejandro-santiago"
+       }
+      ]
+     },
+     {
+      "reactKey": "undefined90AddedTimeNaNundefinedundefined",
+      "timeStr": 90,
+      "type": "AddedTime",
+      "time": 90,
+      "overloadTime": null,
+      "player": {
+       "id": null,
+       "profileUrl": ""
+      },
+      "homeScore": 0,
+      "awayScore": 1,
+      "minutesAddedStr": "+ 3 minutes added",
+      "minutesAddedKey": "added_injury_time",
+      "minutesAddedInput": 3
+     },
+     {
+      "reactKey": "1475790990Card1279557undefinedfalse",
+      "timeStr": "90 + 3",
+      "type": "Card",
+      "time": 90,
+      "overloadTime": 3,
+      "eventId": 14757909,
+      "player": {
+       "id": 1279557,
+       "name": "Clemens Riedel",
+       "profileUrl": "/players/1279557/clemens-riedel"
+      },
+      "homeScore": 0,
+      "awayScore": 1,
+      "profileUrl": "/players/1279557/clemens-riedel",
+      "overloadTimeStr": "+3",
+      "isHome": false,
+      "nameStr": "Clemens Riedel",
+      "firstName": "Clemens",
+      "lastName": "Riedel",
+      "fullName": "Clemens Riedel",
+      "playerId": 1279557,
+      "card": "Yellow",
+      "cardDescription": null,
+      "cardReason": {
+       "localizedKey": "card_desc_foul",
+       "defaultText": "Foul"
+      }
+     },
+     {
+      "reactKey": "undefined90HalfNaNundefinedundefined",
+      "timeStr": 90,
+      "type": "Half",
+      "time": 90,
+      "overloadTime": null,
+      "player": {
+       "id": null,
+       "profileUrl": ""
+      },
+      "homeScore": 0,
+      "awayScore": 1,
+      "halfStrShort": "FT",
+      "halfStrKey": "fulltime_short"
+     }
+    ],
+    "eventTypes": [
+     "Half",
+     "Substitution",
+     "Card",
+     "Goal",
+     "Assist",
+     "AddedTime",
+     "Yellow",
+     "Injuries"
+    ],
+    "penaltyShootoutEvents": null
+   },
+   "teamForm": [
+    [
+     {
+      "result": -1,
+      "resultString": "L",
+      "imageUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/8581.png",
+      "linkToMatch": "/matches/athletic-club-vs-levante/2czq11#5868067",
+      "date": {
+       "utcTime": "2026-10-21T18:00:00.000Z"
+      },
+      "teamPageUrl": "/teams/8581/overview/levante",
+      "tooltipText": {
+       "utcTime": "2026-10-21T18:00:00.000Z",
+       "homeTeam": "Levante",
+       "homeTeamId": 8581,
+       "homeScore": "3",
+       "awayTeam": "Athletic Club",
+       "awayTeamId": 8315,
+       "awayScore": "1"
+      },
+      "score": "3 - 1",
+      "home": {
+       "id": "8581",
+       "name": "Levante",
+       "isOurTeam": false
+      },
+      "away": {
+       "id": "8315",
+       "name": "Athletic Club",
+       "isOurTeam": true
+      }
+     },
+     {
+      "result": 1,
+      "resultString": "W",
+      "imageUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/8305.png",
+      "linkToMatch": "/matches/getafe-vs-athletic-club/2a8kvt#5868102",
+      "date": {
+       "utcTime": "2026-10-25T13:00:00.000Z"
+      },
+      "teamPageUrl": "/teams/8305/overview/getafe",
+      "tooltipText": {
+       "utcTime": "2026-10-25T13:00:00.000Z",
+       "homeTeam": "Athletic Club",
+       "homeTeamId": 8315,
+       "homeScore": "4",
+       "awayTeam": "Getafe",
+       "awayTeamId": 8305,
+       "awayScore": "0"
+      },
+      "score": "4 - 0",
+      "home": {
+       "id": "8315",
+       "name": "Athletic Club",
+       "isOurTeam": true
+      },
+      "away": {
+       "id": "8305",
+       "name": "Getafe",
+       "isOurTeam": false
+      }
+     },
+     {
+      "result": 1,
+      "resultString": "W",
+      "imageUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/189638.png",
+      "linkToMatch": "/matches/athletic-club-vs-ae-prat/9011r30#6428917",
+      "date": {
+       "utcTime": "2026-10-29T20:00:00.000Z"
+      },
+      "teamPageUrl": "/teams/189638/overview/ae-prat",
+      "tooltipText": {
+       "utcTime": "2026-10-29T20:00:00.000Z",
+       "homeTeam": "AE Prat",
+       "homeTeamId": 189638,
+       "homeScore": "1",
+       "awayTeam": "Athletic Club",
+       "awayTeamId": 8315,
+       "awayScore": "6"
+      },
+      "score": "1 - 6",
+      "home": {
+       "id": "189638",
+       "name": "AE Prat",
+       "isOurTeam": false
+      },
+      "away": {
+       "id": "8315",
+       "name": "Athletic Club",
+       "isOurTeam": true
+      }
+     },
+     {
+      "result": 1,
+      "resultString": "W",
+      "imageUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/8560.png",
+      "linkToMatch": "/matches/athletic-club-vs-real-sociedad/2cs4ea#5868111",
+      "date": {
+       "utcTime": "2026-11-01T20:00:00.000Z"
+      },
+      "teamPageUrl": "/teams/8560/overview/real-sociedad",
+      "tooltipText": {
+       "utcTime": "2026-11-01T20:00:00.000Z",
+       "homeTeam": "Athletic Club",
+       "homeTeamId": 8315,
+       "homeScore": "2",
+       "awayTeam": "Real Sociedad",
+       "awayTeamId": 8560,
+       "awayScore": "1"
+      },
+      "score": "2 - 1",
+      "home": {
+       "id": "8315",
+       "name": "Athletic Club",
+       "isOurTeam": true
+      },
+      "away": {
+       "id": "8560",
+       "name": "Real Sociedad",
+       "isOurTeam": false
+      }
+     },
+     {
+      "result": 0,
+      "resultString": "D",
+      "imageUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/8371.png",
+      "linkToMatch": "/matches/athletic-club-vs-osasuna/2aw50s#5868126",
+      "date": {
+       "utcTime": "2026-11-07T17:30:00.000Z"
+      },
+      "teamPageUrl": "/teams/8371/overview/osasuna",
+      "tooltipText": {
+       "utcTime": "2026-11-07T17:30:00.000Z",
+       "homeTeam": "Osasuna",
+       "homeTeamId": 8371,
+       "homeScore": "1",
+       "awayTeam": "Athletic Club",
+       "awayTeamId": 8315,
+       "awayScore": "1"
+      },
+      "score": "1 - 1",
+      "home": {
+       "id": "8371",
+       "name": "Osasuna",
+       "isOurTeam": false
+      },
+      "away": {
+       "id": "8315",
+       "name": "Athletic Club",
+       "isOurTeam": true
+      }
+     }
+    ],
+    [
+     {
+      "result": -1,
+      "resultString": "L",
+      "imageUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/9906.png",
+      "linkToMatch": "/matches/espanyol-vs-atletico-madrid/2thy9u#5868094",
+      "date": {
+       "utcTime": "2026-10-17T12:00:00.000Z"
+      },
+      "teamPageUrl": "/teams/9906/overview/atletico-madrid",
+      "tooltipText": {
+       "utcTime": "2026-10-17T12:00:00.000Z",
+       "homeTeam": "Espanyol",
+       "homeTeamId": 8558,
+       "homeScore": "0",
+       "awayTeam": "Atlético Madrid",
+       "awayTeamId": 9906,
+       "awayScore": "1"
+      },
+      "score": "0 - 1",
+      "home": {
+       "id": "8558",
+       "name": "Espanyol",
+       "isOurTeam": true
+      },
+      "away": {
+       "id": "9906",
+       "name": "Atlético Madrid",
+       "isOurTeam": false
+      }
+     },
+     {
+      "result": -1,
+      "resultString": "L",
+      "imageUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/8696.png",
+      "linkToMatch": "/matches/espanyol-vs-racing-santander/2gmqyl#5868106",
+      "date": {
+       "utcTime": "2026-10-24T14:15:00.000Z"
+      },
+      "teamPageUrl": "/teams/8696/overview/racing-santander",
+      "tooltipText": {
+       "utcTime": "2026-10-24T14:15:00.000Z",
+       "homeTeam": "Racing Santander",
+       "homeTeamId": 8696,
+       "homeScore": "2",
+       "awayTeam": "Espanyol",
+       "awayTeamId": 8558,
+       "awayScore": "1"
+      },
+      "score": "2 - 1",
+      "home": {
+       "id": "8696",
+       "name": "Racing Santander",
+       "isOurTeam": false
+      },
+      "away": {
+       "id": "8558",
+       "name": "Espanyol",
+       "isOurTeam": true
+      }
+     },
+     {
+      "result": -1,
+      "resultString": "L",
+      "imageUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/8228.png",
+      "linkToMatch": "/matches/sestao-vs-espanyol/2bw0k9#6386082",
+      "date": {
+       "utcTime": "2026-10-27T18:00:00.000Z"
+      },
+      "teamPageUrl": "/teams/8228/overview/sestao",
+      "tooltipText": {
+       "utcTime": "2026-10-27T18:00:00.000Z",
+       "homeTeam": "Sestao",
+       "homeTeamId": 8228,
+       "homeScore": "4",
+       "awayTeam": "Espanyol",
+       "awayTeamId": 8558,
+       "awayScore": "3"
+      },
+      "score": "4 - 3",
+      "home": {
+       "id": "8228",
+       "name": "Sestao",
+       "isOurTeam": false
+      },
+      "away": {
+       "id": "8558",
+       "name": "Espanyol",
+       "isOurTeam": true
+      }
+     },
+     {
+      "result": 1,
+      "resultString": "W",
+      "imageUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/10205.png",
+      "linkToMatch": "/matches/espanyol-vs-villarreal/2wt7o0#5868120",
+      "date": {
+       "utcTime": "2026-10-30T20:00:00.000Z"
+      },
+      "teamPageUrl": "/teams/10205/overview/villarreal",
+      "tooltipText": {
+       "utcTime": "2026-10-30T20:00:00.000Z",
+       "homeTeam": "Villarreal",
+       "homeTeamId": 10205,
+       "homeScore": "0",
+       "awayTeam": "Espanyol",
+       "awayTeamId": 8558,
+       "awayScore": "1"
+      },
+      "score": "0 - 1",
+      "home": {
+       "id": "10205",
+       "name": "Villarreal",
+       "isOurTeam": false
+      },
+      "away": {
+       "id": "8558",
+       "name": "Espanyol",
+       "isOurTeam": true
+      }
+     },
+     {
+      "result": 0,
+      "resultString": "D",
+      "imageUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/9783.png",
+      "linkToMatch": "/matches/espanyol-vs-deportivo-coruna/2s5fli#5868124",
+      "date": {
+       "utcTime": "2026-11-07T15:15:00.000Z"
+      },
+      "teamPageUrl": "/teams/9783/overview/deportivo-coruna",
+      "tooltipText": {
+       "utcTime": "2026-11-07T15:15:00.000Z",
+       "homeTeam": "Espanyol",
+       "homeTeamId": 8558,
+       "homeScore": "0",
+       "awayTeam": "Deportivo A Coruña",
+       "awayTeamId": 9783,
+       "awayScore": "0"
+      },
+      "score": "0 - 0",
+      "home": {
+       "id": "8558",
+       "name": "Espanyol",
+       "isOurTeam": true
+      },
+      "away": {
+       "id": "9783",
+       "name": "Deportivo A Coruña",
+       "isOurTeam": false
+      }
+     }
+    ]
+   ],
+   "infoBox": {
+    "Stadium": {
+     "name": "Estadio de San Mamés",
+     "city": "Bilbao",
+     "country": "Spain",
+     "lat": 43.264172789,
+     "long": -2.949383125,
+     "capacity": 53289,
+     "surface": "grass"
+    }
+   }
+  },
+  "stats": {
+   "Periods": {
+    "All": {
+     "stats": [
+      {
+       "title": "Top stats",
+       "key": "top_stats",
+       "stats": [
+        {
+         "title": "Ball possession",
+         "key": "BallPossesion",
+         "stats": [
+          58,
+          42
+         ],
+         "rawStats": [
+          {
+           "value": 58
+          },
+          {
+           "value": 42
+          }
+         ],
+         "format": "integer",
+         "type": "graph",
+         "highlighted": "home"
+        },
+        {
+         "title": "Expected goals (xG)",
+         "key": "expected_goals",
+         "stats": [
+          "1.45",
+          "0.53"
+         ],
+         "rawStats": [
+          {
+           "value": 1.45
+          },
+          {
+           "value": 0.53
+          }
+         ],
+         "format": "double",
+         "type": "text",
+         "highlighted": "home"
+        },
+        {
+         "title": "Total shots",
+         "key": "total_shots",
+         "stats": [
+          17,
+          6
+         ],
+         "rawStats": [
+          {
+           "value": 17
+          },
+          {
+           "value": 6
+          }
+         ],
+         "format": "integer",
+         "type": "text",
+         "highlighted": "home"
+        },
+        {
+         "title": "Shots on target",
+         "key": "ShotsOnTarget",
+         "stats": [
+          6,
+          3
+         ],
+         "rawStats": [
+          {
+           "value": 6
+          },
+          {
+           "value": 3
+          }
+         ],
+         "format": "integer",
+         "type": "text",
+         "highlighted": "home"
+        },
+        {
+         "title": "Accurate passes",
+         "key": "accurate_passes",
+         "stats": [
+          "394 (84%)",
+          "261 (77%)"
+         ],
+         "rawStats": [
+          {
+           "value": 394,
+           "total": 471
+          },
+          {
+           "value": 261,
+           "total": 338
+          }
+         ],
+         "format": "integerWithPercentage",
+         "type": "text",
+         "highlighted": "home"
+        },
+        {
+         "title": "Corners",
+         "key": "corners",
+         "stats": [
+          9,
+          2
+         ],
+         "rawStats": [
+          {
+           "value": 9
+          },
+          {
+           "value": 2
+          }
+         ],
+         "format": "integer",
+         "type": "text",
+         "highlighted": "home"
+        }
+       ]
+      },
+      {
+       "title": "Shots",
+       "key": "shots",
+       "stats": [
+        {
+         "title": "Total shots",
+         "key": "total_shots",
+         "stats": [
+          17,
+          6
+         ],
+         "rawStats": [
+          {
+           "value": 17
+          },
+          {
+           "value": 6
+          }
+         ],
+         "format": "integer",
+         "type": "text",
+         "highlighted": "home"
+        },
+        {
+         "title": "Shots on target",
+         "key": "ShotsOnTarget",
+         "stats": [
+          6,
+          3
+         ],
+         "rawStats": [
+          {
+           "value": 6
+          },
+          {
+           "value": 3
+          }
+         ],
+         "format": "integer",
+         "type": "text",
+         "highlighted": "home"
+        }
+       ]
+      },
+      {
+       "title": "Expected goals (xG)",
+       "key": "expected_goals",
+       "stats": [
+        {
+         "title": "Expected goals (xG)",
+         "key": "expected_goals",
+         "stats": [
+          null,
+          null
+         ],
+         "rawStats": [
+          null,
+          null
+         ],
+         "type": "title",
+         "highlighted": "equal"
+        },
+        {
+         "title": "Expected goals (xG)",
+         "key": "expected_goals",
+         "stats": [
+          "1.45",
+          "0.53"
+         ],
+         "rawStats": [
+          {
+           "value": 1.45
+          },
+          {
+           "value": 0.53
+          }
+         ],
+         "format": "double",
+         "type": "text",
+         "highlighted": "home"
+        }
+       ]
+      },
+      {
+       "title": "Passes",
+       "key": "passes",
+       "stats": [
+        {
+         "title": "Accurate passes",
+         "key": "accurate_passes",
+         "stats": [
+          "394 (84%)",
+          "261 (77%)"
+         ],
+         "rawStats": [
+          {
+           "value": 394,
+           "total": 471
+          },
+          {
+           "value": 261,
+           "total": 338
+          }
+         ],
+         "format": "integerWithPercentage",
+         "type": "text",
+         "highlighted": "home"
+        }
+       ]
+      },
+      {
+       "title": "Discipline",
+       "key": "discipline",
+       "stats": [
+        {
+         "title": "Fouls committed",
+         "key": "fouls",
+         "stats": [
+          16,
+          13
+         ],
+         "rawStats": [
+          {
+           "value": 16
+          },
+          {
+           "value": 13
+          }
+         ],
+         "format": "integer",
+         "type": "text",
+         "highlighted": "away"
+        }
+       ]
+      }
+     ]
+    }
+   }
+  },
+  "lineup": {
+   "lineupType": "standard",
+   "homeTeam": {
+    "formation": "4-2-3-1",
+    "starters": [
+     {
+      "name": "Unai Simón",
+      "shirtNumber": "1",
+      "usualPlayingPositionId": 0
+     },
+     {
+      "name": "Hugo Rincón",
+      "shirtNumber": "15",
+      "usualPlayingPositionId": 1
+     },
+     {
+      "name": "Yeray Álvarez",
+      "shirtNumber": "5",
+      "usualPlayingPositionId": 1
+     },
+     {
+      "name": "Aymeric Laporte",
+      "shirtNumber": "14",
+      "usualPlayingPositionId": 1
+     },
+     {
+      "name": "Yuri Berchiche",
+      "shirtNumber": "17",
+      "usualPlayingPositionId": 1
+     }
+    ],
+    "subs": [
+     {
+      "name": "Iñigo Ruiz de Galarreta",
+      "shirtNumber": "16",
+      "usualPlayingPositionId": 2
+     },
+     {
+      "name": "Beñat Gerenabarrena",
+      "shirtNumber": "24",
+      "usualPlayingPositionId": 2
+     }
+    ]
+   },
+   "awayTeam": {
+    "formation": "5-3-2",
+    "starters": [
+     {
+      "name": "Ángel Fortuño",
+      "shirtNumber": "1",
+      "usualPlayingPositionId": 0
+     },
+     {
+      "name": "Clemens Riedel",
+      "shirtNumber": "5",
+      "usualPlayingPositionId": 1
+     },
+     {
+      "name": "Leandro Cabrera",
+      "shirtNumber": "6",
+      "usualPlayingPositionId": 1
+     },
+     {
+      "name": "Quilindschy Hartman",
+      "shirtNumber": "3",
+      "usualPlayingPositionId": 1
+     },
+     {
+      "name": "Omar El Hilali",
+      "shirtNumber": "23",
+      "usualPlayingPositionId": 1
+     }
+    ],
+    "subs": [
+     {
+      "name": "Tyrhys Dolan",
+      "shirtNumber": "24",
+      "usualPlayingPositionId": 3
+     },
+     {
+      "name": "Gabriel Moscardo",
+      "shirtNumber": "20",
+      "usualPlayingPositionId": 2
+     }
+    ]
+   }
+  }
+ }
+}

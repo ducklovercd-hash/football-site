@@ -96,19 +96,52 @@ weakness of the Streamlit version, where each tab invented its own numbers.
 
 ## Connecting a real provider
 
-There are two supported data paths.
+There are three supported data paths. Live FotMob (C) is the default at runtime.
 
-### A. SofaScore scraper (implemented)
+### C. Live FotMob (implemented, default at runtime)
 
-The `sofascore-scraper` project produces a JSON snapshot of matches, which this
-site reads at runtime. Nothing is fetched from a third party during a request,
-so viewer traffic can never consume a quota.
+The site fetches today's matches directly from FotMob's own data API
+(`www.fotmob.com/api/data`, learned from its frontend; no key, no cookie),
+server-side only. The port lives in `lib/fotmob/` and mirrors the Python
+reference in `sofascore-scraper` (`fotmob_transform.py`).
+
+```
+browser  ->  /api/live (or a server page)
+              ->  lib/data/live.ts  getLiveData()
+                    ->  lib/fotmob/fixtures.ts   matches?date=    (1 request, TTL 60s)
+                    ->  lib/fotmob/detail.ts     matchDetails?    (per match, TTL 60s live / 3600s idle)
+                    ->  fallback: committed snapshot, then demo fixtures
+```
+
+Freshness and cost are both controlled by the Next Data Cache: an entry
+re-fetches only after its TTL expires **and** a real request arrives. While
+nobody is on the site, zero upstream requests happen. 10,000 viewers polling
+`/api/live` every 15s share one upstream fetch per TTL window.
+
+- `/api/live` reports the active path via `source`: `fotmob-live`,
+  `snapshot` (FotMob unreachable, plus a `reason`), or `demo`.
+- `/api/fotmob-check` is a deployment canary: it confirms FotMob still serves
+  JSON to the host's egress IPs. If it returns HTML or a 403, FotMob has
+  started challenging datacenter traffic and the site will silently run on
+  the snapshot instead.
+- TTLs and the per-render detail-fetch concurrency are env-overridable:
+  `FOTMOB_FIXTURES_TTL_S`, `FOTMOB_DETAIL_LIVE_TTL_S`,
+  `FOTMOB_DETAIL_IDLE_TTL_S`, `FOTMOB_DETAIL_CONCURRENCY`.
+- Unit tests for the FotMob mapping run with `npm test` (node:test against
+  real payload fixtures in `tests/fixtures/`).
+
+### A. SofaScore scraper (offline deep snapshot)
+
+The `sofascore-scraper` project produces a JSON snapshot of matches, which
+this site reads at runtime as a fallback and a source of deep fields when a
+FotMob detail fetch fails. Nothing is fetched from a third party during a
+request, so viewer traffic can never consume a quota.
 
 ```
 matches-YYYY-MM-DD.json  ->  npm run prepare:matches
                          ->  lib/data/generated/matches.json   (committed)
                          ->  lib/data/snapshot.ts              (runtime loader)
-                         ->  getMatches() / /api/live
+                         ->  deep-field fallback for getLiveData()
 ```
 
 ```bash
@@ -132,7 +165,7 @@ npm run dev
 
 A malformed value logs a warning and falls through, so bad data can never break
 a build. `/api/live` reports which path is live via its `source` field
-(`sofascore-snapshot` or `demo`).
+(`fotmob-live`, `snapshot` or `demo`).
 
 ### B. Football-data / API-Football providers
 

@@ -1,0 +1,3924 @@
+{
+ "leagues": [
+  {
+   "id": 87,
+   "name": "LaLiga",
+   "ccode": "ESP",
+   "matches": [
+    {
+     "id": 5868132,
+     "leagueId": 87,
+     "time": "20.11.2026 21:00",
+     "home": {
+      "id": 8315,
+      "score": 0,
+      "name": "Athletic Club"
+     },
+     "away": {
+      "id": 8558,
+      "score": 1,
+      "name": "Espanyol"
+     },
+     "eliminatedTeamId": null,
+     "statusId": 6,
+     "tournamentStage": "13",
+     "status": {
+      "utcTime": "2026-11-20T20:00:00.000Z",
+      "halfs": {
+       "firstHalfStarted": "20.11.2026 21:02:34",
+       "secondHalfStarted": "20.11.2026 22:05:03"
+      },
+      "periodLength": 45,
+      "finished": true,
+      "started": true,
+      "cancelled": false,
+      "awarded": false,
+      "scoreStr": "0 - 1",
+      "reason": {
+       "short": "FT",
+       "shortKey": "fulltime_short",
+       "long": "Full-Time",
+       "longKey": "finished"
+      }
+     },
+     "timeTS": 1795204800000
+    }
+   ]
+  },
+  {
+   "id": 957981,
+   "name": "Major League Soccer Playoff",
+   "ccode": "USA",
+   "matches": [
+    {
+     "id": 6580833,
+     "leagueId": 957981,
+     "time": "20.11.2026 01:30",
+     "home": {
+      "id": 267810,
+      "score": 1,
+      "name": "Orlando City",
+      "shortName": "Orlando"
+     },
+     "away": {
+      "id": 722265,
+      "score": 3,
+      "name": "FC Cincinnati",
+      "shortName": "Cincinnati"
+     },
+     "eliminatedTeamId": null,
+     "statusId": 6,
+     "tournamentStage": "1/16",
+     "status": {
+      "utcTime": "2026-11-20T00:30:00.000Z",
+      "halfs": {
+       "firstHalfStarted": "20.11.2026 01:40:34",
+       "secondHalfStarted": "20.11.2026 02:46:20"
+      },
+      "periodLength": 45,
+      "finished": true,
+      "started": true,
+      "cancelled": false,
+      "awarded": false,
+      "scoreStr": "1 - 3",
+      "reason": {
+       "short": "FT",
+       "shortKey": "fulltime_short",
+       "long": "Full-Time",
+       "longKey": "finished"
+      }
+     },
+     "timeTS": 1795134600000
+    }
+   ]
+  },
+  {
+   "id": 232,
+   "name": "1. CFL",
+   "ccode": "MNE",
+   "matches": [
+    {
+     "id": 5796392,
+     "leagueId": 232,
+     "time": "20.11.2026 20:00",
+     "home": {
+      "id": 175653,
+      "score": 0,
+      "name": "Mornar"
+     },
+     "away": {
+      "id": 2245,
+      "score": 0,
+      "name": "Sutjeska"
+     },
+     "eliminatedTeamId": null,
+     "statusId": 6,
+     "tournamentStage": "16",
+     "status": {
+      "utcTime": "2026-11-20T19:00:00.000Z",
+      "halfs": {
+       "firstHalfStarted": "20.11.2026 20:01:27",
+       "secondHalfStarted": "20.11.2026 21:01:00"
+      },
+      "periodLength": 45,
+      "finished": true,
+      "started": true,
+      "cancelled": false,
+      "awarded": false,
+      "scoreStr": "0 - 0",
+      "reason": {
+       "short": "FT",
+       "shortKey": "fulltime_short",
+       "long": "Full-Time",
+       "longKey": "finished"
+      }
+     },
+     "timeTS": 1795201200000
+    }
+   ]
+  },
+  {
+   "id": 936592,
+   "name": "1. Division",
+   "ccode": "DEN",
+   "matches": [
+    {
+     "id": 5764472,
+     "leagueId": 936592,
+     "time": "20.11.2026 19:00",
+     "home": {
+      "id": 8109,
+      "score": 1,
+      "name": "Aarhus Fremad",
+      "redCards": 1
+     },
+     "away": {
+      "id": 9950,
+      "score": 1,
+      "name": "Hobro"
+     },
+     "eliminatedTeamId": null,
+     "statusId": 6,
+     "tournamentStage": "15",
+     "status": {
+      "utcTime": "2026-11-20T18:00:00.000Z",
+      "numberOfHomeRedCards": 1,
+      "halfs": {
+       "firstHalfStarted": "20.11.2026 19:00:26",
+       "secondHalfStarted": "20.11.2026 20:02:17"
+      },
+      "periodLength": 45,
+      "finished": true,
+      "started": true,
+      "cancelled": false,
+      "awarded": false,
+      "scoreStr": "1 - 1",
+      "reason": {
+       "short": "FT",
+       "shortKey": "fulltime_short",
+       "long": "Full-Time",
+       "longKey": "finished"
+      }
+     },
+     "timeTS": 1795197600000
+    }
+   ]
+  },
+  {
+   "id": 146,
+   "name": "2. Bundesliga",
+   "ccode": "GER",
+   "matches": [
+    {
+     "id": 5881726,
+     "leagueId": 146,
+     "time": "20.11.2026 18:30",
+     "home": {
+      "id": 9912,
+      "score": 1,
+      "name": "Arminia Bielefeld"
+     },
+     "away": {
+      "id": 8188,
+      "score": 2,
+      "name": "Magdeburg"
+     },
+     "eliminatedTeamId": null,
+     "statusId": 6,
+     "tournamentStage": "12",
+     "status": {
+      "utcTime": "2026-11-20T17:30:00.000Z",
+      "halfs": {
+       "firstHalfStarted": "20.11.2026 18:30:41",
+       "secondHalfStarted": "20.11.2026 19:34:01"
+      },
+      "periodLength": 45,
+      "finished": true,
+      "started": true,
+      "cancelled": false,
+      "awarded": false,
+      "scoreStr": "1 - 2",
+      "reason": {
+       "short": "FT",
+       "shortKey": "fulltime_short",
+       "long": "Full-Time",
+       "longKey": "finished"
+      }
+     },
+     "timeTS": 1795195800000
+    }
+   ]
+  },
+  {
+   "id": 945609,
+   "name": "2. Division",
+   "ccode": "CYP",
+   "matches": [
+    {
+     "id": 6142325,
+     "leagueId": 945609,
+     "time": "20.11.2026 18:00",
+     "home": {
+      "id": 154796,
+      "score": 3,
+      "name": "PAEEK"
+     },
+     "away": {
+      "id": 154791,
+      "score": 0,
+      "name": "Chalkanoras Idaliou"
+     },
+     "eliminatedTeamId": null,
+     "statusId": 6,
+     "tournamentStage": "8",
+     "status": {
+      "utcTime": "2026-11-20T17:00:00.000Z",
+      "halfs": {
+       "firstHalfStarted": "20.11.2026 18:01:06",
+       "secondHalfStarted": "20.11.2026 19:04:30"
+      },
+      "periodLength": 45,
+      "finished": true,
+      "started": true,
+      "cancelled": false,
+      "awarded": false,
+      "scoreStr": "3 - 0",
+      "reason": {
+       "short": "FT",
+       "shortKey": "fulltime_short",
+       "long": "Full-Time",
+       "longKey": "finished"
+      }
+     },
+     "timeTS": 1795194000000
+    }
+   ]
+  },
+  {
+   "id": 938696,
+   "name": "2. Liga",
+   "ccode": "AUT",
+   "matches": [
+    {
+     "id": 5875023,
+     "leagueId": 938696,
+     "time": "20.11.2026 18:30",
+     "home": {
+      "id": 8274,
+      "score": 3,
+      "name": "Floridsdorfer AC"
+     },
+     "away": {
+      "id": 10248,
+      "score": 1,
+      "name": "Austria Wien II",
+      "redCards": 1
+     },
+     "eliminatedTeamId": null,
+     "statusId": 6,
+     "tournamentStage": "13",
+     "status": {
+      "utcTime": "2026-11-20T17:30:00.000Z",
+      "numberOfAwayRedCards": 1,
+      "halfs": {
+       "firstHalfStarted": "20.11.2026 18:30:41",
+       "secondHalfStarted": "20.11.2026 19:31:10"
+      },
+      "periodLength": 45,
+      "finished": true,
+      "started": true,
+      "cancelled": false,
+      "awarded": false,
+      "scoreStr": "3 - 1",
+      "reason": {
+       "short": "FT",
+       "shortKey": "fulltime_short",
+       "long": "Full-Time",
+       "longKey": "finished"
+      }
+     },
+     "timeTS": 1795195800000
+    }
+   ]
+  },
+  {
+   "id": 208,
+   "name": "3. Liga",
+   "ccode": "GER",
+   "matches": [
+    {
+     "id": 5905986,
+     "leagueId": 208,
+     "time": "20.11.2026 19:00",
+     "home": {
+      "id": 89338,
+      "score": 1,
+      "name": "TSV Havelse"
+     },
+     "away": {
+      "id": 276267,
+      "score": 6,
+      "name": "Viktoria Köln 1904"
+     },
+     "eliminatedTeamId": null,
+     "statusId": 6,
+     "tournamentStage": "14",
+     "status": {
+      "utcTime": "2026-11-20T18:00:00.000Z",
+      "halfs": {
+       "firstHalfStarted": "20.11.2026 19:00:26",
+       "secondHalfStarted": "20.11.2026 20:02:37"
+      },
+      "periodLength": 45,
+      "finished": true,
+      "started": true,
+      "cancelled": false,
+      "awarded": false,
+      "scoreStr": "1 - 6",
+      "reason": {
+       "short": "FT",
+       "shortKey": "fulltime_short",
+       "long": "Full-Time",
+       "longKey": "finished"
+      }
+     },
+     "timeTS": 1795197600000
+    }
+   ]
+  },
+  {
+   "id": 939688,
+   "name": "A-Liga",
+   "ccode": "DEN",
+   "matches": [
+    {
+     "id": 5903870,
+     "leagueId": 939688,
+     "time": "20.11.2026 18:00",
+     "home": {
+      "id": 2073,
+      "score": 2,
+      "name": "FC Nordsjælland (W)"
+     },
+     "away": {
+      "id": 10206,
+      "score": 1,
+      "name": "Fortuna Hjørring (W)"
+     },
+     "eliminatedTeamId": null,
+     "statusId": 6,
+     "tournamentStage": "16",
+     "status": {
+      "utcTime": "2026-11-20T17:00:00.000Z",
+      "halfs": {
+       "firstHalfStarted": "20.11.2026 18:02:28",
+       "secondHalfStarted": "20.11.2026 19:04:57"
+      },
+      "periodLength": 45,
+      "finished": true,
+      "started": true,
+      "cancelled": false,
+      "awarded": false,
+      "scoreStr": "2 - 1",
+      "reason": {
+       "short": "FT",
+       "shortKey": "fulltime_short",
+       "long": "Full-Time",
+       "longKey": "finished"
+      }
+     },
+     "timeTS": 1795194000000
+    }
+   ]
+  },
+  {
+   "id": 949112,
+   "name": "Australian Championship Grp. A",
+   "ccode": "AUS",
+   "matches": [
+    {
+     "id": 6283869,
+     "leagueId": 949112,
+     "time": "20.11.2026 09:30",
+     "home": {
+      "id": 162314,
+      "score": 5,
+      "name": "South Melbourne"
+     },
+     "away": {
+      "id": 162218,
+      "score": 2,
+      "name": "Canberra Croatia"
+     },
+     "eliminatedTeamId": null,
+     "statusId": 6,
+     "tournamentStage": "6",
+     "status": {
+      "utcTime": "2026-11-20T08:30:00.000Z",
+      "halfs": {
+       "firstHalfStarted": "20.11.2026 09:37:22",
+       "secondHalfStarted": "20.11.2026 10:40:31"
+      },
+      "periodLength": 45,
+      "finished": true,
+      "started": true,
+      "cancelled": false,
+      "awarded": false,
+      "scoreStr": "5 - 2",
+      "reason": {
+       "short": "FT",
+       "shortKey": "fulltime_short",
+       "long": "Full-Time",
+       "longKey": "finished"
+      }
+     },
+     "timeTS": 1795163400000
+    }
+   ]
+  },
+  {
+   "id": 937988,
+   "name": "Belgian Pro League",
+   "ccode": "BEL",
+   "matches": [
+    {
+     "id": 5811811,
+     "leagueId": 937988,
+     "time": "20.11.2026 20:45",
+     "home": {
+      "id": 9984,
+      "score": 1,
+      "name": "Cercle Brugge"
+     },
+     "away": {
+      "id": 10001,
+      "score": 0,
+      "name": "Westerlo"
+     },
+     "eliminatedTeamId": null,
+     "statusId": 6,
+     "tournamentStage": "12",
+     "status": {
+      "utcTime": "2026-11-20T19:45:00.000Z",
+      "halfs": {
+       "firstHalfStarted": "20.11.2026 20:46:05",
+       "secondHalfStarted": "20.11.2026 21:49:00"
+      },
+      "periodLength": 45,
+      "finished": true,
+      "started": true,
+      "cancelled": false,
+      "awarded": false,
+      "scoreStr": "1 - 0",
+      "reason": {
+       "short": "FT",
+       "shortKey": "fulltime_short",
+       "long": "Full-Time",
+       "longKey": "finished"
+      }
+     },
+     "timeTS": 1795203900000
+    }
+   ]
+  },
+  {
+   "id": 937668,
+   "name": "Championship",
+   "ccode": "SCO",
+   "matches": [
+    {
+     "id": 5794370,
+     "leagueId": 937668,
+     "time": "20.11.2026 20:30",
+     "home": {
+      "id": 8066,
+      "score": 0,
+      "name": "Inverness Caledonian Thistle",
+      "shortName": "Inverness"
+     },
+     "away": {
+      "id": 9913,
+      "score": 0,
+      "name": "Ayr United"
+     },
+     "eliminatedTeamId": null,
+     "statusId": 6,
+     "tournamentStage": "16",
+     "status": {
+      "utcTime": "2026-11-20T19:30:00.000Z",
+      "halfs": {
+       "firstHalfStarted": "20.11.2026 20:33:13",
+       "secondHalfStarted": "20.11.2026 21:33:00"
+      },
+      "periodLength": 45,
+      "finished": true,
+      "started": true,
+      "cancelled": false,
+      "awarded": false,
+      "scoreStr": "0 - 0",
+      "reason": {
+       "short": "FT",
+       "shortKey": "fulltime_short",
+       "long": "Full-Time",
+       "longKey": "finished"
+      }
+     },
+     "timeTS": 1795203000000
+    }
+   ]
+  },
+  {
+   "id": 9941,
+   "name": "Cup",
+   "ccode": "EGY",
+   "matches": [
+    {
+     "id": 6622719,
+     "leagueId": 9941,
+     "time": "20.11.2026 16:00",
+     "home": {
+      "id": 316480,
+      "score": 2,
+      "name": "Kahrbaa Ismailia"
+     },
+     "away": {
+      "id": 608449,
+      "score": 3,
+      "name": "Ceramica Cleopatra"
+     },
+     "eliminatedTeamId": null,
+     "statusId": 11,
+     "tournamentStage": "1/8",
+     "status": {
+      "utcTime": "2026-11-20T15:00:00.000Z",
+      "halfs": {
+       "firstHalfStarted": "20.11.2026 16:01:50",
+       "secondHalfStarted": "20.11.2026 17:09:46",
+       "firstExtraHalfStarted": "20.11.2026 18:10:30",
+       "secondExtraHalfStarted": "20.11.2026 18:30:47"
+      },
+      "periodLength": 45,
+      "finished": true,
+      "started": true,
+      "cancelled": false,
+      "awarded": false,
+      "scoreStr": "2 - 3",
+      "reason": {
+       "short": "AET",
+       "shortKey": "afterextratime_short",
+       "long": "After extra time",
+       "longKey": "afterextra"
+      }
+     },
+     "timeTS": 1795186800000
+    }
+   ]
+  },
+  {
+   "id": 9550,
+   "name": "Cup",
+   "ccode": "CHN",
+   "matches": [
+    {
+     "id": 6146317,
+     "leagueId": 9550,
+     "time": "20.11.2026 12:35",
+     "home": {
+      "id": 4177,
+      "score": 0,
+      "name": "Beijing Guoan",
+      "redCards": 1
+     },
+     "away": {
+      "id": 198616,
+      "score": 2,
+      "name": "Shanghai Port"
+     },
+     "eliminatedTeamId": null,
+     "statusId": 6,
+     "tournamentStage": "1/2",
+     "status": {
+      "utcTime": "2026-11-20T11:35:00.000Z",
+      "numberOfHomeRedCards": 1,
+      "halfs": {
+       "firstHalfStarted": "20.11.2026 12:35:27",
+       "secondHalfStarted": "20.11.2026 13:41:50"
+      },
+      "periodLength": 45,
+      "finished": true,
+      "started": true,
+      "cancelled": false,
+      "awarded": false,
+      "scoreStr": "0 - 2",
+      "reason": {
+       "short": "FT",
+       "shortKey": "fulltime_short",
+       "long": "Full-Time",
+       "longKey": "finished"
+      }
+     },
+     "timeTS": 1795174500000
+    }
+   ]
+  },
+  {
+   "id": 111,
+   "name": "Eerste Divisie",
+   "ccode": "NED",
+   "matches": [
+    {
+     "id": 5832953,
+     "leagueId": 111,
+     "time": "20.11.2026 20:00",
+     "home": {
+      "id": 4116,
+      "score": 1,
+      "name": "Almere City FC"
+     },
+     "away": {
+      "id": 9761,
+      "score": 4,
+      "name": "NAC Breda"
+     },
+     "eliminatedTeamId": null,
+     "statusId": 6,
+     "tournamentStage": "16",
+     "status": {
+      "utcTime": "2026-11-20T19:00:00.000Z",
+      "halfs": {
+       "firstHalfStarted": "20.11.2026 20:03:11",
+       "secondHalfStarted": "20.11.2026 21:07:48"
+      },
+      "periodLength": 45,
+      "finished": true,
+      "started": true,
+      "cancelled": false,
+      "awarded": false,
+      "scoreStr": "1 - 4",
+      "reason": {
+       "short": "FT",
+       "shortKey": "fulltime_short",
+       "long": "Full-Time",
+       "longKey": "finished"
+      }
+     },
+     "timeTS": 1795201200000
+    }
+   ]
+  },
+  {
+   "id": 937879,
+   "name": "Ekstraklasa",
+   "ccode": "POL",
+   "matches": [
+    {
+     "id": 5804042,
+     "leagueId": 937879,
+     "time": "20.11.2026 18:00",
+     "home": {
+      "id": 8028,
+      "score": 2,
+      "name": "Piast Gliwice"
+     },
+     "away": {
+      "id": 8245,
+      "score": 0,
+      "name": "Korona Kielce"
+     },
+     "eliminatedTeamId": null,
+     "statusId": 6,
+     "tournamentStage": "15",
+     "status": {
+      "utcTime": "2026-11-20T17:00:00.000Z",
+      "halfs": {
+       "firstHalfStarted": "20.11.2026 18:01:25",
+       "secondHalfStarted": "20.11.2026 19:06:40"
+      },
+      "periodLength": 45,
+      "finished": true,
+      "started": true,
+      "cancelled": false,
+      "awarded": false,
+      "scoreStr": "2 - 0",
+      "reason": {
+       "short": "FT",
+       "shortKey": "fulltime_short",
+       "long": "Full-Time",
+       "longKey": "finished"
+      }
+     },
+     "timeTS": 1795194000000
+    }
+   ]
+  },
+  {
+   "id": 59,
+   "name": "Eliteserien",
+   "ccode": "NOR",
+   "matches": [
+    {
+     "id": 5105051,
+     "leagueId": 59,
+     "time": "20.11.2026 19:00",
+     "home": {
+      "id": 9917,
+      "score": 2,
+      "name": "Molde"
+     },
+     "away": {
+      "id": 8402,
+      "score": 4,
+      "name": "Bodø/Glimt"
+     },
+     "eliminatedTeamId": null,
+     "statusId": 6,
+     "tournamentStage": "27",
+     "status": {
+      "utcTime": "2026-11-20T18:00:00.000Z",
+      "halfs": {
+       "firstHalfStarted": "20.11.2026 19:00:33",
+       "secondHalfStarted": "20.11.2026 20:07:47"
+      },
+      "periodLength": 45,
+      "finished": true,
+      "started": true,
+      "cancelled": false,
+      "awarded": false,
+      "scoreStr": "2 - 4",
+      "reason": {
+       "short": "FT",
+       "shortKey": "fulltime_short",
+       "long": "Full-Time",
+       "longKey": "finished"
+      }
+     },
+     "timeTS": 1795197600000
+    }
+   ]
+  },
+  {
+   "id": 439,
+   "name": "Erovnuli Liga",
+   "ccode": "GEO",
+   "matches": [
+    {
+     "id": 5165405,
+     "leagueId": 439,
+     "time": "20.11.2026 15:00",
+     "home": {
+      "id": 154186,
+      "score": 2,
+      "name": "FC Gagra"
+     },
+     "away": {
+      "id": 2217,
+      "score": 3,
+      "name": "Dila Gori"
+     },
+     "eliminatedTeamId": null,
+     "statusId": 6,
+     "tournamentStage": "33",
+     "status": {
+      "utcTime": "2026-11-20T14:00:00.000Z",
+      "halfs": {
+       "firstHalfStarted": "20.11.2026 15:00:50",
+       "secondHalfStarted": "20.11.2026 16:04:34"
+      },
+      "periodLength": 45,
+      "finished": true,
+      "started": true,
+      "cancelled": false,
+      "awarded": false,
+      "scoreStr": "2 - 3",
+      "reason": {
+       "short": "FT",
+       "shortKey": "fulltime_short",
+       "long": "Full-Time",
+       "longKey": "finished"
+      }
+     },
+     "timeTS": 1795183200000
+    }
+   ]
+  },
+  {
+   "id": 936550,
+   "name": "First Professional League",
+   "ccode": "BUL",
+   "matches": [
+    {
+     "id": 5760536,
+     "leagueId": 936550,
+     "time": "20.11.2026 17:00",
+     "home": {
+      "id": 312976,
+      "score": 0,
+      "name": "Septemvri Sofia",
+      "redCards": 1
+     },
+     "away": {
+      "id": 10129,
+      "score": 0,
+      "name": "Lokomotiv Plovdiv"
+     },
+     "eliminatedTeamId": null,
+     "statusId": 6,
+     "tournamentStage": "15",
+     "status": {
+      "utcTime": "2026-11-20T16:00:00.000Z",
+      "numberOfHomeRedCards": 1,
+      "halfs": {
+       "firstHalfStarted": "20.11.2026 17:00:50",
+       "secondHalfStarted": "20.11.2026 18:04:31"
+      },
+      "periodLength": 45,
+      "finished": true,
+      "started": true,
+      "cancelled": false,
+      "awarded": false,
+      "scoreStr": "0 - 0",
+      "reason": {
+       "short": "FT",
+       "shortKey": "fulltime_short",
+       "long": "Full-Time",
+       "longKey": "finished"
+      }
+     },
+     "timeTS": 1795190400000
+    }
+   ]
+  },
+  {
+   "id": 9676,
+   "name": "Frauen-Bundesliga",
+   "ccode": "GER",
+   "matches": [
+    {
+     "id": 5934576,
+     "leagueId": 9676,
+     "time": "20.11.2026 18:30",
+     "home": {
+      "id": 1656078,
+      "score": 0,
+      "name": "Union Berlin (W)"
+     },
+     "away": {
+      "id": 679913,
+      "score": 3,
+      "name": "Bayer Leverkusen (W)"
+     },
+     "eliminatedTeamId": null,
+     "statusId": 6,
+     "tournamentStage": "11",
+     "status": {
+      "utcTime": "2026-11-20T17:30:00.000Z",
+      "halfs": {
+       "firstHalfStarted": "20.11.2026 18:31:35",
+       "secondHalfStarted": "20.11.2026 19:34:42"
+      },
+      "periodLength": 45,
+      "finished": true,
+      "started": true,
+      "cancelled": false,
+      "awarded": false,
+      "scoreStr": "0 - 3",
+      "reason": {
+       "short": "FT",
+       "shortKey": "fulltime_short",
+       "long": "Full-Time",
+       "longKey": "finished"
+      }
+     },
+     "timeTS": 1795195800000
+    }
+   ]
+  },
+  {
+   "id": 197,
+   "name": "I Liga",
+   "ccode": "POL",
+   "matches": [
+    {
+     "id": 5861985,
+     "leagueId": 197,
+     "time": "20.11.2026 18:00",
+     "home": {
+      "id": 273525,
+      "score": 0,
+      "name": "Chrobry Głogów"
+     },
+     "away": {
+      "id": 205870,
+      "score": 2,
+      "name": "Puszcza Niepołomice"
+     },
+     "eliminatedTeamId": null,
+     "statusId": 6,
+     "tournamentStage": "15",
+     "status": {
+      "utcTime": "2026-11-20T17:00:00.000Z",
+      "halfs": {
+       "firstHalfStarted": "20.11.2026 18:01:28",
+       "secondHalfStarted": "20.11.2026 19:03:21"
+      },
+      "periodLength": 45,
+      "finished": true,
+      "started": true,
+      "cancelled": false,
+      "awarded": false,
+      "scoreStr": "0 - 2",
+      "reason": {
+       "short": "FT",
+       "shortKey": "fulltime_short",
+       "long": "Full-Time",
+       "longKey": "finished"
+      }
+     },
+     "timeTS": 1795194000000
+    }
+   ]
+  },
+  {
+   "id": 8935,
+   "name": "II Liga",
+   "ccode": "POL",
+   "matches": [
+    {
+     "id": 5862766,
+     "leagueId": 8935,
+     "time": "20.11.2026 12:30",
+     "home": {
+      "id": 662318,
+      "score": 1,
+      "name": "Swit Skolwin"
+     },
+     "away": {
+      "id": 8049,
+      "score": 2,
+      "name": "Stal Stalowa Wola"
+     },
+     "eliminatedTeamId": null,
+     "statusId": 6,
+     "tournamentStage": "17",
+     "status": {
+      "utcTime": "2026-11-20T11:30:00.000Z",
+      "halfs": {
+       "firstHalfStarted": "20.11.2026 12:31:31",
+       "secondHalfStarted": "20.11.2026 13:37:16"
+      },
+      "periodLength": 45,
+      "finished": true,
+      "started": true,
+      "cancelled": false,
+      "awarded": false,
+      "scoreStr": "1 - 2",
+      "reason": {
+       "short": "FT",
+       "shortKey": "fulltime_short",
+       "long": "Full-Time",
+       "longKey": "finished"
+      }
+     },
+     "timeTS": 1795174200000
+    }
+   ]
+  },
+  {
+   "id": 937875,
+   "name": "J. League",
+   "ccode": "JPN",
+   "matches": [
+    {
+     "id": 5803660,
+     "leagueId": 937875,
+     "time": "20.11.2026 11:00",
+     "home": {
+      "id": 4397,
+      "score": 1,
+      "name": "Kashima Antlers"
+     },
+     "away": {
+      "id": 4426,
+      "score": 1,
+      "name": "Shimizu S-Pulse"
+     },
+     "eliminatedTeamId": null,
+     "statusId": 6,
+     "tournamentStage": "15",
+     "status": {
+      "utcTime": "2026-11-20T10:00:00.000Z",
+      "halfs": {
+       "firstHalfStarted": "20.11.2026 11:03:33",
+       "secondHalfStarted": "20.11.2026 12:04:05"
+      },
+      "periodLength": 45,
+      "finished": true,
+      "started": true,
+      "cancelled": false,
+      "awarded": false,
+      "scoreStr": "1 - 1",
+      "reason": {
+       "short": "FT",
+       "shortKey": "fulltime_short",
+       "long": "Full-Time",
+       "longKey": "finished"
+      }
+     },
+     "timeTS": 1795168800000
+    }
+   ]
+  },
+  {
+   "id": 260,
+   "name": "Kategoria Superiore",
+   "ccode": "ALB",
+   "matches": [
+    {
+     "id": 5944215,
+     "leagueId": 260,
+     "time": "20.11.2026 16:00",
+     "home": {
+      "id": 10033,
+      "score": 1,
+      "name": "Skënderbeu"
+     },
+     "away": {
+      "id": 10039,
+      "score": 0,
+      "name": "Egnatia",
+      "redCards": 1
+     },
+     "eliminatedTeamId": null,
+     "statusId": 6,
+     "tournamentStage": "12",
+     "status": {
+      "utcTime": "2026-11-20T15:00:00.000Z",
+      "numberOfAwayRedCards": 1,
+      "halfs": {
+       "firstHalfStarted": "20.11.2026 15:59:40",
+       "secondHalfStarted": "20.11.2026 17:03:12"
+      },
+      "periodLength": 45,
+      "finished": true,
+      "started": true,
+      "cancelled": false,
+      "awarded": false,
+      "scoreStr": "1 - 0",
+      "reason": {
+       "short": "FT",
+       "shortKey": "fulltime_short",
+       "long": "Full-Time",
+       "longKey": "finished"
+      }
+     },
+     "timeTS": 1795186800000
+    }
+   ]
+  },
+  {
+   "id": 942853,
+   "name": "Liga AUF Uruguaya Clausura",
+   "ccode": "URU",
+   "matches": [
+    {
+     "id": 6674105,
+     "leagueId": 942853,
+     "time": "20.11.2026 20:30",
+     "home": {
+      "id": 1836,
+      "score": 2,
+      "name": "Cerro"
+     },
+     "away": {
+      "id": 8304,
+      "score": 0,
+      "name": "Nacional"
+     },
+     "eliminatedTeamId": null,
+     "statusId": 6,
+     "tournamentStage": "15",
+     "status": {
+      "utcTime": "2026-11-20T19:30:00.000Z",
+      "halfs": {
+       "firstHalfStarted": "20.11.2026 20:30:35",
+       "secondHalfStarted": "20.11.2026 21:37:47"
+      },
+      "periodLength": 45,
+      "finished": true,
+      "started": true,
+      "cancelled": false,
+      "awarded": false,
+      "scoreStr": "2 - 0",
+      "reason": {
+       "short": "FT",
+       "shortKey": "fulltime_short",
+       "long": "Full-Time",
+       "longKey": "finished"
+      }
+     },
+     "timeTS": 1795203000000
+    }
+   ]
+  },
+  {
+   "id": 942122,
+   "name": "Liga II",
+   "ccode": "ROU",
+   "matches": [
+    {
+     "id": 5976965,
+     "leagueId": 942122,
+     "time": "20.11.2026 13:30",
+     "home": {
+      "id": 2550,
+      "score": 5,
+      "name": "FC Bihor Oradea"
+     },
+     "away": {
+      "id": 1787832,
+      "score": 1,
+      "name": "Gloria Bistrița",
+      "redCards": 1
+     },
+     "eliminatedTeamId": null,
+     "statusId": 6,
+     "tournamentStage": "14",
+     "status": {
+      "utcTime": "2026-11-20T12:30:00.000Z",
+      "numberOfAwayRedCards": 1,
+      "halfs": {
+       "firstHalfStarted": "20.11.2026 13:31:00",
+       "secondHalfStarted": "20.11.2026 14:32:28"
+      },
+      "periodLength": 45,
+      "finished": true,
+      "started": true,
+      "cancelled": false,
+      "awarded": false,
+      "scoreStr": "5 - 1",
+      "reason": {
+       "short": "FT",
+       "shortKey": "fulltime_short",
+       "long": "Full-Time",
+       "longKey": "finished"
+      }
+     },
+     "timeTS": 1795177800000
+    }
+   ]
+  },
+  {
+   "id": 8985,
+   "name": "Liga Super",
+   "ccode": "MAS",
+   "matches": [
+    {
+     "id": 5998176,
+     "leagueId": 8985,
+     "time": "20.11.2026 09:45",
+     "home": {
+      "id": 165222,
+      "score": 0,
+      "name": "Negeri Sembilan"
+     },
+     "away": {
+      "id": 1114226,
+      "score": 2,
+      "name": "Kuching City"
+     },
+     "eliminatedTeamId": null,
+     "statusId": 6,
+     "tournamentStage": "7",
+     "status": {
+      "utcTime": "2026-11-20T08:45:00.000Z",
+      "halfs": {
+       "firstHalfStarted": "20.11.2026 09:45:44",
+       "secondHalfStarted": "20.11.2026 10:51:37"
+      },
+      "periodLength": 45,
+      "finished": true,
+      "started": true,
+      "cancelled": false,
+      "awarded": false,
+      "scoreStr": "0 - 2",
+      "reason": {
+       "short": "FT",
+       "shortKey": "fulltime_short",
+       "long": "Full-Time",
+       "longKey": "finished"
+      }
+     },
+     "timeTS": 1795164300000
+    }
+   ]
+  },
+  {
+   "id": 516,
+   "name": "Ligue 1",
+   "ccode": "ALG",
+   "matches": [
+    {
+     "id": 5989884,
+     "leagueId": 516,
+     "time": "20.11.2026 17:00",
+     "home": {
+      "id": 101629,
+      "score": 2,
+      "name": "ASO Chlef"
+     },
+     "away": {
+      "id": 1387869,
+      "score": 0,
+      "name": "USM Khenchela"
+     },
+     "eliminatedTeamId": null,
+     "statusId": 6,
+     "tournamentStage": "10",
+     "status": {
+      "utcTime": "2026-11-20T16:00:00.000Z",
+      "halfs": {
+       "firstHalfStarted": "20.11.2026 17:01:10",
+       "secondHalfStarted": "20.11.2026 18:06:22"
+      },
+      "periodLength": 45,
+      "finished": true,
+      "started": true,
+      "cancelled": false,
+      "awarded": false,
+      "scoreStr": "2 - 0",
+      "reason": {
+       "short": "FT",
+       "shortKey": "fulltime_short",
+       "long": "Full-Time",
+       "longKey": "finished"
+      }
+     },
+     "timeTS": 1795190400000
+    }
+   ]
+  },
+  {
+   "id": 110,
+   "name": "Ligue 2",
+   "ccode": "FRA",
+   "matches": [
+    {
+     "id": 5803317,
+     "leagueId": 110,
+     "time": "20.11.2026 20:00",
+     "home": {
+      "id": 293352,
+      "score": 4,
+      "name": "Annecy FC"
+     },
+     "away": {
+      "id": 8311,
+      "score": 2,
+      "name": "Clermont Foot"
+     },
+     "eliminatedTeamId": null,
+     "statusId": 6,
+     "tournamentStage": "13",
+     "status": {
+      "utcTime": "2026-11-20T19:00:00.000Z",
+      "halfs": {
+       "firstHalfStarted": "20.11.2026 20:00:27",
+       "secondHalfStarted": "20.11.2026 21:05:41"
+      },
+      "periodLength": 45,
+      "finished": true,
+      "started": true,
+      "cancelled": false,
+      "awarded": false,
+      "scoreStr": "4 - 2",
+      "reason": {
+       "short": "FT",
+       "shortKey": "fulltime_short",
+       "long": "Full-Time",
+       "longKey": "finished"
+      }
+     },
+     "timeTS": 1795201200000
+    }
+   ]
+  },
+  {
+   "id": 943985,
+   "name": "Ligue I",
+   "ccode": "TUN",
+   "matches": [
+    {
+     "id": 6050553,
+     "leagueId": 943985,
+     "time": "20.11.2026 14:30",
+     "home": {
+      "id": 102108,
+      "score": 0,
+      "name": "CS Hammam-Lif",
+      "redCards": 1
+     },
+     "away": {
+      "id": 405958,
+      "score": 3,
+      "name": "Etoile Métlaoui"
+     },
+     "eliminatedTeamId": null,
+     "statusId": 6,
+     "tournamentStage": "8",
+     "status": {
+      "utcTime": "2026-11-20T13:30:00.000Z",
+      "numberOfHomeRedCards": 1,
+      "halfs": {
+       "firstHalfStarted": "20.11.2026 14:30:49",
+       "secondHalfStarted": "20.11.2026 15:38:20"
+      },
+      "periodLength": 45,
+      "finished": true,
+      "started": true,
+      "cancelled": false,
+      "awarded": false,
+      "scoreStr": "0 - 3",
+      "reason": {
+       "short": "FT",
+       "shortKey": "fulltime_short",
+       "long": "Full-Time",
+       "longKey": "finished"
+      }
+     },
+     "timeTS": 1795181400000
+    }
+   ]
+  },
+  {
+   "id": 940355,
+   "name": "National League",
+   "ccode": "ENG",
+   "matches": [
+    {
+     "id": 5906561,
+     "leagueId": 940355,
+     "time": "20.11.2026 20:45",
+     "home": {
+      "id": 8652,
+      "score": 2,
+      "name": "Southend United",
+      "shortName": "Southend"
+     },
+     "away": {
+      "id": 2488,
+      "score": 3,
+      "name": "Boreham Wood"
+     },
+     "eliminatedTeamId": null,
+     "statusId": 6,
+     "tournamentStage": "18",
+     "status": {
+      "utcTime": "2026-11-20T19:45:00.000Z",
+      "halfs": {
+       "firstHalfStarted": "20.11.2026 20:46:21",
+       "secondHalfStarted": "20.11.2026 21:50:15"
+      },
+      "periodLength": 45,
+      "finished": true,
+      "started": true,
+      "cancelled": false,
+      "awarded": false,
+      "scoreStr": "2 - 3",
+      "reason": {
+       "short": "FT",
+       "shortKey": "fulltime_short",
+       "long": "Full-Time",
+       "longKey": "finished"
+      }
+     },
+     "timeTS": 1795203900000
+    }
+   ]
+  },
+  {
+   "id": 63,
+   "name": "Premier League",
+   "ccode": "RUS",
+   "matches": [
+    {
+     "id": 5847235,
+     "leagueId": 63,
+     "time": "20.11.2026 17:30",
+     "home": {
+      "id": 8705,
+      "score": 3,
+      "name": "FC Rostov",
+      "shortName": "Rostov"
+     },
+     "away": {
+      "id": 8709,
+      "score": 0,
+      "name": "Krylya Sovetov Samara",
+      "shortName": "Krylya Sovetov"
+     },
+     "eliminatedTeamId": null,
+     "statusId": 6,
+     "tournamentStage": "15",
+     "status": {
+      "utcTime": "2026-11-20T16:30:00.000Z",
+      "halfs": {
+       "firstHalfStarted": "20.11.2026 17:32:11",
+       "secondHalfStarted": "20.11.2026 18:35:21"
+      },
+      "periodLength": 45,
+      "finished": true,
+      "started": true,
+      "cancelled": false,
+      "awarded": false,
+      "scoreStr": "3 - 0",
+      "reason": {
+       "short": "FT",
+       "shortKey": "fulltime_short",
+       "long": "Full-Time",
+       "longKey": "finished"
+      }
+     },
+     "timeTS": 1795192200000
+    }
+   ]
+  },
+  {
+   "id": 940431,
+   "name": "Premier League",
+   "ccode": "UKR",
+   "matches": [
+    {
+     "id": 5909336,
+     "leagueId": 940431,
+     "time": "20.11.2026 17:00",
+     "home": {
+      "id": 9728,
+      "score": 1,
+      "name": "Shakhtar Donetsk"
+     },
+     "away": {
+      "id": 1507991,
+      "score": 1,
+      "name": "Liviy Bereh"
+     },
+     "eliminatedTeamId": null,
+     "statusId": 6,
+     "tournamentStage": "13",
+     "status": {
+      "utcTime": "2026-11-20T16:00:00.000Z",
+      "halfs": {
+       "firstHalfStarted": "20.11.2026 17:03:29",
+       "secondHalfStarted": "20.11.2026 18:06:41"
+      },
+      "periodLength": 45,
+      "finished": true,
+      "started": true,
+      "cancelled": false,
+      "awarded": false,
+      "scoreStr": "1 - 1",
+      "reason": {
+       "short": "FT",
+       "shortKey": "fulltime_short",
+       "long": "Full-Time",
+       "longKey": "finished"
+      }
+     },
+     "timeTS": 1795190400000
+    }
+   ]
+  },
+  {
+   "id": 938776,
+   "name": "Premier League",
+   "ccode": "WAL",
+   "matches": [
+    {
+     "id": 5882152,
+     "leagueId": 938776,
+     "time": "20.11.2026 20:45",
+     "home": {
+      "id": 2200,
+      "score": 3,
+      "name": "Airbus UK Broughton"
+     },
+     "away": {
+      "id": 207869,
+      "score": 4,
+      "name": "Colwyn Bay"
+     },
+     "eliminatedTeamId": null,
+     "statusId": 6,
+     "tournamentStage": "17",
+     "status": {
+      "utcTime": "2026-11-20T19:45:00.000Z",
+      "halfs": {
+       "firstHalfStarted": "20.11.2026 20:46:07",
+       "secondHalfStarted": "20.11.2026 21:49:00"
+      },
+      "periodLength": 45,
+      "finished": true,
+      "started": true,
+      "cancelled": false,
+      "awarded": false,
+      "scoreStr": "3 - 4",
+      "reason": {
+       "short": "FT",
+       "shortKey": "fulltime_short",
+       "long": "Full-Time",
+       "longKey": "finished"
+      }
+     },
+     "timeTS": 1795203900000
+    }
+   ]
+  },
+  {
+   "id": 262,
+   "name": "Premier League",
+   "ccode": "AZE",
+   "matches": [
+    {
+     "id": 5987558,
+     "leagueId": 262,
+     "time": "20.11.2026 11:30",
+     "home": {
+      "id": 1786024,
+      "score": 2,
+      "name": "Imisli FK"
+     },
+     "away": {
+      "id": 577619,
+      "score": 2,
+      "name": "Zira"
+     },
+     "eliminatedTeamId": null,
+     "statusId": 6,
+     "tournamentStage": "12",
+     "status": {
+      "utcTime": "2026-11-20T10:30:00.000Z",
+      "halfs": {
+       "firstHalfStarted": "20.11.2026 11:30:54",
+       "secondHalfStarted": "20.11.2026 12:35:59"
+      },
+      "periodLength": 45,
+      "finished": true,
+      "started": true,
+      "cancelled": false,
+      "awarded": false,
+      "scoreStr": "2 - 2",
+      "reason": {
+       "short": "FT",
+       "shortKey": "fulltime_short",
+       "long": "Full-Time",
+       "longKey": "finished"
+      }
+     },
+     "timeTS": 1795170600000
+    }
+   ]
+  },
+  {
+   "id": 118,
+   "name": "Premier League",
+   "ccode": "ARM",
+   "matches": [
+    {
+     "id": 5972944,
+     "leagueId": 118,
+     "time": "20.11.2026 12:00",
+     "home": {
+      "id": 1078400,
+      "score": 1,
+      "name": "Van"
+     },
+     "away": {
+      "id": 866109,
+      "score": 2,
+      "name": "Ararat Armenia"
+     },
+     "eliminatedTeamId": null,
+     "statusId": 6,
+     "tournamentStage": "14",
+     "status": {
+      "utcTime": "2026-11-20T11:00:00.000Z",
+      "halfs": {
+       "firstHalfStarted": "20.11.2026 12:00:45",
+       "secondHalfStarted": "20.11.2026 13:04:46"
+      },
+      "periodLength": 45,
+      "finished": true,
+      "started": true,
+      "cancelled": false,
+      "awarded": false,
+      "scoreStr": "1 - 2",
+      "reason": {
+       "short": "FT",
+       "shortKey": "fulltime_short",
+       "long": "Full-Time",
+       "longKey": "finished"
+      }
+     },
+     "timeTS": 1795172400000
+    }
+   ]
+  },
+  {
+   "id": 461,
+   "name": "Premier League",
+   "ccode": "SIN",
+   "matches": [
+    {
+     "id": 5973214,
+     "leagueId": 461,
+     "time": "20.11.2026 12:30",
+     "home": {
+      "id": 67377,
+      "score": 3,
+      "name": "FC Jurong"
+     },
+     "away": {
+      "id": 67378,
+      "score": 2,
+      "name": "Balestier Khalsa FC"
+     },
+     "eliminatedTeamId": null,
+     "statusId": 6,
+     "tournamentStage": "7",
+     "status": {
+      "utcTime": "2026-11-20T11:30:00.000Z",
+      "halfs": {
+       "firstHalfStarted": "20.11.2026 12:30:45",
+       "secondHalfStarted": "20.11.2026 13:34:53"
+      },
+      "periodLength": 45,
+      "finished": true,
+      "started": true,
+      "cancelled": false,
+      "awarded": false,
+      "scoreStr": "3 - 2",
+      "reason": {
+       "short": "FT",
+       "shortKey": "fulltime_short",
+       "long": "Full-Time",
+       "longKey": "finished"
+      }
+     },
+     "timeTS": 1795174200000
+    }
+   ]
+  },
+  {
+   "id": 9066,
+   "name": "Premier League",
+   "ccode": "TAN",
+   "matches": [
+    {
+     "id": 5998360,
+     "leagueId": 9066,
+     "time": "20.11.2026 14:00",
+     "home": {
+      "id": 165093,
+      "score": 0,
+      "name": "Polisi Tanzania FC"
+     },
+     "away": {
+      "id": 165084,
+      "score": 2,
+      "name": "Young Africans"
+     },
+     "eliminatedTeamId": null,
+     "statusId": 6,
+     "tournamentStage": "12",
+     "status": {
+      "utcTime": "2026-11-20T13:00:00.000Z",
+      "halfs": {
+       "firstHalfStarted": "20.11.2026 14:00:40",
+       "secondHalfStarted": "20.11.2026 15:06:47"
+      },
+      "periodLength": 45,
+      "finished": true,
+      "started": true,
+      "cancelled": false,
+      "awarded": false,
+      "scoreStr": "0 - 2",
+      "reason": {
+       "short": "FT",
+       "shortKey": "fulltime_short",
+       "long": "Full-Time",
+       "longKey": "finished"
+      }
+     },
+     "timeTS": 1795179600000
+    }
+   ]
+  },
+  {
+   "id": 938005,
+   "name": "Premiere Ligue",
+   "ccode": "FRA",
+   "matches": [
+    {
+     "id": 5901207,
+     "leagueId": 938005,
+     "time": "20.11.2026 21:00",
+     "home": {
+      "id": 1863810,
+      "score": 1,
+      "name": "Toulouse (W)"
+     },
+     "away": {
+      "id": 626232,
+      "score": 1,
+      "name": "Marseille (W)"
+     },
+     "eliminatedTeamId": null,
+     "statusId": 6,
+     "tournamentStage": "10",
+     "status": {
+      "utcTime": "2026-11-20T20:00:00.000Z",
+      "halfs": {
+       "firstHalfStarted": "20.11.2026 21:01:18",
+       "secondHalfStarted": "20.11.2026 22:03:41"
+      },
+      "periodLength": 45,
+      "finished": true,
+      "started": true,
+      "cancelled": false,
+      "awarded": false,
+      "scoreStr": "1 - 1",
+      "reason": {
+       "short": "FT",
+       "shortKey": "fulltime_short",
+       "long": "Full-Time",
+       "longKey": "finished"
+      }
+     },
+     "timeTS": 1795204800000
+    }
+   ]
+  },
+  {
+   "id": 938371,
+   "name": "Premiership",
+   "ccode": "NIR",
+   "matches": [
+    {
+     "id": 5847491,
+     "leagueId": 938371,
+     "time": "20.11.2026 20:45",
+     "home": {
+      "id": 1703,
+      "score": 3,
+      "name": "Cliftonville"
+     },
+     "away": {
+      "id": 2203,
+      "score": 2,
+      "name": "Glentoran"
+     },
+     "eliminatedTeamId": null,
+     "statusId": 6,
+     "tournamentStage": "17",
+     "status": {
+      "utcTime": "2026-11-20T19:45:00.000Z",
+      "halfs": {
+       "firstHalfStarted": "20.11.2026 20:47:08",
+       "secondHalfStarted": "20.11.2026 21:47:09"
+      },
+      "periodLength": 45,
+      "finished": true,
+      "started": true,
+      "cancelled": false,
+      "awarded": false,
+      "scoreStr": "3 - 2",
+      "reason": {
+       "short": "FT",
+       "shortKey": "fulltime_short",
+       "long": "Full-Time",
+       "longKey": "finished"
+      }
+     },
+     "timeTS": 1795203900000
+    }
+   ]
+  },
+  {
+   "id": 938783,
+   "name": "Primera Federacion - Group 2",
+   "ccode": "ESP",
+   "matches": [
+    {
+     "id": 5883745,
+     "leagueId": 938783,
+     "time": "20.11.2026 19:00",
+     "home": {
+      "id": 190091,
+      "score": 0,
+      "name": "CD Teruel"
+     },
+     "away": {
+      "id": 10278,
+      "score": 1,
+      "name": "Hércules"
+     },
+     "eliminatedTeamId": null,
+     "statusId": 6,
+     "tournamentStage": "13",
+     "status": {
+      "utcTime": "2026-11-20T18:00:00.000Z",
+      "halfs": {
+       "firstHalfStarted": "20.11.2026 19:00:26",
+       "secondHalfStarted": "20.11.2026 20:03:11"
+      },
+      "periodLength": 45,
+      "finished": true,
+      "started": true,
+      "cancelled": false,
+      "awarded": false,
+      "scoreStr": "0 - 1",
+      "reason": {
+       "short": "FT",
+       "shortKey": "fulltime_short",
+       "long": "Full-Time",
+       "longKey": "finished"
+      }
+     },
+     "timeTS": 1795197600000
+    }
+   ]
+  },
+  {
+   "id": 249,
+   "name": "Prva Liga",
+   "ccode": "MKD",
+   "matches": [
+    {
+     "id": 5804972,
+     "leagueId": 249,
+     "time": "20.11.2026 13:00",
+     "home": {
+      "id": 2009441,
+      "score": 0,
+      "name": "Shkendija Haracine"
+     },
+     "away": {
+      "id": 1523811,
+      "score": 1,
+      "name": "Bashkimi"
+     },
+     "eliminatedTeamId": null,
+     "statusId": 6,
+     "tournamentStage": "14",
+     "status": {
+      "utcTime": "2026-11-20T12:00:00.000Z",
+      "halfs": {
+       "firstHalfStarted": "20.11.2026 13:00:49",
+       "secondHalfStarted": "20.11.2026 14:00:40"
+      },
+      "periodLength": 45,
+      "finished": true,
+      "started": true,
+      "cancelled": false,
+      "awarded": false,
+      "scoreStr": "0 - 1",
+      "reason": {
+       "short": "FT",
+       "shortKey": "fulltime_short",
+       "long": "Full-Time",
+       "longKey": "finished"
+      }
+     },
+     "timeTS": 1795176000000
+    }
+   ]
+  },
+  {
+   "id": 940451,
+   "name": "Regionalliga Bayern",
+   "ccode": "GER",
+   "matches": [
+    {
+     "id": 5911636,
+     "leagueId": 940451,
+     "time": "20.11.2026 19:00",
+     "home": {
+      "id": 145501,
+      "score": 0,
+      "name": "FV Illertissen"
+     },
+     "away": {
+      "id": 340732,
+      "score": 0,
+      "name": "VfB Eichstätt"
+     },
+     "eliminatedTeamId": null,
+     "statusId": 6,
+     "tournamentStage": "20",
+     "status": {
+      "utcTime": "2026-11-20T18:00:00.000Z",
+      "halfs": {
+       "firstHalfStarted": "20.11.2026 19:01:00",
+       "secondHalfStarted": "20.11.2026 20:01:26"
+      },
+      "periodLength": 45,
+      "finished": true,
+      "started": true,
+      "cancelled": false,
+      "awarded": false,
+      "scoreStr": "0 - 0",
+      "reason": {
+       "short": "FT",
+       "shortKey": "fulltime_short",
+       "long": "Full-Time",
+       "longKey": "finished"
+      }
+     },
+     "timeTS": 1795197600000
+    }
+   ]
+  },
+  {
+   "id": 940452,
+   "name": "Regionalliga North",
+   "ccode": "GER",
+   "matches": [
+    {
+     "id": 5911966,
+     "leagueId": 940452,
+     "time": "20.11.2026 19:00",
+     "home": {
+      "id": 8192,
+      "score": 1,
+      "name": "Kickers Emden"
+     },
+     "away": {
+      "id": 145705,
+      "score": 2,
+      "name": "Bremer SV"
+     },
+     "eliminatedTeamId": null,
+     "statusId": 6,
+     "tournamentStage": "19",
+     "status": {
+      "utcTime": "2026-11-20T18:00:00.000Z",
+      "halfs": {
+       "firstHalfStarted": "20.11.2026 19:01:00",
+       "secondHalfStarted": "20.11.2026 20:01:26"
+      },
+      "periodLength": 45,
+      "finished": true,
+      "started": true,
+      "cancelled": false,
+      "awarded": false,
+      "scoreStr": "1 - 2",
+      "reason": {
+       "short": "FT",
+       "shortKey": "fulltime_short",
+       "long": "Full-Time",
+       "longKey": "finished"
+      }
+     },
+     "timeTS": 1795197600000
+    }
+   ]
+  },
+  {
+   "id": 940449,
+   "name": "Regionalliga Northeast",
+   "ccode": "GER",
+   "matches": [
+    {
+     "id": 5910943,
+     "leagueId": 940449,
+     "time": "20.11.2026 19:00",
+     "home": {
+      "id": 145597,
+      "score": 3,
+      "name": "Lokomotive Leipzig"
+     },
+     "away": {
+      "id": 585157,
+      "score": 0,
+      "name": "RSV Eintracht 1949"
+     },
+     "eliminatedTeamId": null,
+     "statusId": 6,
+     "tournamentStage": "17",
+     "status": {
+      "utcTime": "2026-11-20T18:00:00.000Z",
+      "halfs": {
+       "firstHalfStarted": "20.11.2026 19:01:00",
+       "secondHalfStarted": "20.11.2026 20:01:26"
+      },
+      "periodLength": 45,
+      "finished": true,
+      "started": true,
+      "cancelled": false,
+      "awarded": false,
+      "scoreStr": "3 - 0",
+      "reason": {
+       "short": "FT",
+       "shortKey": "fulltime_short",
+       "long": "Full-Time",
+       "longKey": "finished"
+      }
+     },
+     "timeTS": 1795197600000
+    }
+   ]
+  },
+  {
+   "id": 940469,
+   "name": "Regionalliga Southwest",
+   "ccode": "GER",
+   "matches": [
+    {
+     "id": 5916123,
+     "leagueId": 940469,
+     "time": "20.11.2026 19:00",
+     "home": {
+      "id": 8407,
+      "score": 0,
+      "name": "Kickers Offenbach",
+      "redCards": 1
+     },
+     "away": {
+      "id": 1701,
+      "score": 1,
+      "name": "VfR Mannheim"
+     },
+     "eliminatedTeamId": null,
+     "statusId": 6,
+     "tournamentStage": "17",
+     "status": {
+      "utcTime": "2026-11-20T18:00:00.000Z",
+      "numberOfHomeRedCards": 1,
+      "halfs": {
+       "firstHalfStarted": "20.11.2026 19:01:00",
+       "secondHalfStarted": "20.11.2026 20:01:26"
+      },
+      "periodLength": 45,
+      "finished": true,
+      "started": true,
+      "cancelled": false,
+      "awarded": false,
+      "scoreStr": "0 - 1",
+      "reason": {
+       "short": "FT",
+       "shortKey": "fulltime_short",
+       "long": "Full-Time",
+       "longKey": "finished"
+      }
+     },
+     "timeTS": 1795197600000
+    }
+   ]
+  },
+  {
+   "id": 940450,
+   "name": "Regionalliga West",
+   "ccode": "GER",
+   "matches": [
+    {
+     "id": 5911268,
+     "leagueId": 940450,
+     "time": "20.11.2026 18:30",
+     "home": {
+      "id": 7766,
+      "score": 1,
+      "name": "Wattenscheid",
+      "redCards": 1
+     },
+     "away": {
+      "id": 8459,
+      "score": 1,
+      "name": "FC Köln II"
+     },
+     "eliminatedTeamId": null,
+     "statusId": 6,
+     "tournamentStage": "17",
+     "status": {
+      "utcTime": "2026-11-20T17:30:00.000Z",
+      "numberOfHomeRedCards": 1,
+      "halfs": {
+       "firstHalfStarted": "20.11.2026 18:31:53",
+       "secondHalfStarted": "20.11.2026 19:34:20"
+      },
+      "periodLength": 45,
+      "finished": true,
+      "started": true,
+      "cancelled": false,
+      "awarded": false,
+      "scoreStr": "1 - 1",
+      "reason": {
+       "short": "FT",
+       "shortKey": "fulltime_short",
+       "long": "Full-Time",
+       "longKey": "finished"
+      }
+     },
+     "timeTS": 1795195800000
+    }
+   ]
+  },
+  {
+   "id": 943389,
+   "name": "Stars League",
+   "ccode": "IRQ",
+   "matches": [
+    {
+     "id": 6028627,
+     "leagueId": 943389,
+     "time": "20.11.2026 14:00",
+     "home": {
+      "id": 191814,
+      "score": 1,
+      "name": "Zakho"
+     },
+     "away": {
+      "id": 101655,
+      "score": 1,
+      "name": "Al Shorta"
+     },
+     "eliminatedTeamId": null,
+     "statusId": 6,
+     "tournamentStage": "14",
+     "status": {
+      "utcTime": "2026-11-20T13:00:00.000Z",
+      "halfs": {
+       "firstHalfStarted": "20.11.2026 14:00:40",
+       "secondHalfStarted": "20.11.2026 15:05:14"
+      },
+      "periodLength": 45,
+      "finished": true,
+      "started": true,
+      "cancelled": false,
+      "awarded": false,
+      "scoreStr": "1 - 1",
+      "reason": {
+       "short": "FT",
+       "shortKey": "fulltime_short",
+       "long": "Full-Time",
+       "longKey": "finished"
+      }
+     },
+     "timeTS": 1795179600000
+    }
+   ]
+  },
+  {
+   "id": 8983,
+   "name": "Super League",
+   "ccode": "IDN",
+   "matches": [
+    {
+     "id": 6011909,
+     "leagueId": 8983,
+     "time": "20.11.2026 09:30",
+     "home": {
+      "id": 1118023,
+      "score": 1,
+      "name": "Garudayaksa FC"
+     },
+     "away": {
+      "id": 165199,
+      "score": 0,
+      "name": "Madura United"
+     },
+     "eliminatedTeamId": null,
+     "statusId": 6,
+     "tournamentStage": "10",
+     "status": {
+      "utcTime": "2026-11-20T08:30:00.000Z",
+      "halfs": {
+       "firstHalfStarted": "20.11.2026 09:30:21",
+       "secondHalfStarted": "20.11.2026 10:32:43"
+      },
+      "periodLength": 45,
+      "finished": true,
+      "started": true,
+      "cancelled": false,
+      "awarded": false,
+      "scoreStr": "1 - 0",
+      "reason": {
+       "short": "FT",
+       "shortKey": "fulltime_short",
+       "long": "Full-Time",
+       "longKey": "finished"
+      }
+     },
+     "timeTS": 1795163400000
+    }
+   ]
+  },
+  {
+   "id": 938428,
+   "name": "Superliga",
+   "ccode": "ROU",
+   "matches": [
+    {
+     "id": 5853557,
+     "leagueId": 938428,
+     "time": "20.11.2026 16:30",
+     "home": {
+      "id": 188191,
+      "score": 3,
+      "name": "Botoșani"
+     },
+     "away": {
+      "id": 405332,
+      "score": 3,
+      "name": "FC Voluntari"
+     },
+     "eliminatedTeamId": null,
+     "statusId": 6,
+     "tournamentStage": "16",
+     "status": {
+      "utcTime": "2026-11-20T15:30:00.000Z",
+      "halfs": {
+       "firstHalfStarted": "20.11.2026 16:32:52",
+       "secondHalfStarted": "20.11.2026 17:38:08"
+      },
+      "periodLength": 45,
+      "finished": true,
+      "started": true,
+      "cancelled": false,
+      "awarded": false,
+      "scoreStr": "3 - 3",
+      "reason": {
+       "short": "FT",
+       "shortKey": "fulltime_short",
+       "long": "Full-Time",
+       "longKey": "finished"
+      }
+     },
+     "timeTS": 1795188600000
+    }
+   ]
+  },
+  {
+   "id": 540,
+   "name": "Superliga",
+   "ccode": "UZB",
+   "matches": [
+    {
+     "id": 5200704,
+     "leagueId": 540,
+     "time": "20.11.2026 13:00",
+     "home": {
+      "id": 115128,
+      "score": 0,
+      "name": "AGMK"
+     },
+     "away": {
+      "id": 102147,
+      "score": 1,
+      "name": "Qizilqum Zarafshon"
+     },
+     "eliminatedTeamId": null,
+     "statusId": 6,
+     "tournamentStage": "28",
+     "status": {
+      "utcTime": "2026-11-20T12:00:00.000Z",
+      "halfs": {
+       "firstHalfStarted": "20.11.2026 13:01:09",
+       "secondHalfStarted": "20.11.2026 14:04:41"
+      },
+      "periodLength": 45,
+      "finished": true,
+      "started": true,
+      "cancelled": false,
+      "awarded": false,
+      "scoreStr": "0 - 1",
+      "reason": {
+       "short": "FT",
+       "shortKey": "fulltime_short",
+       "long": "Full-Time",
+       "longKey": "finished"
+      }
+     },
+     "timeTS": 1795176000000
+    }
+   ]
+  },
+  {
+   "id": 935487,
+   "name": "Superligaen",
+   "ccode": "DEN",
+   "matches": [
+    {
+     "id": 5739551,
+     "leagueId": 935487,
+     "time": "20.11.2026 19:00",
+     "home": {
+      "id": 8071,
+      "score": 2,
+      "name": "AGF"
+     },
+     "away": {
+      "id": 9907,
+      "score": 1,
+      "name": "Lyngby"
+     },
+     "eliminatedTeamId": null,
+     "statusId": 6,
+     "tournamentStage": "15",
+     "status": {
+      "utcTime": "2026-11-20T18:00:00.000Z",
+      "halfs": {
+       "firstHalfStarted": "20.11.2026 19:00:33",
+       "secondHalfStarted": "20.11.2026 20:07:29"
+      },
+      "periodLength": 45,
+      "finished": true,
+      "started": true,
+      "cancelled": false,
+      "awarded": false,
+      "scoreStr": "2 - 1",
+      "reason": {
+       "short": "FT",
+       "shortKey": "fulltime_short",
+       "long": "Full-Time",
+       "longKey": "finished"
+      }
+     },
+     "timeTS": 1795197600000
+    }
+   ]
+  },
+  {
+   "id": 186,
+   "name": "Taca de Portugal",
+   "ccode": "POR",
+   "matches": [
+    {
+     "id": 6506251,
+     "leagueId": 186,
+     "time": "20.11.2026 21:45",
+     "home": {
+      "id": 9773,
+      "score": 1,
+      "name": "FC Porto",
+      "penScore": 3
+     },
+     "away": {
+      "id": 2503,
+      "score": 1,
+      "name": "Paredes",
+      "penScore": 1
+     },
+     "eliminatedTeamId": 2503,
+     "statusId": 13,
+     "tournamentStage": "4",
+     "status": {
+      "utcTime": "2026-11-20T20:45:00.000Z",
+      "halfs": {
+       "firstHalfStarted": "20.11.2026 21:48:17",
+       "secondHalfStarted": "20.11.2026 22:52:09",
+       "firstExtraHalfStarted": "20.11.2026 23:49:41",
+       "secondExtraHalfStarted": "21.11.2026 00:07:59"
+      },
+      "periodLength": 45,
+      "finished": true,
+      "started": true,
+      "cancelled": false,
+      "awarded": false,
+      "scoreStr": "1 - 1",
+      "reason": {
+       "short": "Pen",
+       "shortKey": "penalties_short",
+       "long": "After penalties",
+       "longKey": "afterpenalties"
+      }
+     },
+     "timeTS": 1795207500000
+    }
+   ]
+  },
+  {
+   "id": 9088,
+   "name": "V-League",
+   "ccode": "VIE",
+   "matches": [
+    {
+     "id": 6095773,
+     "leagueId": 9088,
+     "time": "20.11.2026 11:00",
+     "home": {
+      "id": 179226,
+      "score": 2,
+      "name": "Thanh Hòa FC"
+     },
+     "away": {
+      "id": 179227,
+      "score": 1,
+      "name": "Hoàng Anh Gia Lai"
+     },
+     "eliminatedTeamId": null,
+     "statusId": 6,
+     "tournamentStage": "8",
+     "status": {
+      "utcTime": "2026-11-20T10:00:00.000Z",
+      "halfs": {
+       "firstHalfStarted": "20.11.2026 11:00:20",
+       "secondHalfStarted": "20.11.2026 12:05:59"
+      },
+      "periodLength": 45,
+      "finished": true,
+      "started": true,
+      "cancelled": false,
+      "awarded": false,
+      "scoreStr": "2 - 1",
+      "reason": {
+       "short": "FT",
+       "shortKey": "fulltime_short",
+       "long": "Full-Time",
+       "longKey": "finished"
+      }
+     },
+     "timeTS": 1795168800000
+    }
+   ]
+  },
+  {
+   "id": 1000005083,
+   "name": "Bundesliga",
+   "ccode": "GER",
+   "matches": [
+    {
+     "id": 5881226,
+     "leagueId": 1000005083,
+     "time": "20.11.2026 20:30",
+     "home": {
+      "id": 9823,
+      "score": 1,
+      "name": "Bayern München",
+      "shortName": "Bayern München"
+     },
+     "away": {
+      "id": 8722,
+      "score": 1,
+      "name": "1. FC Köln",
+      "shortName": "Köln"
+     },
+     "eliminatedTeamId": null,
+     "statusId": 6,
+     "tournamentStage": "10",
+     "status": {
+      "utcTime": "2026-11-20T19:30:00.000Z",
+      "halfs": {
+       "firstHalfStarted": "20.11.2026 20:30:15",
+       "secondHalfStarted": "20.11.2026 21:36:41"
+      },
+      "periodLength": 45,
+      "finished": true,
+      "started": true,
+      "cancelled": false,
+      "awarded": false,
+      "scoreStr": "1 - 1",
+      "reason": {
+       "short": "FT",
+       "shortKey": "fulltime_short",
+       "long": "Full-Time",
+       "longKey": "finished"
+      }
+     },
+     "timeTS": 1795203000000
+    }
+   ]
+  },
+  {
+   "id": 1000006325,
+   "name": "Ligue 1",
+   "ccode": "FRA",
+   "matches": [
+    {
+     "id": 5802999,
+     "leagueId": 1000006325,
+     "time": "20.11.2026 20:45",
+     "home": {
+      "id": 10242,
+      "score": 3,
+      "name": "Troyes"
+     },
+     "away": {
+      "id": 9746,
+      "score": 1,
+      "name": "Le Havre",
+      "redCards": 1
+     },
+     "eliminatedTeamId": null,
+     "statusId": 6,
+     "tournamentStage": "11",
+     "status": {
+      "utcTime": "2026-11-20T19:45:00.000Z",
+      "numberOfAwayRedCards": 1,
+      "halfs": {
+       "firstHalfStarted": "20.11.2026 20:45:13",
+       "secondHalfStarted": "20.11.2026 21:48:44"
+      },
+      "periodLength": 45,
+      "finished": true,
+      "started": true,
+      "cancelled": false,
+      "awarded": false,
+      "scoreStr": "3 - 1",
+      "reason": {
+       "short": "FT",
+       "shortKey": "fulltime_short",
+       "long": "Full-Time",
+       "longKey": "finished"
+      }
+     },
+     "timeTS": 1795203900000
+    }
+   ]
+  },
+  {
+   "id": 1000001750,
+   "name": "1. Lig",
+   "ccode": "TUR",
+   "matches": [
+    {
+     "id": 5908704,
+     "leagueId": 1000001750,
+     "time": "20.11.2026 18:00",
+     "home": {
+      "id": 1281818,
+      "score": 2,
+      "name": "Iğdır FK"
+     },
+     "away": {
+      "id": 281460,
+      "score": 2,
+      "name": "Ümraniyespor"
+     },
+     "eliminatedTeamId": null,
+     "statusId": 6,
+     "tournamentStage": "15",
+     "status": {
+      "utcTime": "2026-11-20T17:00:00.000Z",
+      "halfs": {
+       "firstHalfStarted": "20.11.2026 17:59:29",
+       "secondHalfStarted": "20.11.2026 19:02:40"
+      },
+      "periodLength": 45,
+      "finished": true,
+      "started": true,
+      "cancelled": false,
+      "awarded": false,
+      "scoreStr": "2 - 2",
+      "reason": {
+       "short": "FT",
+       "shortKey": "fulltime_short",
+       "long": "Full-Time",
+       "longKey": "finished"
+      }
+     },
+     "timeTS": 1795194000000
+    }
+   ]
+  },
+  {
+   "id": 1000001678,
+   "name": "A-League",
+   "ccode": "AUS",
+   "matches": [
+    {
+     "id": 1000017581,
+     "leagueId": 1000001678,
+     "time": "20.11.2026 09:40",
+     "home": {
+      "id": 323834,
+      "score": 4,
+      "name": "Western Sydney Wanderers FC",
+      "shortName": "Western Sydney"
+     },
+     "away": {
+      "id": 8008,
+      "score": 2,
+      "name": "Adelaide United"
+     },
+     "eliminatedTeamId": null,
+     "statusId": 6,
+     "tournamentStage": "5",
+     "status": {
+      "utcTime": "2026-11-20T08:40:00.000Z",
+      "halfs": {
+       "firstHalfStarted": "20.11.2026 09:40:17",
+       "secondHalfStarted": "20.11.2026 10:52:53"
+      },
+      "periodLength": 45,
+      "finished": true,
+      "started": true,
+      "cancelled": false,
+      "awarded": false,
+      "scoreStr": "4 - 2",
+      "reason": {
+       "short": "FT",
+       "shortKey": "fulltime_short",
+       "long": "Full-Time",
+       "longKey": "finished"
+      }
+     },
+     "timeTS": 1795164000000
+    }
+   ]
+  },
+  {
+   "id": 1000001497,
+   "name": "A-League Women",
+   "ccode": "AUS",
+   "matches": [
+    {
+     "id": 1000020336,
+     "leagueId": 1000001497,
+     "time": "20.11.2026 06:50",
+     "home": {
+      "id": 675732,
+      "score": 0,
+      "name": "Western Sydney Wanderers FC (W)"
+     },
+     "away": {
+      "id": 1300347,
+      "score": 2,
+      "name": "Wellington Phoenix (W)"
+     },
+     "eliminatedTeamId": null,
+     "statusId": 6,
+     "tournamentStage": "6",
+     "status": {
+      "utcTime": "2026-11-20T05:50:00.000Z",
+      "halfs": {
+       "firstHalfStarted": "20.11.2026 06:50:16",
+       "secondHalfStarted": "20.11.2026 07:51:59"
+      },
+      "periodLength": 45,
+      "finished": true,
+      "started": true,
+      "cancelled": false,
+      "awarded": false,
+      "scoreStr": "0 - 2",
+      "reason": {
+       "short": "FT",
+       "shortKey": "fulltime_short",
+       "long": "Full-Time",
+       "longKey": "finished"
+      }
+     },
+     "timeTS": 1795153800000
+    }
+   ]
+  },
+  {
+   "id": 1000001739,
+   "name": "Challenge League",
+   "ccode": "SUI",
+   "matches": [
+    {
+     "id": 5804618,
+     "leagueId": 1000001739,
+     "time": "20.11.2026 19:30",
+     "home": {
+      "id": 185504,
+      "score": 2,
+      "name": "FC Rapperswil-Jona"
+     },
+     "away": {
+      "id": 9930,
+      "score": 1,
+      "name": "Aarau"
+     },
+     "eliminatedTeamId": null,
+     "statusId": 6,
+     "tournamentStage": "14",
+     "status": {
+      "utcTime": "2026-11-20T18:30:00.000Z",
+      "halfs": {
+       "firstHalfStarted": "20.11.2026 19:30:12",
+       "secondHalfStarted": "20.11.2026 20:33:34"
+      },
+      "periodLength": 45,
+      "finished": true,
+      "started": true,
+      "cancelled": false,
+      "awarded": false,
+      "scoreStr": "2 - 1",
+      "reason": {
+       "short": "FT",
+       "shortKey": "fulltime_short",
+       "long": "Full-Time",
+       "longKey": "finished"
+      }
+     },
+     "timeTS": 1795199400000
+    }
+   ]
+  },
+  {
+   "id": 1000001212,
+   "name": "Division Profesional",
+   "ccode": "PAR",
+   "matches": [
+    {
+     "id": 1000017468,
+     "leagueId": 1000001212,
+     "time": "20.11.2026 21:30",
+     "home": {
+      "id": 1242560,
+      "score": 1,
+      "name": "Sportivo Ameliano"
+     },
+     "away": {
+      "id": 49687,
+      "score": 0,
+      "name": "Luqueño"
+     },
+     "eliminatedTeamId": null,
+     "statusId": 6,
+     "tournamentStage": "Clausura - Round 20",
+     "status": {
+      "utcTime": "2026-11-20T20:30:00.000Z",
+      "halfs": {
+       "firstHalfStarted": "20.11.2026 21:30:49",
+       "secondHalfStarted": "20.11.2026 22:38:29"
+      },
+      "periodLength": 45,
+      "finished": true,
+      "started": true,
+      "cancelled": false,
+      "awarded": false,
+      "scoreStr": "1 - 0",
+      "reason": {
+       "short": "FT",
+       "shortKey": "fulltime_short",
+       "long": "Full-Time",
+       "longKey": "finished"
+      }
+     },
+     "timeTS": 1795206600000
+    }
+   ]
+  },
+  {
+   "id": 1000001509,
+   "name": "First Division B",
+   "ccode": "BEL",
+   "matches": [
+    {
+     "id": 1000015510,
+     "leagueId": 1000001509,
+     "time": "20.11.2026 20:00",
+     "home": {
+      "id": 1173026,
+      "score": 2,
+      "name": "Club Brugge NXT"
+     },
+     "away": {
+      "id": 8174,
+      "score": 2,
+      "name": "Virton"
+     },
+     "eliminatedTeamId": null,
+     "statusId": 6,
+     "tournamentStage": "11",
+     "status": {
+      "utcTime": "2026-11-20T19:00:00.000Z",
+      "halfs": {
+       "firstHalfStarted": "20.11.2026 20:01:14",
+       "secondHalfStarted": "20.11.2026 21:06:19"
+      },
+      "periodLength": 45,
+      "finished": true,
+      "started": true,
+      "cancelled": false,
+      "awarded": false,
+      "scoreStr": "2 - 2",
+      "reason": {
+       "short": "FT",
+       "shortKey": "fulltime_short",
+       "long": "Full-Time",
+       "longKey": "finished"
+      }
+     },
+     "timeTS": 1795201200000
+    }
+   ]
+  },
+  {
+   "id": 1000001573,
+   "name": "FNL",
+   "ccode": "CZE",
+   "matches": [
+    {
+     "id": 1000015762,
+     "leagueId": 1000001573,
+     "time": "20.11.2026 17:00",
+     "home": {
+      "id": 157007,
+      "score": 3,
+      "name": "FC Silon Táborsko"
+     },
+     "away": {
+      "id": 1151541,
+      "score": 1,
+      "name": "Slavia Prague B"
+     },
+     "eliminatedTeamId": null,
+     "statusId": 6,
+     "tournamentStage": "15",
+     "status": {
+      "utcTime": "2026-11-20T16:00:00.000Z",
+      "halfs": {
+       "firstHalfStarted": "20.11.2026 17:00:20",
+       "secondHalfStarted": "20.11.2026 18:01:35"
+      },
+      "periodLength": 45,
+      "finished": true,
+      "started": true,
+      "cancelled": false,
+      "awarded": false,
+      "scoreStr": "3 - 1",
+      "reason": {
+       "short": "FT",
+       "shortKey": "fulltime_short",
+       "long": "Full-Time",
+       "longKey": "finished"
+      }
+     },
+     "timeTS": 1795190400000
+    }
+   ]
+  },
+  {
+   "id": 1000001771,
+   "name": "I League",
+   "ccode": "IND",
+   "matches": [
+    {
+     "id": 1000022442,
+     "leagueId": 1000001771,
+     "time": "20.11.2026 10:30",
+     "home": {
+      "id": 1320490,
+      "score": 1,
+      "name": "Rajasthan United FC"
+     },
+     "away": {
+      "id": 624342,
+      "score": 4,
+      "name": "Chanmari FC"
+     },
+     "eliminatedTeamId": null,
+     "statusId": 6,
+     "tournamentStage": "4",
+     "status": {
+      "utcTime": "2026-11-20T09:30:00.000Z",
+      "halfs": {
+       "firstHalfStarted": "20.11.2026 10:30:16",
+       "secondHalfStarted": "20.11.2026 11:32:35"
+      },
+      "periodLength": 45,
+      "finished": true,
+      "started": true,
+      "cancelled": false,
+      "awarded": false,
+      "scoreStr": "1 - 4",
+      "reason": {
+       "short": "FT",
+       "shortKey": "fulltime_short",
+       "long": "Full-Time",
+       "longKey": "finished"
+      }
+     },
+     "timeTS": 1795167000000
+    }
+   ]
+  },
+  {
+   "id": 1000001810,
+   "name": "Indian Super League",
+   "ccode": "IND",
+   "matches": [
+    {
+     "id": 6362018,
+     "leagueId": 1000001810,
+     "time": "20.11.2026 12:30",
+     "home": {
+      "id": 165184,
+      "score": 2,
+      "name": "East Bengal FC"
+     },
+     "away": {
+      "id": 1086744,
+      "score": 2,
+      "name": "SC Delhi"
+     },
+     "eliminatedTeamId": null,
+     "statusId": 6,
+     "tournamentStage": "Regular Season",
+     "status": {
+      "utcTime": "2026-11-20T11:30:00.000Z",
+      "halfs": {
+       "firstHalfStarted": "20.11.2026 12:31:05",
+       "secondHalfStarted": "20.11.2026 13:36:33"
+      },
+      "periodLength": 45,
+      "finished": true,
+      "started": true,
+      "cancelled": false,
+      "awarded": false,
+      "scoreStr": "2 - 2",
+      "reason": {
+       "short": "FT",
+       "shortKey": "fulltime_short",
+       "long": "Full-Time",
+       "longKey": "finished"
+      }
+     },
+     "timeTS": 1795174200000
+    }
+   ]
+  },
+  {
+   "id": 1000007645,
+   "name": "LaLiga2",
+   "ccode": "ESP",
+   "matches": [
+    {
+     "id": 5868547,
+     "leagueId": 1000007645,
+     "time": "20.11.2026 20:30",
+     "home": {
+      "id": 494050,
+      "score": 1,
+      "name": "FC Andorra",
+      "redCards": 1
+     },
+     "away": {
+      "id": 7854,
+      "score": 3,
+      "name": "Leganés"
+     },
+     "eliminatedTeamId": null,
+     "statusId": 6,
+     "tournamentStage": "15",
+     "status": {
+      "utcTime": "2026-11-20T19:30:00.000Z",
+      "numberOfHomeRedCards": 1,
+      "halfs": {
+       "firstHalfStarted": "20.11.2026 20:30:43",
+       "secondHalfStarted": "20.11.2026 21:42:04"
+      },
+      "periodLength": 45,
+      "finished": true,
+      "started": true,
+      "cancelled": false,
+      "awarded": false,
+      "scoreStr": "1 - 3",
+      "reason": {
+       "short": "FT",
+       "shortKey": "fulltime_short",
+       "long": "Full-Time",
+       "longKey": "finished"
+      }
+     },
+     "timeTS": 1795203000000
+    }
+   ]
+  },
+  {
+   "id": 1000001825,
+   "name": "League One",
+   "ccode": "ENG",
+   "matches": [
+    {
+     "id": 5837267,
+     "leagueId": 1000001825,
+     "time": "20.11.2026 21:00",
+     "home": {
+      "id": 8283,
+      "score": 1,
+      "name": "Barnsley"
+     },
+     "away": {
+      "id": 10163,
+      "score": 2,
+      "name": "Sheffield Wednesday",
+      "shortName": "Sheff Wed"
+     },
+     "eliminatedTeamId": null,
+     "statusId": 6,
+     "tournamentStage": "16",
+     "status": {
+      "utcTime": "2026-11-20T20:00:00.000Z",
+      "halfs": {
+       "firstHalfStarted": "20.11.2026 21:00:21",
+       "secondHalfStarted": "20.11.2026 22:02:06"
+      },
+      "periodLength": 45,
+      "finished": true,
+      "started": true,
+      "cancelled": false,
+      "awarded": false,
+      "scoreStr": "1 - 2",
+      "reason": {
+       "short": "FT",
+       "shortKey": "fulltime_short",
+       "long": "Full-Time",
+       "longKey": "finished"
+      }
+     },
+     "timeTS": 1795204800000
+    }
+   ]
+  },
+  {
+   "id": 1000001730,
+   "name": "Liga Profesional - Clausura - 8th Finals",
+   "ccode": "ARG",
+   "matches": [
+    {
+     "id": 1000023194,
+     "leagueId": 1000001730,
+     "time": "21.11.2026 00:00",
+     "home": {
+      "id": 10079,
+      "score": 2,
+      "name": "Vélez Sarsfield",
+      "penScore": 3
+     },
+     "away": {
+      "id": 10092,
+      "score": 2,
+      "name": "Belgrano",
+      "penScore": 1
+     },
+     "eliminatedTeamId": 10092,
+     "statusId": 13,
+     "tournamentStage": "Clausura - 8th Finals",
+     "status": {
+      "utcTime": "2026-11-20T23:00:00.000Z",
+      "halfs": {
+       "firstHalfStarted": "20.11.2026 23:59:55",
+       "secondHalfStarted": "21.11.2026 01:05:30",
+       "firstExtraHalfStarted": "21.11.2026 01:59:30",
+       "secondExtraHalfStarted": "21.11.2026 02:18:42"
+      },
+      "periodLength": 45,
+      "finished": true,
+      "started": true,
+      "cancelled": false,
+      "awarded": false,
+      "scoreStr": "2 - 2",
+      "reason": {
+       "short": "Pen",
+       "shortKey": "penalties_short",
+       "long": "After penalties",
+       "longKey": "afterpenalties"
+      }
+     },
+     "timeTS": 1795215600000
+    }
+   ]
+  },
+  {
+   "id": 1000001715,
+   "name": "Persian Gulf",
+   "ccode": "IRN",
+   "matches": [
+    {
+     "id": 1000023177,
+     "leagueId": 1000001715,
+     "time": "20.11.2026 13:00",
+     "home": {
+      "id": 101623,
+      "score": 1,
+      "name": "Fajr Sepasi"
+     },
+     "away": {
+      "id": 1396532,
+      "score": 1,
+      "name": "Chadormalu Ardakan SC"
+     },
+     "eliminatedTeamId": null,
+     "statusId": 6,
+     "tournamentStage": "13",
+     "status": {
+      "utcTime": "2026-11-20T12:00:00.000Z",
+      "halfs": {
+       "firstHalfStarted": "20.11.2026 13:00:00",
+       "secondHalfStarted": "20.11.2026 14:04:31"
+      },
+      "periodLength": 45,
+      "finished": true,
+      "started": true,
+      "cancelled": false,
+      "awarded": false,
+      "scoreStr": "1 - 1",
+      "reason": {
+       "short": "FT",
+       "shortKey": "fulltime_short",
+       "long": "Full-Time",
+       "longKey": "finished"
+      }
+     },
+     "timeTS": 1795176000000
+    }
+   ]
+  },
+  {
+   "id": 1000001697,
+   "name": "Primera A",
+   "ccode": "COL",
+   "matches": [
+    {
+     "id": 6671297,
+     "leagueId": 1000001697,
+     "time": "20.11.2026 22:30",
+     "home": {
+      "id": 2528,
+      "score": 1,
+      "name": "Independiente Medellín"
+     },
+     "away": {
+      "id": 7818,
+      "score": 0,
+      "name": "Santa Fe"
+     },
+     "eliminatedTeamId": null,
+     "statusId": 6,
+     "tournamentStage": "Clausura - Quadrangular - Round 1",
+     "status": {
+      "utcTime": "2026-11-20T21:30:00.000Z",
+      "halfs": {
+       "firstHalfStarted": "20.11.2026 22:30:29",
+       "secondHalfStarted": "21.11.2026 00:52:51"
+      },
+      "periodLength": 45,
+      "finished": true,
+      "started": true,
+      "cancelled": false,
+      "awarded": false,
+      "scoreStr": "1 - 0",
+      "reason": {
+       "short": "FT",
+       "shortKey": "fulltime_short",
+       "long": "Full-Time",
+       "longKey": "finished"
+      }
+     },
+     "timeTS": 1795210200000
+    }
+   ]
+  },
+  {
+   "id": 1000001591,
+   "name": "Primera B",
+   "ccode": "COL",
+   "matches": [
+    {
+     "id": 1000024455,
+     "leagueId": 1000001591,
+     "time": "20.11.2026 01:45",
+     "home": {
+      "id": 7731,
+      "score": 5,
+      "name": "Real Cartagena"
+     },
+     "away": {
+      "id": 193030,
+      "score": 0,
+      "name": "Tigres FC"
+     },
+     "eliminatedTeamId": null,
+     "statusId": 6,
+     "tournamentStage": "Clausura - Quadrangular - Round 6",
+     "status": {
+      "utcTime": "2026-11-20T00:45:00.000Z",
+      "halfs": {
+       "firstHalfStarted": "20.11.2026 01:45:58",
+       "secondHalfStarted": "20.11.2026 02:49:32"
+      },
+      "periodLength": 45,
+      "finished": true,
+      "started": true,
+      "cancelled": false,
+      "awarded": false,
+      "scoreStr": "5 - 0",
+      "reason": {
+       "short": "FT",
+       "shortKey": "fulltime_short",
+       "long": "Full-Time",
+       "longKey": "finished"
+      }
+     },
+     "timeTS": 1795135500000
+    }
+   ]
+  },
+  {
+   "id": 1000001232,
+   "name": "Primera B - Promotion Play-offs - 1st Round",
+   "ccode": "CHI",
+   "matches": [
+    {
+     "id": 1000024443,
+     "leagueId": 1000001232,
+     "time": "20.11.2026 22:00",
+     "home": {
+      "id": 1264972,
+      "score": 3,
+      "name": "Deportes Recoleta"
+     },
+     "away": {
+      "id": 1849,
+      "score": 1,
+      "name": "Santiago Wanderers"
+     },
+     "eliminatedTeamId": null,
+     "statusId": 6,
+     "tournamentStage": "Promotion Play-offs - 1st Round",
+     "status": {
+      "utcTime": "2026-11-20T21:00:00.000Z",
+      "halfs": {
+       "firstHalfStarted": "20.11.2026 22:00:33",
+       "secondHalfStarted": "20.11.2026 23:05:33"
+      },
+      "periodLength": 45,
+      "finished": true,
+      "started": true,
+      "cancelled": false,
+      "awarded": false,
+      "scoreStr": "3 - 1",
+      "reason": {
+       "short": "FT",
+       "shortKey": "fulltime_short",
+       "long": "Full-Time",
+       "longKey": "finished"
+      }
+     },
+     "timeTS": 1795208400000
+    }
+   ]
+  },
+  {
+   "id": 1000001661,
+   "name": "Primera División",
+   "ccode": "CHI",
+   "matches": [
+    {
+     "id": 1000013269,
+     "leagueId": 1000001661,
+     "time": "20.11.2026 22:00",
+     "home": {
+      "id": 4055,
+      "score": 3,
+      "name": "Cobresal",
+      "redCards": 1
+     },
+     "away": {
+      "id": 4058,
+      "score": 2,
+      "name": "Audax Italiano",
+      "redCards": 2
+     },
+     "eliminatedTeamId": null,
+     "statusId": 6,
+     "tournamentStage": "28",
+     "status": {
+      "utcTime": "2026-11-20T21:00:00.000Z",
+      "numberOfHomeRedCards": 1,
+      "numberOfAwayRedCards": 2,
+      "halfs": {
+       "firstHalfStarted": "20.11.2026 22:01:04",
+       "secondHalfStarted": "20.11.2026 23:05:28"
+      },
+      "periodLength": 45,
+      "finished": true,
+      "started": true,
+      "cancelled": false,
+      "awarded": false,
+      "scoreStr": "3 - 2",
+      "reason": {
+       "short": "FT",
+       "shortKey": "fulltime_short",
+       "long": "Full-Time",
+       "longKey": "finished"
+      }
+     },
+     "timeTS": 1795208400000
+    }
+   ]
+  },
+  {
+   "id": 1000001738,
+   "name": "Pro League",
+   "ccode": "UAE",
+   "matches": [
+    {
+     "id": 1000022242,
+     "leagueId": 1000001738,
+     "time": "20.11.2026 13:45",
+     "home": {
+      "id": 209190,
+      "score": 0,
+      "name": "Kalba FC"
+     },
+     "away": {
+      "id": 102124,
+      "score": 3,
+      "name": "Sharjah Cultural Club"
+     },
+     "eliminatedTeamId": null,
+     "statusId": 6,
+     "tournamentStage": "9",
+     "status": {
+      "utcTime": "2026-11-20T12:45:00.000Z",
+      "halfs": {
+       "firstHalfStarted": "20.11.2026 13:45:17",
+       "secondHalfStarted": "20.11.2026 14:50:03"
+      },
+      "periodLength": 45,
+      "finished": true,
+      "started": true,
+      "cancelled": false,
+      "awarded": false,
+      "scoreStr": "0 - 3",
+      "reason": {
+       "short": "FT",
+       "shortKey": "fulltime_short",
+       "long": "Full-Time",
+       "longKey": "finished"
+      }
+     },
+     "timeTS": 1795178700000
+    }
+   ]
+  },
+  {
+   "id": 1000001746,
+   "name": "Qatar Stars League",
+   "ccode": "QAT",
+   "matches": [
+    {
+     "id": 5952307,
+     "leagueId": 1000001746,
+     "time": "20.11.2026 14:00",
+     "home": {
+      "id": 203826,
+      "score": 1,
+      "name": "Al-Duhail SC"
+     },
+     "away": {
+      "id": 101900,
+      "score": 2,
+      "name": "Qatar SC",
+      "redCards": 1
+     },
+     "eliminatedTeamId": null,
+     "statusId": 6,
+     "tournamentStage": "10",
+     "status": {
+      "utcTime": "2026-11-20T13:00:00.000Z",
+      "numberOfAwayRedCards": 1,
+      "halfs": {
+       "firstHalfStarted": "20.11.2026 14:00:11",
+       "secondHalfStarted": "20.11.2026 15:09:05"
+      },
+      "periodLength": 45,
+      "finished": true,
+      "started": true,
+      "cancelled": false,
+      "awarded": false,
+      "scoreStr": "1 - 2",
+      "reason": {
+       "short": "FT",
+       "shortKey": "fulltime_short",
+       "long": "Full-Time",
+       "longKey": "finished"
+      }
+     },
+     "timeTS": 1795179600000
+    }
+   ]
+  },
+  {
+   "id": 1000001787,
+   "name": "Saudi Pro League",
+   "ccode": "KSA",
+   "matches": [
+    {
+     "id": 5970153,
+     "leagueId": 1000001787,
+     "time": "20.11.2026 18:30",
+     "home": {
+      "id": 2530,
+      "score": 3,
+      "name": "Al Ahli"
+     },
+     "away": {
+      "id": 101918,
+      "score": 1,
+      "name": "Al Nassr FC"
+     },
+     "eliminatedTeamId": null,
+     "statusId": 6,
+     "tournamentStage": "9",
+     "status": {
+      "utcTime": "2026-11-20T17:30:00.000Z",
+      "halfs": {
+       "firstHalfStarted": "20.11.2026 18:30:32",
+       "secondHalfStarted": "20.11.2026 19:36:01"
+      },
+      "periodLength": 45,
+      "finished": true,
+      "started": true,
+      "cancelled": false,
+      "awarded": false,
+      "scoreStr": "3 - 1",
+      "reason": {
+       "short": "FT",
+       "shortKey": "fulltime_short",
+       "long": "Full-Time",
+       "longKey": "finished"
+      }
+     },
+     "timeTS": 1795195800000
+    }
+   ]
+  },
+  {
+   "id": 1000001407,
+   "name": "Série A",
+   "ccode": "BRA",
+   "matches": [
+    {
+     "id": 5103706,
+     "leagueId": 1000001407,
+     "time": "20.11.2026 01:30",
+     "home": {
+      "id": 10277,
+      "score": 0,
+      "name": "São Paulo"
+     },
+     "away": {
+      "id": 9863,
+      "score": 1,
+      "name": "Fluminense"
+     },
+     "eliminatedTeamId": null,
+     "statusId": 6,
+     "tournamentStage": "35",
+     "status": {
+      "utcTime": "2026-11-20T00:30:00.000Z",
+      "halfs": {
+       "firstHalfStarted": "20.11.2026 01:30:29",
+       "secondHalfStarted": "20.11.2026 02:37:21"
+      },
+      "periodLength": 45,
+      "finished": true,
+      "started": true,
+      "cancelled": false,
+      "awarded": false,
+      "scoreStr": "0 - 1",
+      "reason": {
+       "short": "FT",
+       "shortKey": "fulltime_short",
+       "long": "Full-Time",
+       "longKey": "finished"
+      }
+     },
+     "timeTS": 1795134600000
+    }
+   ]
+  },
+  {
+   "id": 1000001250,
+   "name": "Serie A - Championship Round",
+   "ccode": "ECU",
+   "matches": [
+    {
+     "id": 1000022038,
+     "leagueId": 1000001250,
+     "time": "20.11.2026 18:00",
+     "home": {
+      "id": 192875,
+      "score": 0,
+      "name": "Independiente del Valle"
+     },
+     "away": {
+      "id": 6609,
+      "score": 1,
+      "name": "CSD Macará"
+     },
+     "eliminatedTeamId": null,
+     "statusId": 6,
+     "tournamentStage": "Championship Round - Round 7",
+     "status": {
+      "utcTime": "2026-11-20T17:00:00.000Z",
+      "halfs": {
+       "firstHalfStarted": "20.11.2026 18:03:43",
+       "secondHalfStarted": "20.11.2026 19:09:40"
+      },
+      "periodLength": 45,
+      "finished": true,
+      "started": true,
+      "cancelled": false,
+      "awarded": false,
+      "scoreStr": "0 - 1",
+      "reason": {
+       "short": "FT",
+       "shortKey": "fulltime_short",
+       "long": "Full-Time",
+       "longKey": "finished"
+      }
+     },
+     "timeTS": 1795194000000
+    }
+   ]
+  },
+  {
+   "id": 1000002333,
+   "name": "Serie B",
+   "ccode": "ITA",
+   "matches": [
+    {
+     "id": 5967158,
+     "leagueId": 1000002333,
+     "time": "20.11.2026 20:30",
+     "home": {
+      "id": 9876,
+      "score": 0,
+      "name": "Hellas Verona"
+     },
+     "away": {
+      "id": 584022,
+      "score": 2,
+      "name": "Cesena"
+     },
+     "eliminatedTeamId": null,
+     "statusId": 6,
+     "tournamentStage": "12",
+     "status": {
+      "utcTime": "2026-11-20T19:30:00.000Z",
+      "halfs": {
+       "firstHalfStarted": "20.11.2026 20:31:44",
+       "secondHalfStarted": "20.11.2026 21:32:49"
+      },
+      "periodLength": 45,
+      "finished": true,
+      "started": true,
+      "cancelled": false,
+      "awarded": false,
+      "scoreStr": "0 - 2",
+      "reason": {
+       "short": "FT",
+       "shortKey": "fulltime_short",
+       "long": "Full-Time",
+       "longKey": "finished"
+      }
+     },
+     "timeTS": 1795203000000
+    }
+   ]
+  },
+  {
+   "id": 147,
+   "name": "Serie C - Girone A",
+   "ccode": "ITA",
+   "matches": [
+    {
+     "id": 5990565,
+     "leagueId": 147,
+     "time": "20.11.2026 20:30",
+     "home": {
+      "id": 6097,
+      "score": 1,
+      "name": "Trento"
+     },
+     "away": {
+      "id": 6485,
+      "score": 0,
+      "name": "Cittadella"
+     },
+     "eliminatedTeamId": null,
+     "statusId": 6,
+     "tournamentStage": "15",
+     "status": {
+      "utcTime": "2026-11-20T19:30:00.000Z",
+      "halfs": {
+       "firstHalfStarted": "20.11.2026 20:32:57",
+       "secondHalfStarted": "20.11.2026 21:40:35"
+      },
+      "periodLength": 45,
+      "finished": true,
+      "started": true,
+      "cancelled": false,
+      "awarded": false,
+      "scoreStr": "1 - 0",
+      "reason": {
+       "short": "FT",
+       "shortKey": "fulltime_short",
+       "long": "Full-Time",
+       "longKey": "finished"
+      }
+     },
+     "timeTS": 1795203000000
+    }
+   ]
+  },
+  {
+   "id": 147,
+   "name": "Serie C - Girone C",
+   "ccode": "ITA",
+   "matches": [
+    {
+     "id": 5991526,
+     "leagueId": 147,
+     "time": "20.11.2026 20:30",
+     "home": {
+      "id": 277990,
+      "score": 2,
+      "name": "Casertana",
+      "redCards": 1
+     },
+     "away": {
+      "id": 6480,
+      "score": 2,
+      "name": "Salernitana"
+     },
+     "eliminatedTeamId": null,
+     "statusId": 6,
+     "tournamentStage": "15",
+     "status": {
+      "utcTime": "2026-11-20T19:30:00.000Z",
+      "numberOfHomeRedCards": 1,
+      "halfs": {
+       "firstHalfStarted": "20.11.2026 20:30:40",
+       "secondHalfStarted": "20.11.2026 21:33:28"
+      },
+      "periodLength": 45,
+      "finished": true,
+      "started": true,
+      "cancelled": false,
+      "awarded": false,
+      "scoreStr": "2 - 2",
+      "reason": {
+       "short": "FT",
+       "shortKey": "fulltime_short",
+       "long": "Full-Time",
+       "longKey": "finished"
+      }
+     },
+     "timeTS": 1795203000000
+    }
+   ]
+  },
+  {
+   "id": 1000001616,
+   "name": "Thai League 2",
+   "ccode": "THA",
+   "matches": [
+    {
+     "id": 1000018198,
+     "leagueId": 1000001616,
+     "time": "20.11.2026 13:00",
+     "home": {
+      "id": 165244,
+      "score": 1,
+      "name": "Police Tero FC"
+     },
+     "away": {
+      "id": 1513932,
+      "score": 0,
+      "name": "Chanthaburi FC"
+     },
+     "eliminatedTeamId": null,
+     "statusId": 6,
+     "tournamentStage": "11",
+     "status": {
+      "utcTime": "2026-11-20T12:00:00.000Z",
+      "halfs": {
+       "firstHalfStarted": "20.11.2026 13:00:43",
+       "secondHalfStarted": "20.11.2026 14:02:33"
+      },
+      "periodLength": 45,
+      "finished": true,
+      "started": true,
+      "cancelled": false,
+      "awarded": false,
+      "scoreStr": "1 - 0",
+      "reason": {
+       "short": "FT",
+       "shortKey": "fulltime_short",
+       "long": "Full-Time",
+       "longKey": "finished"
+      }
+     },
+     "timeTS": 1795176000000
+    }
+   ]
+  },
+  {
+   "id": 306,
+   "name": "World Cup U17 - F",
+   "ccode": "INT",
+   "matches": [
+    {
+     "id": 6139531,
+     "leagueId": 306,
+     "time": "20.11.2026 14:00",
+     "home": {
+      "id": 2180484,
+      "score": 3,
+      "name": "Cuba U17"
+     },
+     "away": {
+      "id": 78795,
+      "score": 5,
+      "name": "Tajikistan U17"
+     },
+     "eliminatedTeamId": null,
+     "statusId": 6,
+     "tournamentStage": "1",
+     "status": {
+      "utcTime": "2026-11-20T13:00:00.000Z",
+      "halfs": {
+       "firstHalfStarted": "20.11.2026 14:01:20",
+       "secondHalfStarted": "20.11.2026 15:04:37"
+      },
+      "periodLength": 45,
+      "finished": true,
+      "started": true,
+      "cancelled": false,
+      "awarded": false,
+      "scoreStr": "3 - 5",
+      "reason": {
+       "short": "FT",
+       "shortKey": "fulltime_short",
+       "long": "Full-Time",
+       "longKey": "finished"
+      }
+     },
+     "timeTS": 1795179600000
+    }
+   ]
+  },
+  {
+   "id": 306,
+   "name": "World Cup U17 - G",
+   "ccode": "INT",
+   "matches": [
+    {
+     "id": 6139547,
+     "leagueId": 306,
+     "time": "20.11.2026 14:00",
+     "home": {
+      "id": 6589,
+      "score": 3,
+      "name": "Belgium U17"
+     },
+     "away": {
+      "id": 2180485,
+      "score": 2,
+      "name": "Vietnam U17"
+     },
+     "eliminatedTeamId": null,
+     "statusId": 6,
+     "tournamentStage": "1",
+     "status": {
+      "utcTime": "2026-11-20T13:00:00.000Z",
+      "halfs": {
+       "firstHalfStarted": "20.11.2026 14:00:38",
+       "secondHalfStarted": "20.11.2026 15:04:22"
+      },
+      "periodLength": 45,
+      "finished": true,
+      "started": true,
+      "cancelled": false,
+      "awarded": false,
+      "scoreStr": "3 - 2",
+      "reason": {
+       "short": "FT",
+       "shortKey": "fulltime_short",
+       "long": "Full-Time",
+       "longKey": "finished"
+      }
+     },
+     "timeTS": 1795179600000
+    }
+   ]
+  },
+  {
+   "id": 306,
+   "name": "World Cup U17 - H",
+   "ccode": "INT",
+   "matches": [
+    {
+     "id": 6139553,
+     "leagueId": 306,
+     "time": "20.11.2026 15:00",
+     "home": {
+      "id": 6585,
+      "score": 5,
+      "name": "Spain U17"
+     },
+     "away": {
+      "id": 5966,
+      "score": 0,
+      "name": "China U17"
+     },
+     "eliminatedTeamId": null,
+     "statusId": 6,
+     "tournamentStage": "1",
+     "status": {
+      "utcTime": "2026-11-20T14:00:00.000Z",
+      "halfs": {
+       "firstHalfStarted": "20.11.2026 15:00:45",
+       "secondHalfStarted": "20.11.2026 16:03:25"
+      },
+      "periodLength": 45,
+      "finished": true,
+      "started": true,
+      "cancelled": false,
+      "awarded": false,
+      "scoreStr": "5 - 0",
+      "reason": {
+       "short": "FT",
+       "shortKey": "fulltime_short",
+       "long": "Full-Time",
+       "longKey": "finished"
+      }
+     },
+     "timeTS": 1795183200000
+    }
+   ]
+  },
+  {
+   "id": 306,
+   "name": "World Cup U17 - E",
+   "ccode": "INT",
+   "matches": [
+    {
+     "id": 6139111,
+     "leagueId": 306,
+     "time": "20.11.2026 16:00",
+     "home": {
+      "id": 5936,
+      "score": 6,
+      "name": "Italy U17"
+     },
+     "away": {
+      "id": 265237,
+      "score": 0,
+      "name": "Jamaica U17"
+     },
+     "eliminatedTeamId": null,
+     "statusId": 6,
+     "tournamentStage": "1",
+     "status": {
+      "utcTime": "2026-11-20T15:00:00.000Z",
+      "halfs": {
+       "firstHalfStarted": "20.11.2026 16:00:33",
+       "secondHalfStarted": "20.11.2026 17:03:19"
+      },
+      "periodLength": 45,
+      "finished": true,
+      "started": true,
+      "cancelled": false,
+      "awarded": false,
+      "scoreStr": "6 - 0",
+      "reason": {
+       "short": "FT",
+       "shortKey": "fulltime_short",
+       "long": "Full-Time",
+       "longKey": "finished"
+      }
+     },
+     "timeTS": 1795186800000
+    }
+   ]
+  }
+ ]
+}

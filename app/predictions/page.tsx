@@ -1,6 +1,6 @@
 import { PredictionPanel } from "@/components/prediction-panel";
 import { TeamCrest } from "@/components/team-crest";
-import { PanelCard } from "@/components/ui/panel-card";
+import { PanelCard } from "@/components/primitives/panel-card";
 import { getMatches } from "@/lib/data/matches";
 import { formatKickoff } from "@/lib/format";
 import { predictMatch } from "@/lib/model/poisson";
@@ -13,9 +13,9 @@ export const metadata = {
     "Poisson-model win/draw/loss probabilities, expected goals and scoreline forecasts.",
 };
 
-export default function PredictionsPage() {
+export default async function PredictionsPage() {
   const now = new Date();
-  const matches = getMatches(now);
+  const matches = await getMatches(now);
   const analysed = matches.map((match) => ({
     match,
     prediction: predictMatch(match),

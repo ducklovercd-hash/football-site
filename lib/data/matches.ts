@@ -10,7 +10,7 @@ import type {
 } from "@/lib/types";
 import { COMPETITION_BY_CODE, TEAMS_BY_COMPETITION, TEAM_BY_ID, VENUES } from "./teams";
 import type { TeamLineup } from "@/lib/types";
-import { getSnapshot } from "./snapshot";
+import { getLiveData } from "./live";
 
 /* ------------------------------------------------------------------ */
 /* Deterministic name pools for generated lineups                      */
@@ -429,27 +429,34 @@ function buildMatch(plan: FixturePlan, now: Date): Match {
 /**
  * All matches for "today".
  *
- * Prefers real scraped data when a snapshot is present (committed by
- * `npm run prepare:matches`, or supplied via the FOOTBALL_SNAPSHOT env var).
- * Otherwise falls back to the deterministic demo fixtures, so the site always
- * renders something.
+ * Prefers live FotMob data (fetched server-side while the site is in use,
+ * see lib/data/live.ts). When FotMob is unreachable, falls back to the
+ * committed snapshot, then to the deterministic demo fixtures, so the site
+ * always renders something.
  */
-export function getMatches(now: Date = new Date()): Match[] {
-  const scraped = getSnapshot().matches;
-  const source = scraped.length > 0 ? scraped : PLAN.map((plan) => buildMatch(plan, now));
+export async function getMatches(now: Date = new Date()): Promise<Match[]> {
+  const live = await getLiveData();
+  const source =
+    live.source === "fotmob-live"
+      ? live.matches
+      : live.matches.length > 0
+        ? live.matches
+        : PLAN.map((plan) => buildMatch(plan, now));
 
   return [...source].sort(
     (a, b) => new Date(a.kickoff).getTime() - new Date(b.kickoff).getTime(),
   );
 }
 
-export function getLiveMatches(now: Date = new Date()): Match[] {
-  return getMatches(now).filter((m) => m.status === "LIVE" || m.status === "HT");
+export async function getLiveMatches(now: Date = new Date()): Promise<Match[]> {
+  return (await getMatches(now)).filter(
+    (m) => m.status === "LIVE" || m.status === "HT",
+  );
 }
 
-export function getMatchById(
+export async function getMatchById(
   id: string,
   now: Date = new Date(),
-): Match | undefined {
-  return getMatches(now).find((match) => match.id === id);
+): Promise<Match | undefined> {
+  return (await getMatches(now)).find((match) => match.id === id);
 }

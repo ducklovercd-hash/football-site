@@ -2,7 +2,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { FormationPitch } from "@/components/formation-pitch";
 import { PredictionPanel } from "@/components/prediction-panel";
-import { PanelCard } from "@/components/ui/panel-card";
+import { PanelCard } from "@/components/primitives/panel-card";
 import { StatBar } from "@/components/stat-bar";
 import { StatusBadge } from "@/components/status-badge";
 import { TeamCrest } from "@/components/team-crest";
@@ -27,7 +27,7 @@ export async function generateMetadata({
   params: Promise<{ id: string }>;
 }) {
   const { id } = await params;
-  const match = getMatchById(id);
+  const match = await getMatchById(id);
   if (!match) return { title: "Match not found | PitchSide" };
   return {
     title: `${match.home.name} vs ${match.away.name} | PitchSide`,
@@ -41,7 +41,7 @@ export default async function MatchPage({
   params: Promise<{ id: string }>;
 }) {
   const { id } = await params;
-  const match = getMatchById(id);
+  const match = await getMatchById(id);
   if (!match) notFound();
 
   const prediction = predictMatch(match);

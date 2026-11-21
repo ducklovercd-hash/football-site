@@ -7,9 +7,9 @@ export const metadata = {
   title: "Live scores | PitchSide",
 };
 
-export default function LivePage() {
+export default async function LivePage() {
   const now = new Date();
-  const matches = getLiveMatches(now);
+  const matches = await getLiveMatches(now);
 
   return (
     <div>

@@ -1,7 +1,7 @@
 import { formatKickoff, formatOdds, formatPct } from "@/lib/format";
 import { getMatches } from "@/lib/data/matches";
 import { matchOdds, predictMatch } from "@/lib/model/poisson";
-import { PanelCard } from "@/components/ui/panel-card";
+import { PanelCard } from "@/components/primitives/panel-card";
 
 export const dynamic = "force-dynamic";
 
@@ -46,9 +46,9 @@ function OddsBox({
   );
 }
 
-export default function OddsPage() {
+export default async function OddsPage() {
   const now = new Date();
-  const rows = getMatches(now).map((match) => {
+  const rows = (await getMatches(now)).map((match) => {
     const prediction = predictMatch(match);
     return { match, prediction, odds: matchOdds(prediction) };
   });

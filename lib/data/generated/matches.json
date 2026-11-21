@@ -1,5 +1,5264 @@
 {
-  "generatedAt": null,
-  "source": null,
-  "matches": []
+  "generatedAt": "2026-11-21T07:23:29.534Z",
+  "source": "lib/data/generated/matches-2026-11-21.json",
+  "matches": [
+    {
+      "id": "5795522",
+      "competition": {
+        "code": "PL",
+        "name": "Premier League",
+        "country": "England",
+        "flag": "🏴󠁧󠁢󠁥󠁮󠁧󠁿"
+      },
+      "home": {
+        "id": 8456,
+        "name": "Manchester City",
+        "short": "MAN ",
+        "color": "#69A8D8"
+      },
+      "away": {
+        "id": 9879,
+        "name": "Fulham",
+        "short": "FULH",
+        "color": "#000000"
+      },
+      "status": "SCHEDULED",
+      "kickoff": "2026-11-21T20:30:00+08:00",
+      "minute": null,
+      "score": {
+        "home": 0,
+        "away": 0
+      },
+      "halfTime": null,
+      "venue": "Etihad Stadium",
+      "stats": {
+        "possession": [
+          0,
+          0
+        ],
+        "shots": [
+          0,
+          0
+        ],
+        "shotsOnTarget": [
+          0,
+          0
+        ],
+        "corners": [
+          0,
+          0
+        ],
+        "fouls": [
+          0,
+          0
+        ],
+        "xg": [
+          0,
+          0
+        ],
+        "passAccuracy": [
+          0,
+          0
+        ]
+      },
+      "events": [],
+      "lineups": {
+        "home": [
+          {
+            "number": 1,
+            "name": "Gianluigi Donnarumma",
+            "position": "GK"
+          },
+          {
+            "number": 27,
+            "name": "Matheus Nunes",
+            "position": "DF"
+          },
+          {
+            "number": 3,
+            "name": "Rúben Dias",
+            "position": "DF"
+          },
+          {
+            "number": 6,
+            "name": "Marc Guéhi",
+            "position": "DF"
+          },
+          {
+            "number": 33,
+            "name": "Nico O'Reilly",
+            "position": "DF"
+          },
+          {
+            "number": 5,
+            "name": "Elliot Anderson",
+            "position": "MF"
+          },
+          {
+            "number": 17,
+            "name": "Enzo Fernández",
+            "position": "MF"
+          },
+          {
+            "number": 7,
+            "name": "Iliman Ndiaye",
+            "position": "FW"
+          },
+          {
+            "number": 10,
+            "name": "Rayan Cherki",
+            "position": "MF"
+          },
+          {
+            "number": 11,
+            "name": "Jérémy Doku",
+            "position": "FW"
+          },
+          {
+            "number": 9,
+            "name": "Erling Haaland",
+            "position": "FW"
+          }
+        ],
+        "away": [
+          {
+            "number": 1,
+            "name": "Bernd Leno",
+            "position": "GK"
+          },
+          {
+            "number": 21,
+            "name": "Timothy Castagne",
+            "position": "DF"
+          },
+          {
+            "number": 22,
+            "name": "David Affengruber",
+            "position": "DF"
+          },
+          {
+            "number": 3,
+            "name": "Calvin Bassey",
+            "position": "DF"
+          },
+          {
+            "number": 33,
+            "name": "Antonee Robinson",
+            "position": "DF"
+          },
+          {
+            "number": 16,
+            "name": "Sander Berge",
+            "position": "MF"
+          },
+          {
+            "number": 19,
+            "name": "Shea Charles",
+            "position": "MF"
+          },
+          {
+            "number": 14,
+            "name": "Oscar Bobb",
+            "position": "FW"
+          },
+          {
+            "number": 24,
+            "name": "Joshua King",
+            "position": "MF"
+          },
+          {
+            "number": 17,
+            "name": "Alex Iwobi",
+            "position": "MF"
+          },
+          {
+            "number": 7,
+            "name": "Gonzalo García",
+            "position": "FW"
+          }
+        ]
+      },
+      "form": {
+        "home": [
+          "L",
+          "W",
+          "L",
+          "D",
+          "L"
+        ],
+        "away": [
+          "D",
+          "D",
+          "L",
+          "W",
+          "W"
+        ]
+      },
+      "strength": {
+        "home": {
+          "attack": 0.9,
+          "defence": 1.6
+        },
+        "away": {
+          "attack": 0.6,
+          "defence": 0.6
+        }
+      }
+    },
+    {
+      "id": "5795515",
+      "competition": {
+        "code": "PL",
+        "name": "Premier League",
+        "country": "England",
+        "flag": "🏴󠁧󠁢󠁥󠁮󠁧󠁿"
+      },
+      "home": {
+        "id": 8678,
+        "name": "AFC Bournemouth",
+        "short": "BOUR",
+        "color": "#D71921"
+      },
+      "away": {
+        "id": 10203,
+        "name": "Nottingham Forest",
+        "short": "NOTT",
+        "color": "#203866"
+      },
+      "status": "SCHEDULED",
+      "kickoff": "2026-11-21T23:00:00+08:00",
+      "minute": null,
+      "score": {
+        "home": 0,
+        "away": 0
+      },
+      "halfTime": null,
+      "venue": "Vitality Stadium",
+      "stats": {
+        "possession": [
+          0,
+          0
+        ],
+        "shots": [
+          0,
+          0
+        ],
+        "shotsOnTarget": [
+          0,
+          0
+        ],
+        "corners": [
+          0,
+          0
+        ],
+        "fouls": [
+          0,
+          0
+        ],
+        "xg": [
+          0,
+          0
+        ],
+        "passAccuracy": [
+          0,
+          0
+        ]
+      },
+      "events": [],
+      "lineups": {
+        "home": [
+          {
+            "number": 1,
+            "name": "Djordje Petrović",
+            "position": "GK"
+          },
+          {
+            "number": 15,
+            "name": "Adam Smith",
+            "position": "DF"
+          },
+          {
+            "number": 5,
+            "name": "James Hill",
+            "position": "DF"
+          },
+          {
+            "number": 14,
+            "name": "António Silva",
+            "position": "DF"
+          },
+          {
+            "number": 3,
+            "name": "Adrien Truffert",
+            "position": "DF"
+          },
+          {
+            "number": 12,
+            "name": "Tyler Adams",
+            "position": "MF"
+          },
+          {
+            "number": 10,
+            "name": "Ryan Christie",
+            "position": "MF"
+          },
+          {
+            "number": 37,
+            "name": "Rayan",
+            "position": "FW"
+          },
+          {
+            "number": 19,
+            "name": "Justin Kluivert",
+            "position": "MF"
+          },
+          {
+            "number": 16,
+            "name": "Marcus Tavernier",
+            "position": "FW"
+          },
+          {
+            "number": 9,
+            "name": "Evanilson",
+            "position": "FW"
+          }
+        ],
+        "away": [
+          {
+            "number": 26,
+            "name": "Matz Sels",
+            "position": "GK"
+          },
+          {
+            "number": 23,
+            "name": "Jair Cunha",
+            "position": "DF"
+          },
+          {
+            "number": 31,
+            "name": "Nikola Milenković",
+            "position": "DF"
+          },
+          {
+            "number": 5,
+            "name": "Murillo",
+            "position": "DF"
+          },
+          {
+            "number": 27,
+            "name": "Daniel Muñoz",
+            "position": "MF"
+          },
+          {
+            "number": 22,
+            "name": "Ryan Yates",
+            "position": "MF"
+          },
+          {
+            "number": 6,
+            "name": "Ibrahim Sangaré",
+            "position": "MF"
+          },
+          {
+            "number": 25,
+            "name": "Luca Netz",
+            "position": "MF"
+          },
+          {
+            "number": 24,
+            "name": "James McAtee",
+            "position": "MF"
+          },
+          {
+            "number": 10,
+            "name": "Morgan Gibbs-White",
+            "position": "MF"
+          },
+          {
+            "number": 19,
+            "name": "Liam Delap",
+            "position": "FW"
+          }
+        ]
+      },
+      "form": {
+        "home": [
+          "W",
+          "W",
+          "W",
+          "W",
+          "W"
+        ],
+        "away": [
+          "W",
+          "L",
+          "D",
+          "L",
+          "L"
+        ]
+      },
+      "strength": {
+        "home": {
+          "attack": 1.6,
+          "defence": 0.6
+        },
+        "away": {
+          "attack": 0.6,
+          "defence": 1.4
+        }
+      }
+    },
+    {
+      "id": "5795516",
+      "competition": {
+        "code": "PL",
+        "name": "Premier League",
+        "country": "England",
+        "flag": "🏴󠁧󠁢󠁥󠁮󠁧󠁿"
+      },
+      "home": {
+        "id": 10252,
+        "name": "Aston Villa",
+        "short": "AST",
+        "color": "#7D1142"
+      },
+      "away": {
+        "id": 8472,
+        "name": "Sunderland",
+        "short": "SUN",
+        "color": "#DC0814"
+      },
+      "status": "SCHEDULED",
+      "kickoff": "2026-11-21T23:00:00+08:00",
+      "minute": null,
+      "score": {
+        "home": 0,
+        "away": 0
+      },
+      "halfTime": null,
+      "venue": "Villa Park",
+      "stats": {
+        "possession": [
+          0,
+          0
+        ],
+        "shots": [
+          0,
+          0
+        ],
+        "shotsOnTarget": [
+          0,
+          0
+        ],
+        "corners": [
+          0,
+          0
+        ],
+        "fouls": [
+          0,
+          0
+        ],
+        "xg": [
+          0,
+          0
+        ],
+        "passAccuracy": [
+          0,
+          0
+        ]
+      },
+      "events": [],
+      "lineups": {
+        "home": [
+          {
+            "number": 1,
+            "name": "Zion Suzuki",
+            "position": "GK"
+          },
+          {
+            "number": 4,
+            "name": "Taylor Harwood-Bellis",
+            "position": "DF"
+          },
+          {
+            "number": 3,
+            "name": "Victor Nilsson Lindelöf",
+            "position": "DF"
+          },
+          {
+            "number": 14,
+            "name": "Pau Torres",
+            "position": "DF"
+          },
+          {
+            "number": 22,
+            "name": "Ian Maatsen",
+            "position": "DF"
+          },
+          {
+            "number": 8,
+            "name": "Boubacar Kamara",
+            "position": "MF"
+          },
+          {
+            "number": 35,
+            "name": "João Gomes",
+            "position": "MF"
+          },
+          {
+            "number": 47,
+            "name": "Alysson Edward",
+            "position": "FW"
+          },
+          {
+            "number": 7,
+            "name": "John McGinn",
+            "position": "FW"
+          },
+          {
+            "number": 44,
+            "name": "Johan Manzambi",
+            "position": "MF"
+          },
+          {
+            "number": 11,
+            "name": "Nicolas Jackson",
+            "position": "FW"
+          }
+        ],
+        "away": [
+          {
+            "number": 22,
+            "name": "Robin Roefs",
+            "position": "GK"
+          },
+          {
+            "number": 12,
+            "name": "Thomas Meunier",
+            "position": "DF"
+          },
+          {
+            "number": 20,
+            "name": "Nordi Mukiele",
+            "position": "DF"
+          },
+          {
+            "number": 13,
+            "name": "Luke O'Nien",
+            "position": "DF"
+          },
+          {
+            "number": 17,
+            "name": "Reinildo",
+            "position": "DF"
+          },
+          {
+            "number": 29,
+            "name": "Jules Ahoka",
+            "position": "MF"
+          },
+          {
+            "number": 27,
+            "name": "Noah Sadiki",
+            "position": "MF"
+          },
+          {
+            "number": 32,
+            "name": "Trai Hume",
+            "position": "DF"
+          },
+          {
+            "number": 28,
+            "name": "Enzo Le Fée",
+            "position": "MF"
+          },
+          {
+            "number": 7,
+            "name": "Chemsdine Talbi",
+            "position": "FW"
+          },
+          {
+            "number": 18,
+            "name": "Wilson Isidor",
+            "position": "FW"
+          }
+        ]
+      },
+      "form": {
+        "home": [
+          "D",
+          "L",
+          "D",
+          "L",
+          "W"
+        ],
+        "away": [
+          "W",
+          "L",
+          "L",
+          "W",
+          "D"
+        ]
+      },
+      "strength": {
+        "home": {
+          "attack": 0.9,
+          "defence": 1.6
+        },
+        "away": {
+          "attack": 0.6,
+          "defence": 1.2
+        }
+      }
+    },
+    {
+      "id": "5795518",
+      "competition": {
+        "code": "PL",
+        "name": "Premier League",
+        "country": "England",
+        "flag": "🏴󠁧󠁢󠁥󠁮󠁧󠁿"
+      },
+      "home": {
+        "id": 8455,
+        "name": "Chelsea",
+        "short": "CHE",
+        "color": "#051495"
+      },
+      "away": {
+        "id": 8463,
+        "name": "Leeds United",
+        "short": "LEED",
+        "color": "#0060AA"
+      },
+      "status": "SCHEDULED",
+      "kickoff": "2026-11-21T23:00:00+08:00",
+      "minute": null,
+      "score": {
+        "home": 0,
+        "away": 0
+      },
+      "halfTime": null,
+      "venue": "Stamford Bridge",
+      "stats": {
+        "possession": [
+          0,
+          0
+        ],
+        "shots": [
+          0,
+          0
+        ],
+        "shotsOnTarget": [
+          0,
+          0
+        ],
+        "corners": [
+          0,
+          0
+        ],
+        "fouls": [
+          0,
+          0
+        ],
+        "xg": [
+          0,
+          0
+        ],
+        "passAccuracy": [
+          0,
+          0
+        ]
+      },
+      "events": [],
+      "lineups": {
+        "home": [
+          {
+            "number": 39,
+            "name": "Mike Penders",
+            "position": "GK"
+          },
+          {
+            "number": 34,
+            "name": "Josh Acheampong",
+            "position": "DF"
+          },
+          {
+            "number": 3,
+            "name": "Wesley Fofana",
+            "position": "DF"
+          },
+          {
+            "number": 6,
+            "name": "Levi Colwill",
+            "position": "DF"
+          },
+          {
+            "number": 29,
+            "name": "Pep Chavarría",
+            "position": "DF"
+          },
+          {
+            "number": 25,
+            "name": "Moisés Caicedo",
+            "position": "MF"
+          },
+          {
+            "number": 45,
+            "name": "Roméo Lavia",
+            "position": "MF"
+          },
+          {
+            "number": 41,
+            "name": "Estêvão",
+            "position": "FW"
+          },
+          {
+            "number": 10,
+            "name": "Cole Palmer",
+            "position": "MF"
+          },
+          {
+            "number": 17,
+            "name": "Morgan Rogers",
+            "position": "MF"
+          },
+          {
+            "number": 7,
+            "name": "Pedro Neto",
+            "position": "FW"
+          }
+        ],
+        "away": [
+          {
+            "number": 1,
+            "name": "James Trafford",
+            "position": "GK"
+          },
+          {
+            "number": 24,
+            "name": "James Justin",
+            "position": "DF"
+          },
+          {
+            "number": 30,
+            "name": "Nico Elvedi",
+            "position": "DF"
+          },
+          {
+            "number": 5,
+            "name": "Tarik Muharemović",
+            "position": "DF"
+          },
+          {
+            "number": 2,
+            "name": "Jayden Bogle",
+            "position": "MF"
+          },
+          {
+            "number": 4,
+            "name": "Ethan Ampadu",
+            "position": "MF"
+          },
+          {
+            "number": 22,
+            "name": "Ao Tanaka",
+            "position": "MF"
+          },
+          {
+            "number": 3,
+            "name": "Gabriel Gudmundsson",
+            "position": "MF"
+          },
+          {
+            "number": 8,
+            "name": "Sean Longstaff",
+            "position": "MF"
+          },
+          {
+            "number": 19,
+            "name": "Noah Okafor",
+            "position": "MF"
+          },
+          {
+            "number": 9,
+            "name": "Dominic Calvert-Lewin",
+            "position": "FW"
+          }
+        ]
+      },
+      "form": {
+        "home": [
+          "L",
+          "W",
+          "D",
+          "L",
+          "W"
+        ],
+        "away": [
+          "W",
+          "L",
+          "D",
+          "D",
+          "L"
+        ]
+      },
+      "strength": {
+        "home": {
+          "attack": 0.6,
+          "defence": 0.6
+        },
+        "away": {
+          "attack": 0.6,
+          "defence": 0.8
+        }
+      }
+    },
+    {
+      "id": "5795519",
+      "competition": {
+        "code": "PL",
+        "name": "Premier League",
+        "country": "England",
+        "flag": "🏴󠁧󠁢󠁥󠁮󠁧󠁿"
+      },
+      "home": {
+        "id": 8669,
+        "name": "Coventry City",
+        "short": "COVE",
+        "color": "#65b0e4"
+      },
+      "away": {
+        "id": 9826,
+        "name": "Crystal Palace",
+        "short": "CRY",
+        "color": "#0055A5"
+      },
+      "status": "SCHEDULED",
+      "kickoff": "2026-11-21T23:00:00+08:00",
+      "minute": null,
+      "score": {
+        "home": 0,
+        "away": 0
+      },
+      "halfTime": null,
+      "venue": "Coventry Building Society Arena",
+      "stats": {
+        "possession": [
+          0,
+          0
+        ],
+        "shots": [
+          0,
+          0
+        ],
+        "shotsOnTarget": [
+          0,
+          0
+        ],
+        "corners": [
+          0,
+          0
+        ],
+        "fouls": [
+          0,
+          0
+        ],
+        "xg": [
+          0,
+          0
+        ],
+        "passAccuracy": [
+          0,
+          0
+        ]
+      },
+      "events": [],
+      "lineups": {
+        "home": [
+          {
+            "number": 19,
+            "name": "Carl Rushworth",
+            "position": "GK"
+          },
+          {
+            "number": 27,
+            "name": "Milan van Ewijk",
+            "position": "DF"
+          },
+          {
+            "number": 12,
+            "name": "Stephen Mfuni",
+            "position": "DF"
+          },
+          {
+            "number": 2,
+            "name": "Ethan Pinnock",
+            "position": "DF"
+          },
+          {
+            "number": 3,
+            "name": "Jay Dasilva",
+            "position": "DF"
+          },
+          {
+            "number": 8,
+            "name": "Caleb Yirenkyi",
+            "position": "MF"
+          },
+          {
+            "number": 29,
+            "name": "Victor Torp",
+            "position": "MF"
+          },
+          {
+            "number": 7,
+            "name": "Tatsuhiro Sakamoto",
+            "position": "FW"
+          },
+          {
+            "number": 5,
+            "name": "Jack Rudoni",
+            "position": "MF"
+          },
+          {
+            "number": 34,
+            "name": "Yann Gboho",
+            "position": "MF"
+          },
+          {
+            "number": 14,
+            "name": "Taiwo Awoniyi",
+            "position": "FW"
+          }
+        ],
+        "away": [
+          {
+            "number": 1,
+            "name": "Dean Henderson",
+            "position": "GK"
+          },
+          {
+            "number": 26,
+            "name": "Chris Richards",
+            "position": "DF"
+          },
+          {
+            "number": 5,
+            "name": "Axel Disasi",
+            "position": "DF"
+          },
+          {
+            "number": 6,
+            "name": "Jaydee Canvot",
+            "position": "DF"
+          },
+          {
+            "number": 30,
+            "name": "Óscar Mingueza",
+            "position": "MF"
+          },
+          {
+            "number": 20,
+            "name": "Adam Wharton",
+            "position": "MF"
+          },
+          {
+            "number": 23,
+            "name": "Quinten Timber",
+            "position": "MF"
+          },
+          {
+            "number": 3,
+            "name": "Tyrick Mitchell",
+            "position": "MF"
+          },
+          {
+            "number": 18,
+            "name": "Daichi Kamada",
+            "position": "MF"
+          },
+          {
+            "number": 10,
+            "name": "Yéremi Pino",
+            "position": "MF"
+          },
+          {
+            "number": 9,
+            "name": "Edward Nketiah",
+            "position": "MF"
+          }
+        ]
+      },
+      "form": {
+        "home": [
+          "L",
+          "W",
+          "L",
+          "L",
+          "W"
+        ],
+        "away": [
+          "L",
+          "D",
+          "L",
+          "W",
+          "L"
+        ]
+      },
+      "strength": {
+        "home": {
+          "attack": 1.3,
+          "defence": 1.6
+        },
+        "away": {
+          "attack": 0.6,
+          "defence": 1.4
+        }
+      }
+    },
+    {
+      "id": "5795524",
+      "competition": {
+        "code": "PL",
+        "name": "Premier League",
+        "country": "England",
+        "flag": "🏴󠁧󠁢󠁥󠁮󠁧󠁿"
+      },
+      "home": {
+        "id": 8586,
+        "name": "Tottenham Hotspur",
+        "short": "TOTT",
+        "color": "#132257"
+      },
+      "away": {
+        "id": 9902,
+        "name": "Ipswich Town",
+        "short": "IPSW",
+        "color": "#E2241B"
+      },
+      "status": "SCHEDULED",
+      "kickoff": "2026-11-21T23:00:00+08:00",
+      "minute": null,
+      "score": {
+        "home": 0,
+        "away": 0
+      },
+      "halfTime": null,
+      "venue": "Tottenham Hotspur Stadium",
+      "stats": {
+        "possession": [
+          0,
+          0
+        ],
+        "shots": [
+          0,
+          0
+        ],
+        "shotsOnTarget": [
+          0,
+          0
+        ],
+        "corners": [
+          0,
+          0
+        ],
+        "fouls": [
+          0,
+          0
+        ],
+        "xg": [
+          0,
+          0
+        ],
+        "passAccuracy": [
+          0,
+          0
+        ]
+      },
+      "events": [],
+      "lineups": {
+        "home": [
+          {
+            "number": 31,
+            "name": "Antonín Kinský",
+            "position": "GK"
+          },
+          {
+            "number": 23,
+            "name": "Pedro Porro",
+            "position": "DF"
+          },
+          {
+            "number": 6,
+            "name": "Jan Paul van Hecke",
+            "position": "DF"
+          },
+          {
+            "number": 37,
+            "name": "Micky van de Ven",
+            "position": "DF"
+          },
+          {
+            "number": 3,
+            "name": "Andrew Robertson",
+            "position": "DF"
+          },
+          {
+            "number": 16,
+            "name": "Sandro Tonali",
+            "position": "MF"
+          },
+          {
+            "number": 30,
+            "name": "Rodrigo Bentancur",
+            "position": "MF"
+          },
+          {
+            "number": 20,
+            "name": "Mohammed Kudus",
+            "position": "FW"
+          },
+          {
+            "number": 18,
+            "name": "Mateus Fernandes",
+            "position": "MF"
+          },
+          {
+            "number": 22,
+            "name": "Omar Marmoush",
+            "position": "FW"
+          },
+          {
+            "number": 19,
+            "name": "Dominic Solanke",
+            "position": "FW"
+          }
+        ],
+        "away": [
+          {
+            "number": 28,
+            "name": "Christian Walton",
+            "position": "GK"
+          },
+          {
+            "number": 42,
+            "name": "Abdoul Ouattara",
+            "position": "DF"
+          },
+          {
+            "number": 6,
+            "name": "Issa Diop",
+            "position": "DF"
+          },
+          {
+            "number": 26,
+            "name": "Dara O'Shea",
+            "position": "DF"
+          },
+          {
+            "number": 3,
+            "name": "Leif Davis",
+            "position": "DF"
+          },
+          {
+            "number": 23,
+            "name": "Saša Lukić",
+            "position": "MF"
+          },
+          {
+            "number": 25,
+            "name": "Exequiel Palacios",
+            "position": "MF"
+          },
+          {
+            "number": 38,
+            "name": "Daizen Maeda",
+            "position": "FW"
+          },
+          {
+            "number": 10,
+            "name": "Julio Enciso",
+            "position": "MF"
+          },
+          {
+            "number": 47,
+            "name": "Jack Clarke",
+            "position": "FW"
+          },
+          {
+            "number": 19,
+            "name": "Emersonn",
+            "position": "FW"
+          }
+        ]
+      },
+      "form": {
+        "home": [
+          "L",
+          "W",
+          "W",
+          "W",
+          "D"
+        ],
+        "away": [
+          "L",
+          "D",
+          "D",
+          "L",
+          "W"
+        ]
+      },
+      "strength": {
+        "home": {
+          "attack": 1.1,
+          "defence": 0.6
+        },
+        "away": {
+          "attack": 1.1,
+          "defence": 1.6
+        }
+      }
+    },
+    {
+      "id": "5795523",
+      "competition": {
+        "code": "PL",
+        "name": "Premier League",
+        "country": "England",
+        "flag": "🏴󠁧󠁢󠁥󠁮󠁧󠁿"
+      },
+      "home": {
+        "id": 10261,
+        "name": "Newcastle United",
+        "short": "NEWC",
+        "color": "#141413"
+      },
+      "away": {
+        "id": 9825,
+        "name": "Arsenal",
+        "short": "ARS",
+        "color": "#bd0510"
+      },
+      "status": "SCHEDULED",
+      "kickoff": "2026-11-22T01:30:00+08:00",
+      "minute": null,
+      "score": {
+        "home": 0,
+        "away": 0
+      },
+      "halfTime": null,
+      "venue": "St. James' Park",
+      "stats": {
+        "possession": [
+          0,
+          0
+        ],
+        "shots": [
+          0,
+          0
+        ],
+        "shotsOnTarget": [
+          0,
+          0
+        ],
+        "corners": [
+          0,
+          0
+        ],
+        "fouls": [
+          0,
+          0
+        ],
+        "xg": [
+          0,
+          0
+        ],
+        "passAccuracy": [
+          0,
+          0
+        ]
+      },
+      "events": [],
+      "lineups": {
+        "home": [
+          {
+            "number": 21,
+            "name": "Lukás Hornícek",
+            "position": "GK"
+          },
+          {
+            "number": 37,
+            "name": "Amar Dedić",
+            "position": "DF"
+          },
+          {
+            "number": 12,
+            "name": "Malick Thiaw",
+            "position": "DF"
+          },
+          {
+            "number": 33,
+            "name": "Daniel Burn",
+            "position": "DF"
+          },
+          {
+            "number": 3,
+            "name": "Lewis Hall",
+            "position": "DF"
+          },
+          {
+            "number": 14,
+            "name": "Sean Steur",
+            "position": "MF"
+          },
+          {
+            "number": 67,
+            "name": "Lewis Miley",
+            "position": "MF"
+          },
+          {
+            "number": 23,
+            "name": "Jacob Murphy",
+            "position": "FW"
+          },
+          {
+            "number": 9,
+            "name": "Yoane Wissa",
+            "position": "FW"
+          },
+          {
+            "number": 11,
+            "name": "Harvey Barnes",
+            "position": "FW"
+          },
+          {
+            "number": 10,
+            "name": "William Osula",
+            "position": "FW"
+          }
+        ],
+        "away": [
+          {
+            "number": 1,
+            "name": "David Raya",
+            "position": "GK"
+          },
+          {
+            "number": 12,
+            "name": "Jurriën Timber",
+            "position": "DF"
+          },
+          {
+            "number": 15,
+            "name": "Ezri Konsa",
+            "position": "DF"
+          },
+          {
+            "number": 6,
+            "name": "Gabriel",
+            "position": "DF"
+          },
+          {
+            "number": 33,
+            "name": "Riccardo Calafiori",
+            "position": "DF"
+          },
+          {
+            "number": 41,
+            "name": "Declan Rice",
+            "position": "MF"
+          },
+          {
+            "number": 49,
+            "name": "Myles Lewis-Skelly",
+            "position": "MF"
+          },
+          {
+            "number": 20,
+            "name": "Noni Madueke",
+            "position": "FW"
+          },
+          {
+            "number": 8,
+            "name": "Martin Ødegaard",
+            "position": "MF"
+          },
+          {
+            "number": 17,
+            "name": "Christos Tzolis",
+            "position": "FW"
+          },
+          {
+            "number": 29,
+            "name": "Kai Havertz",
+            "position": "FW"
+          }
+        ]
+      },
+      "form": {
+        "home": [
+          "D",
+          "L",
+          "L",
+          "W",
+          "L"
+        ],
+        "away": [
+          "W",
+          "W",
+          "W",
+          "D",
+          "W"
+        ]
+      },
+      "strength": {
+        "home": {
+          "attack": 0.6,
+          "defence": 1
+        },
+        "away": {
+          "attack": 0.9,
+          "defence": 0.6
+        }
+      }
+    },
+    {
+      "id": "5868131",
+      "competition": {
+        "code": "PD",
+        "name": "La Liga",
+        "country": "Spain",
+        "flag": "🇪🇸"
+      },
+      "home": {
+        "id": 9866,
+        "name": "Deportivo Alavés",
+        "short": "DEP",
+        "color": "#0351A3"
+      },
+      "away": {
+        "id": 9783,
+        "name": "Deportivo A Coruña",
+        "short": "DEP",
+        "color": "#101010"
+      },
+      "status": "SCHEDULED",
+      "kickoff": "2026-11-21T21:00:00+08:00",
+      "minute": null,
+      "score": {
+        "home": 0,
+        "away": 0
+      },
+      "halfTime": null,
+      "venue": "Estadio de Mendizorroza",
+      "stats": {
+        "possession": [
+          0,
+          0
+        ],
+        "shots": [
+          0,
+          0
+        ],
+        "shotsOnTarget": [
+          0,
+          0
+        ],
+        "corners": [
+          0,
+          0
+        ],
+        "fouls": [
+          0,
+          0
+        ],
+        "xg": [
+          0,
+          0
+        ],
+        "passAccuracy": [
+          0,
+          0
+        ]
+      },
+      "events": [],
+      "lineups": {
+        "home": [
+          {
+            "number": 1,
+            "name": "Antonio Sivera",
+            "position": "GK"
+          },
+          {
+            "number": 14,
+            "name": "Nahuel Tenaglia",
+            "position": "DF"
+          },
+          {
+            "number": 16,
+            "name": "Ville Koski",
+            "position": "DF"
+          },
+          {
+            "number": 2,
+            "name": "Nicolás Valentini",
+            "position": "DF"
+          },
+          {
+            "number": 7,
+            "name": "Ángel Pérez",
+            "position": "MF"
+          },
+          {
+            "number": 6,
+            "name": "Ander Guevara",
+            "position": "MF"
+          },
+          {
+            "number": 8,
+            "name": "Antonio Blanco",
+            "position": "MF"
+          },
+          {
+            "number": 19,
+            "name": "Pablo Ibáñez",
+            "position": "MF"
+          },
+          {
+            "number": 3,
+            "name": "Youssef Enríquez",
+            "position": "DF"
+          },
+          {
+            "number": 11,
+            "name": "Toni Martínez",
+            "position": "FW"
+          },
+          {
+            "number": 15,
+            "name": "Lucas Boyé",
+            "position": "FW"
+          }
+        ],
+        "away": [
+          {
+            "number": 13,
+            "name": "Leo Román",
+            "position": "GK"
+          },
+          {
+            "number": 2,
+            "name": "Adrià Altimira",
+            "position": "DF"
+          },
+          {
+            "number": 15,
+            "name": "Miguel Loureiro",
+            "position": "DF"
+          },
+          {
+            "number": 20,
+            "name": "José Giménez",
+            "position": "DF"
+          },
+          {
+            "number": 12,
+            "name": "Giacomo Quagliata",
+            "position": "DF"
+          },
+          {
+            "number": 6,
+            "name": "Marc Casadó",
+            "position": "MF"
+          },
+          {
+            "number": 16,
+            "name": "Lorenzo Amatucci",
+            "position": "MF"
+          },
+          {
+            "number": 11,
+            "name": "David Mella",
+            "position": "MF"
+          },
+          {
+            "number": 21,
+            "name": "Mario Soriano",
+            "position": "MF"
+          },
+          {
+            "number": 10,
+            "name": "Yeremay Hernández",
+            "position": "FW"
+          },
+          {
+            "number": 32,
+            "name": "Bil Nsongo",
+            "position": "FW"
+          }
+        ]
+      },
+      "form": {
+        "home": [
+          "W",
+          "D",
+          "L",
+          "D",
+          "L"
+        ],
+        "away": [
+          "D",
+          "W",
+          "W",
+          "L",
+          "D"
+        ]
+      },
+      "strength": {
+        "home": {
+          "attack": 1.3,
+          "defence": 1.6
+        },
+        "away": {
+          "attack": 0.7,
+          "defence": 0.6
+        }
+      }
+    },
+    {
+      "id": "5868138",
+      "competition": {
+        "code": "PD",
+        "name": "La Liga",
+        "country": "Spain",
+        "flag": "🇪🇸"
+      },
+      "home": {
+        "id": 8370,
+        "name": "Rayo Vallecano",
+        "short": "RAY",
+        "color": "#EB3A32"
+      },
+      "away": {
+        "id": 10267,
+        "name": "Valencia",
+        "short": "VAL",
+        "color": "#000000"
+      },
+      "status": "SCHEDULED",
+      "kickoff": "2026-11-21T23:15:00+08:00",
+      "minute": null,
+      "score": {
+        "home": 0,
+        "away": 0
+      },
+      "halfTime": null,
+      "venue": "Estadio de Vallecas",
+      "stats": {
+        "possession": [
+          0,
+          0
+        ],
+        "shots": [
+          0,
+          0
+        ],
+        "shotsOnTarget": [
+          0,
+          0
+        ],
+        "corners": [
+          0,
+          0
+        ],
+        "fouls": [
+          0,
+          0
+        ],
+        "xg": [
+          0,
+          0
+        ],
+        "passAccuracy": [
+          0,
+          0
+        ]
+      },
+      "events": [],
+      "lineups": {
+        "home": [
+          {
+            "number": 25,
+            "name": "Emil Audero",
+            "position": "GK"
+          },
+          {
+            "number": 2,
+            "name": "Andrei Rațiu",
+            "position": "DF"
+          },
+          {
+            "number": 24,
+            "name": "Florian Lejeune",
+            "position": "DF"
+          },
+          {
+            "number": 15,
+            "name": "Mujaid Sadick",
+            "position": "DF"
+          },
+          {
+            "number": 17,
+            "name": "Adrià Pedrosa",
+            "position": "DF"
+          },
+          {
+            "number": 8,
+            "name": "Unai López",
+            "position": "MF"
+          },
+          {
+            "number": 6,
+            "name": "Pathé Ciss",
+            "position": "MF"
+          },
+          {
+            "number": 19,
+            "name": "Jorge de Frutos",
+            "position": "FW"
+          },
+          {
+            "number": 4,
+            "name": "Pedro Díaz",
+            "position": "MF"
+          },
+          {
+            "number": 14,
+            "name": "Giorgi Tsitaishvili",
+            "position": "FW"
+          },
+          {
+            "number": 10,
+            "name": "Sergio Camello",
+            "position": "FW"
+          }
+        ],
+        "away": [
+          {
+            "number": 1,
+            "name": "Stole Dimitrievski",
+            "position": "GK"
+          },
+          {
+            "number": 22,
+            "name": "Arnau Martínez",
+            "position": "DF"
+          },
+          {
+            "number": 5,
+            "name": "César Tárrega",
+            "position": "DF"
+          },
+          {
+            "number": 18,
+            "name": "Pepelu",
+            "position": "MF"
+          },
+          {
+            "number": 24,
+            "name": "Pablo Maffeo",
+            "position": "DF"
+          },
+          {
+            "number": 2,
+            "name": "Guido Rodríguez",
+            "position": "MF"
+          },
+          {
+            "number": 33,
+            "name": "Aaron Mayol",
+            "position": "MF"
+          },
+          {
+            "number": 11,
+            "name": "Luis Rioja",
+            "position": "MF"
+          },
+          {
+            "number": 8,
+            "name": "Javier Guerra",
+            "position": "MF"
+          },
+          {
+            "number": 7,
+            "name": "Arnaut Danjuma",
+            "position": "FW"
+          },
+          {
+            "number": 6,
+            "name": "Umar Sadiq",
+            "position": "FW"
+          }
+        ]
+      },
+      "form": {
+        "home": [
+          "L",
+          "W",
+          "W",
+          "L",
+          "D"
+        ],
+        "away": [
+          "W",
+          "L",
+          "W",
+          "L",
+          "D"
+        ]
+      },
+      "strength": {
+        "home": {
+          "attack": 0.9,
+          "defence": 1.2
+        },
+        "away": {
+          "attack": 1.1,
+          "defence": 0.8
+        }
+      }
+    },
+    {
+      "id": "5868140",
+      "competition": {
+        "code": "PD",
+        "name": "La Liga",
+        "country": "Spain",
+        "flag": "🇪🇸"
+      },
+      "home": {
+        "id": 8302,
+        "name": "Sevilla",
+        "short": "SEV",
+        "color": "#C90F20"
+      },
+      "away": {
+        "id": 8603,
+        "name": "Real Betis",
+        "short": "REA",
+        "color": "#009048"
+      },
+      "status": "SCHEDULED",
+      "kickoff": "2026-11-22T01:30:00+08:00",
+      "minute": null,
+      "score": {
+        "home": 0,
+        "away": 0
+      },
+      "halfTime": null,
+      "venue": "Estadio Ramón Sánchez Pizjuán",
+      "stats": {
+        "possession": [
+          0,
+          0
+        ],
+        "shots": [
+          0,
+          0
+        ],
+        "shotsOnTarget": [
+          0,
+          0
+        ],
+        "corners": [
+          0,
+          0
+        ],
+        "fouls": [
+          0,
+          0
+        ],
+        "xg": [
+          0,
+          0
+        ],
+        "passAccuracy": [
+          0,
+          0
+        ]
+      },
+      "events": [],
+      "lineups": {
+        "home": [
+          {
+            "number": 1,
+            "name": "Odysseas Vlachodimos",
+            "position": "GK"
+          },
+          {
+            "number": 2,
+            "name": "Juan Iglesias",
+            "position": "DF"
+          },
+          {
+            "number": 5,
+            "name": "Andrés López",
+            "position": "DF"
+          },
+          {
+            "number": 4,
+            "name": "Kike Salas",
+            "position": "DF"
+          },
+          {
+            "number": 17,
+            "name": "Gabriel Suazo",
+            "position": "DF"
+          },
+          {
+            "number": 24,
+            "name": "Youssouf Fofana",
+            "position": "MF"
+          },
+          {
+            "number": 6,
+            "name": "Lucien Agoumé",
+            "position": "MF"
+          },
+          {
+            "number": 21,
+            "name": "Chidera Ejuke",
+            "position": "FW"
+          },
+          {
+            "number": 16,
+            "name": "Isaac Romero",
+            "position": "FW"
+          },
+          {
+            "number": 20,
+            "name": "Félix Correia",
+            "position": "FW"
+          },
+          {
+            "number": 19,
+            "name": "Lucas Stassin",
+            "position": "FW"
+          }
+        ],
+        "away": [
+          {
+            "number": 1,
+            "name": "Álvaro Vallés",
+            "position": "GK"
+          },
+          {
+            "number": 2,
+            "name": "Héctor Bellerín",
+            "position": "DF"
+          },
+          {
+            "number": 5,
+            "name": "Marc Bartra",
+            "position": "DF"
+          },
+          {
+            "number": 4,
+            "name": "Natan",
+            "position": "DF"
+          },
+          {
+            "number": 11,
+            "name": "Fran García",
+            "position": "DF"
+          },
+          {
+            "number": 8,
+            "name": "Pablo Fornals",
+            "position": "MF"
+          },
+          {
+            "number": 21,
+            "name": "Marc Roca",
+            "position": "MF"
+          },
+          {
+            "number": 7,
+            "name": "Antony",
+            "position": "FW"
+          },
+          {
+            "number": 22,
+            "name": "Isco",
+            "position": "MF"
+          },
+          {
+            "number": 10,
+            "name": "Abdessamad Ezzalzouli",
+            "position": "FW"
+          },
+          {
+            "number": 19,
+            "name": "Troy Parrott",
+            "position": "FW"
+          }
+        ]
+      },
+      "form": {
+        "home": [
+          "D",
+          "L",
+          "W",
+          "W",
+          "L"
+        ],
+        "away": [
+          "W",
+          "W",
+          "L",
+          "W",
+          "D"
+        ]
+      },
+      "strength": {
+        "home": {
+          "attack": 0.9,
+          "defence": 1.2
+        },
+        "away": {
+          "attack": 1.1,
+          "defence": 0.8
+        }
+      }
+    },
+    {
+      "id": "5868139",
+      "competition": {
+        "code": "PD",
+        "name": "La Liga",
+        "country": "Spain",
+        "flag": "🇪🇸"
+      },
+      "home": {
+        "id": 8633,
+        "name": "Real Madrid",
+        "short": "REA",
+        "color": "#085098"
+      },
+      "away": {
+        "id": 9910,
+        "name": "Celta Vigo",
+        "short": "CEL",
+        "color": "#67ade0"
+      },
+      "status": "SCHEDULED",
+      "kickoff": "2026-11-22T04:00:00+08:00",
+      "minute": null,
+      "score": {
+        "home": 0,
+        "away": 0
+      },
+      "halfTime": null,
+      "venue": "Estadio Bernabéu",
+      "stats": {
+        "possession": [
+          0,
+          0
+        ],
+        "shots": [
+          0,
+          0
+        ],
+        "shotsOnTarget": [
+          0,
+          0
+        ],
+        "corners": [
+          0,
+          0
+        ],
+        "fouls": [
+          0,
+          0
+        ],
+        "xg": [
+          0,
+          0
+        ],
+        "passAccuracy": [
+          0,
+          0
+        ]
+      },
+      "events": [],
+      "lineups": {
+        "home": [
+          {
+            "number": 1,
+            "name": "Thibaut Courtois",
+            "position": "GK"
+          },
+          {
+            "number": 12,
+            "name": "Trent Alexander-Arnold",
+            "position": "DF"
+          },
+          {
+            "number": 3,
+            "name": "Éder Militão",
+            "position": "DF"
+          },
+          {
+            "number": 22,
+            "name": "Antonio Rüdiger",
+            "position": "DF"
+          },
+          {
+            "number": 18,
+            "name": "Álvaro Carreras",
+            "position": "DF"
+          },
+          {
+            "number": 20,
+            "name": "Bernardo Silva",
+            "position": "MF"
+          },
+          {
+            "number": 6,
+            "name": "Eduardo Camavinga",
+            "position": "MF"
+          },
+          {
+            "number": 15,
+            "name": "Arda Güler",
+            "position": "MF"
+          },
+          {
+            "number": 5,
+            "name": "Jude Bellingham",
+            "position": "MF"
+          },
+          {
+            "number": 25,
+            "name": "Yan Diomande",
+            "position": "FW"
+          },
+          {
+            "number": 10,
+            "name": "Kylian Mbappé",
+            "position": "FW"
+          }
+        ],
+        "away": [
+          {
+            "number": 13,
+            "name": "Ionuț Radu",
+            "position": "GK"
+          },
+          {
+            "number": 20,
+            "name": "Javi Rodríguez",
+            "position": "DF"
+          },
+          {
+            "number": 18,
+            "name": "Yoel Lago",
+            "position": "DF"
+          },
+          {
+            "number": 3,
+            "name": "Marcos Alonso",
+            "position": "DF"
+          },
+          {
+            "number": 17,
+            "name": "Javi Rueda",
+            "position": "MF"
+          },
+          {
+            "number": 6,
+            "name": "Ilaix Moriba",
+            "position": "MF"
+          },
+          {
+            "number": 14,
+            "name": "Aleix Febas",
+            "position": "MF"
+          },
+          {
+            "number": 5,
+            "name": "Sergio Carreira",
+            "position": "MF"
+          },
+          {
+            "number": 23,
+            "name": "Hugo Álvarez",
+            "position": "FW"
+          },
+          {
+            "number": 9,
+            "name": "Ferrán Jutglà",
+            "position": "FW"
+          },
+          {
+            "number": 19,
+            "name": "Williot Swedberg",
+            "position": "FW"
+          }
+        ]
+      },
+      "form": {
+        "home": [
+          "W",
+          "W",
+          "W",
+          "W",
+          "W"
+        ],
+        "away": [
+          "W",
+          "D",
+          "L",
+          "L",
+          "D"
+        ]
+      },
+      "strength": {
+        "home": {
+          "attack": 1.6,
+          "defence": 0.6
+        },
+        "away": {
+          "attack": 0.7,
+          "defence": 0.8
+        }
+      }
+    },
+    {
+      "id": "5749753",
+      "competition": {
+        "code": "SA",
+        "name": "Serie A",
+        "country": "Italy",
+        "flag": "🇮🇹"
+      },
+      "home": {
+        "id": 10171,
+        "name": "Como",
+        "short": "COM",
+        "color": "#005ea9"
+      },
+      "away": {
+        "id": 8529,
+        "name": "Cagliari",
+        "short": "CAG",
+        "color": "#B51F2B"
+      },
+      "status": "SCHEDULED",
+      "kickoff": "2026-11-21T22:00:00+08:00",
+      "minute": null,
+      "score": {
+        "home": 0,
+        "away": 0
+      },
+      "halfTime": null,
+      "venue": "Stadio Giuseppe Sinigaglia",
+      "stats": {
+        "possession": [
+          0,
+          0
+        ],
+        "shots": [
+          0,
+          0
+        ],
+        "shotsOnTarget": [
+          0,
+          0
+        ],
+        "corners": [
+          0,
+          0
+        ],
+        "fouls": [
+          0,
+          0
+        ],
+        "xg": [
+          0,
+          0
+        ],
+        "passAccuracy": [
+          0,
+          0
+        ]
+      },
+      "events": [],
+      "lineups": {
+        "home": [
+          {
+            "number": 1,
+            "name": "Jean Butez",
+            "position": "GK"
+          },
+          {
+            "number": 27,
+            "name": "Yan Couto",
+            "position": "DF"
+          },
+          {
+            "number": 4,
+            "name": "Jacobo Ramón",
+            "position": "DF"
+          },
+          {
+            "number": 2,
+            "name": "Marc-Oliver Kempf",
+            "position": "DF"
+          },
+          {
+            "number": 3,
+            "name": "Álex Valle",
+            "position": "DF"
+          },
+          {
+            "number": 6,
+            "name": "Luis Milla",
+            "position": "MF"
+          },
+          {
+            "number": 5,
+            "name": "Máximo Perrone",
+            "position": "MF"
+          },
+          {
+            "number": 7,
+            "name": "Lucas Da Cunha",
+            "position": "MF"
+          },
+          {
+            "number": 10,
+            "name": "Nico Paz",
+            "position": "MF"
+          },
+          {
+            "number": 20,
+            "name": "Martin Baturina",
+            "position": "FW"
+          },
+          {
+            "number": 9,
+            "name": "Anastasios Douvikas",
+            "position": "FW"
+          }
+        ],
+        "away": [
+          {
+            "number": 1,
+            "name": "Elia Caprile",
+            "position": "GK"
+          },
+          {
+            "number": 2,
+            "name": "Zé Pedro",
+            "position": "DF"
+          },
+          {
+            "number": 22,
+            "name": "Raphael Kofler",
+            "position": "DF"
+          },
+          {
+            "number": 15,
+            "name": "Juan Rodríguez",
+            "position": "DF"
+          },
+          {
+            "number": 33,
+            "name": "Adam Obert",
+            "position": "DF"
+          },
+          {
+            "number": 14,
+            "name": "Alessandro Deiola",
+            "position": "MF"
+          },
+          {
+            "number": 4,
+            "name": "Alessandro Romano",
+            "position": "MF"
+          },
+          {
+            "number": 8,
+            "name": "Michel Ndary Adopo",
+            "position": "MF"
+          },
+          {
+            "number": 10,
+            "name": "Jacopo Fazzini",
+            "position": "FW"
+          },
+          {
+            "number": 70,
+            "name": "Daniel Maldini",
+            "position": "FW"
+          },
+          {
+            "number": 31,
+            "name": "Paul Mendy",
+            "position": "FW"
+          }
+        ]
+      },
+      "form": {
+        "home": [
+          "L",
+          "W",
+          "W",
+          "W",
+          "W"
+        ],
+        "away": [
+          "W",
+          "L",
+          "L",
+          "L",
+          "L"
+        ]
+      },
+      "strength": {
+        "home": {
+          "attack": 1.6,
+          "defence": 0.6
+        },
+        "away": {
+          "attack": 0.6,
+          "defence": 1.6
+        }
+      }
+    },
+    {
+      "id": "5749755",
+      "competition": {
+        "code": "SA",
+        "name": "Serie A",
+        "country": "Italy",
+        "flag": "🇮🇹"
+      },
+      "home": {
+        "id": 8543,
+        "name": "Lazio",
+        "short": "LAZ",
+        "color": "#75acd4"
+      },
+      "away": {
+        "id": 9888,
+        "name": "Lecce",
+        "short": "LEC",
+        "color": "#e12300"
+      },
+      "status": "SCHEDULED",
+      "kickoff": "2026-11-21T22:00:00+08:00",
+      "minute": null,
+      "score": {
+        "home": 0,
+        "away": 0
+      },
+      "halfTime": null,
+      "venue": "Stadio Olimpico",
+      "stats": {
+        "possession": [
+          0,
+          0
+        ],
+        "shots": [
+          0,
+          0
+        ],
+        "shotsOnTarget": [
+          0,
+          0
+        ],
+        "corners": [
+          0,
+          0
+        ],
+        "fouls": [
+          0,
+          0
+        ],
+        "xg": [
+          0,
+          0
+        ],
+        "passAccuracy": [
+          0,
+          0
+        ]
+      },
+      "events": [],
+      "lineups": {
+        "home": [
+          {
+            "number": 35,
+            "name": "Christos Mandas",
+            "position": "GK"
+          },
+          {
+            "number": 15,
+            "name": "Romano Floriani",
+            "position": "DF"
+          },
+          {
+            "number": 2,
+            "name": "Diogo Leite",
+            "position": "DF"
+          },
+          {
+            "number": 25,
+            "name": "Oliver Provstgaard",
+            "position": "DF"
+          },
+          {
+            "number": 23,
+            "name": "Alfonso Pedraza",
+            "position": "DF"
+          },
+          {
+            "number": 16,
+            "name": "Davide Frattesi",
+            "position": "MF"
+          },
+          {
+            "number": 21,
+            "name": "Reda Belahyane",
+            "position": "MF"
+          },
+          {
+            "number": 24,
+            "name": "Kenneth Taylor",
+            "position": "MF"
+          },
+          {
+            "number": 11,
+            "name": "Gustav Isaksen",
+            "position": "FW"
+          },
+          {
+            "number": 9,
+            "name": "Andrea Pinamonti",
+            "position": "FW"
+          },
+          {
+            "number": 14,
+            "name": "Tijjani Noslin",
+            "position": "FW"
+          }
+        ],
+        "away": [
+          {
+            "number": 30,
+            "name": "Wladimiro Falcone",
+            "position": "GK"
+          },
+          {
+            "number": 17,
+            "name": "Danilo Veiga",
+            "position": "DF"
+          },
+          {
+            "number": 4,
+            "name": "Kialonda Gaspar",
+            "position": "DF"
+          },
+          {
+            "number": 44,
+            "name": "Tiago Gabriel",
+            "position": "DF"
+          },
+          {
+            "number": 25,
+            "name": "Antonino Gallo",
+            "position": "DF"
+          },
+          {
+            "number": 29,
+            "name": "Lassana Coulibaly",
+            "position": "MF"
+          },
+          {
+            "number": 79,
+            "name": "Oumar Ngom",
+            "position": "MF"
+          },
+          {
+            "number": 14,
+            "name": "Youssef Maleh",
+            "position": "MF"
+          },
+          {
+            "number": 11,
+            "name": "Konan N’Dri",
+            "position": "FW"
+          },
+          {
+            "number": 69,
+            "name": "Willem Geubbels",
+            "position": "FW"
+          },
+          {
+            "number": 7,
+            "name": "Amar Fatah",
+            "position": "FW"
+          }
+        ]
+      },
+      "form": {
+        "home": [
+          "D",
+          "W",
+          "W",
+          "W",
+          "W"
+        ],
+        "away": [
+          "D",
+          "L",
+          "L",
+          "L",
+          "W"
+        ]
+      },
+      "strength": {
+        "home": {
+          "attack": 1.6,
+          "defence": 0.8
+        },
+        "away": {
+          "attack": 0.7,
+          "defence": 1.6
+        }
+      }
+    },
+    {
+      "id": "5749758",
+      "competition": {
+        "code": "SA",
+        "name": "Serie A",
+        "country": "Italy",
+        "flag": "🇮🇹"
+      },
+      "home": {
+        "id": 10167,
+        "name": "Parma",
+        "short": "PARM",
+        "color": "#000000"
+      },
+      "away": {
+        "id": 8686,
+        "name": "Roma",
+        "short": "ROM",
+        "color": "#96092B"
+      },
+      "status": "SCHEDULED",
+      "kickoff": "2026-11-22T01:00:00+08:00",
+      "minute": null,
+      "score": {
+        "home": 0,
+        "away": 0
+      },
+      "halfTime": null,
+      "venue": "Stadio Ennio Tardini",
+      "stats": {
+        "possession": [
+          0,
+          0
+        ],
+        "shots": [
+          0,
+          0
+        ],
+        "shotsOnTarget": [
+          0,
+          0
+        ],
+        "corners": [
+          0,
+          0
+        ],
+        "fouls": [
+          0,
+          0
+        ],
+        "xg": [
+          0,
+          0
+        ],
+        "passAccuracy": [
+          0,
+          0
+        ]
+      },
+      "events": [],
+      "lineups": {
+        "home": [
+          {
+            "number": 30,
+            "name": "Giovanni Daffara",
+            "position": "GK"
+          },
+          {
+            "number": 15,
+            "name": "Enrico Del Prato",
+            "position": "DF"
+          },
+          {
+            "number": 37,
+            "name": "Mariano Troilo",
+            "position": "DF"
+          },
+          {
+            "number": 29,
+            "name": "Franco Carboni",
+            "position": "DF"
+          },
+          {
+            "number": 27,
+            "name": "Sascha Britschgi",
+            "position": "MF"
+          },
+          {
+            "number": 80,
+            "name": "Giovanni Fabbian",
+            "position": "MF"
+          },
+          {
+            "number": 41,
+            "name": "Hans Nicolussi Caviglia",
+            "position": "MF"
+          },
+          {
+            "number": 16,
+            "name": "Mandela Keita",
+            "position": "MF"
+          },
+          {
+            "number": 14,
+            "name": "Emanuele Valeri",
+            "position": "MF"
+          },
+          {
+            "number": 23,
+            "name": "Nesta Elphege",
+            "position": "FW"
+          },
+          {
+            "number": 76,
+            "name": "Simone Lontani",
+            "position": "FW"
+          }
+        ],
+        "away": [
+          {
+            "number": 99,
+            "name": "Mile Svilar",
+            "position": "GK"
+          },
+          {
+            "number": 23,
+            "name": "Gianluca Mancini",
+            "position": "DF"
+          },
+          {
+            "number": 5,
+            "name": "Evan N'Dicka",
+            "position": "DF"
+          },
+          {
+            "number": 22,
+            "name": "Mario Hermoso",
+            "position": "DF"
+          },
+          {
+            "number": 20,
+            "name": "Nahuel Molina",
+            "position": "DF"
+          },
+          {
+            "number": 4,
+            "name": "Bryan Cristante",
+            "position": "MF"
+          },
+          {
+            "number": 17,
+            "name": "Manu Koné",
+            "position": "MF"
+          },
+          {
+            "number": 43,
+            "name": "Wesley",
+            "position": "MF"
+          },
+          {
+            "number": 21,
+            "name": "Paulo Dybala",
+            "position": "MF"
+          },
+          {
+            "number": 86,
+            "name": "Rodrigo Mora",
+            "position": "MF"
+          },
+          {
+            "number": 14,
+            "name": "Donyell Malen",
+            "position": "FW"
+          }
+        ]
+      },
+      "form": {
+        "home": [
+          "L",
+          "W",
+          "D",
+          "L",
+          "L"
+        ],
+        "away": [
+          "W",
+          "L",
+          "W",
+          "W",
+          "D"
+        ]
+      },
+      "strength": {
+        "home": {
+          "attack": 0.6,
+          "defence": 1.2
+        },
+        "away": {
+          "attack": 1.6,
+          "defence": 1.6
+        }
+      }
+    },
+    {
+      "id": "5749757",
+      "competition": {
+        "code": "SA",
+        "name": "Serie A",
+        "country": "Italy",
+        "flag": "🇮🇹"
+      },
+      "home": {
+        "id": 9875,
+        "name": "Napoli",
+        "short": "NAP",
+        "color": "#12A0D7"
+      },
+      "away": {
+        "id": 9804,
+        "name": "Torino",
+        "short": "TOR",
+        "color": "#80110B"
+      },
+      "status": "SCHEDULED",
+      "kickoff": "2026-11-22T03:45:00+08:00",
+      "minute": null,
+      "score": {
+        "home": 0,
+        "away": 0
+      },
+      "halfTime": null,
+      "venue": "Stadio Diego Armando Maradona",
+      "stats": {
+        "possession": [
+          0,
+          0
+        ],
+        "shots": [
+          0,
+          0
+        ],
+        "shotsOnTarget": [
+          0,
+          0
+        ],
+        "corners": [
+          0,
+          0
+        ],
+        "fouls": [
+          0,
+          0
+        ],
+        "xg": [
+          0,
+          0
+        ],
+        "passAccuracy": [
+          0,
+          0
+        ]
+      },
+      "events": [],
+      "lineups": {
+        "home": [
+          {
+            "number": 32,
+            "name": "Vanja Milinković-Savić",
+            "position": "GK"
+          },
+          {
+            "number": 31,
+            "name": "Sam Beukema",
+            "position": "DF"
+          },
+          {
+            "number": 13,
+            "name": "Amir Rrahmani",
+            "position": "DF"
+          },
+          {
+            "number": 16,
+            "name": "Rafa Marín",
+            "position": "DF"
+          },
+          {
+            "number": 37,
+            "name": "Leonardo Spinazzola",
+            "position": "MF"
+          },
+          {
+            "number": 99,
+            "name": "Frank Anguissa",
+            "position": "MF"
+          },
+          {
+            "number": 11,
+            "name": "Kevin De Bruyne",
+            "position": "MF"
+          },
+          {
+            "number": 8,
+            "name": "Scott McTominay",
+            "position": "MF"
+          },
+          {
+            "number": 21,
+            "name": "Matteo Politano",
+            "position": "MF"
+          },
+          {
+            "number": 19,
+            "name": "Rasmus Højlund",
+            "position": "FW"
+          },
+          {
+            "number": 70,
+            "name": "Noa Lang",
+            "position": "FW"
+          }
+        ],
+        "away": [
+          {
+            "number": 20,
+            "name": "Lucas Perri",
+            "position": "GK"
+          },
+          {
+            "number": 23,
+            "name": "Saúl Coco",
+            "position": "DF"
+          },
+          {
+            "number": 44,
+            "name": "Ardian Ismajli",
+            "position": "DF"
+          },
+          {
+            "number": 15,
+            "name": "Pietro Comuzzo",
+            "position": "DF"
+          },
+          {
+            "number": 45,
+            "name": "Rafik Belghali",
+            "position": "MF"
+          },
+          {
+            "number": 6,
+            "name": "Emirhan İlkhan",
+            "position": "MF"
+          },
+          {
+            "number": 8,
+            "name": "Rolando Mandragora",
+            "position": "MF"
+          },
+          {
+            "number": 22,
+            "name": "Cesare Casadei",
+            "position": "MF"
+          },
+          {
+            "number": 77,
+            "name": "Alessio Cacciamani",
+            "position": "MF"
+          },
+          {
+            "number": 19,
+            "name": "Ché Adams",
+            "position": "FW"
+          },
+          {
+            "number": 18,
+            "name": "Giovanni Simeone",
+            "position": "FW"
+          }
+        ]
+      },
+      "form": {
+        "home": [
+          "D",
+          "L",
+          "L",
+          "W",
+          "D"
+        ],
+        "away": [
+          "D",
+          "L",
+          "L",
+          "W",
+          "W"
+        ]
+      },
+      "strength": {
+        "home": {
+          "attack": 1.3,
+          "defence": 1.6
+        },
+        "away": {
+          "attack": 1.1,
+          "defence": 1.4
+        }
+      }
+    },
+    {
+      "id": "5881225",
+      "competition": {
+        "code": "BL1",
+        "name": "Bundesliga",
+        "country": "Germany",
+        "flag": "🇩🇪"
+      },
+      "home": {
+        "id": 8178,
+        "name": "Bayer Leverkusen",
+        "short": "LEVE",
+        "color": "#cf1e1e"
+      },
+      "away": {
+        "id": 8460,
+        "name": "Paderborn",
+        "short": "PADE",
+        "color": "#004A99"
+      },
+      "status": "SCHEDULED",
+      "kickoff": "2026-11-21T22:30:00+08:00",
+      "minute": null,
+      "score": {
+        "home": 0,
+        "away": 0
+      },
+      "halfTime": null,
+      "venue": "BayArena",
+      "stats": {
+        "possession": [
+          0,
+          0
+        ],
+        "shots": [
+          0,
+          0
+        ],
+        "shotsOnTarget": [
+          0,
+          0
+        ],
+        "corners": [
+          0,
+          0
+        ],
+        "fouls": [
+          0,
+          0
+        ],
+        "xg": [
+          0,
+          0
+        ],
+        "passAccuracy": [
+          0,
+          0
+        ]
+      },
+      "events": [],
+      "lineups": {
+        "home": [
+          {
+            "number": 1,
+            "name": "Mark Flekken",
+            "position": "GK"
+          },
+          {
+            "number": 4,
+            "name": "Jarell Quansah",
+            "position": "DF"
+          },
+          {
+            "number": 12,
+            "name": "Edmond Tapsoba",
+            "position": "DF"
+          },
+          {
+            "number": 2,
+            "name": "Facundo Medina",
+            "position": "DF"
+          },
+          {
+            "number": 3,
+            "name": "Miguel Gutiérrez",
+            "position": "DF"
+          },
+          {
+            "number": 6,
+            "name": "Equi Fernández",
+            "position": "MF"
+          },
+          {
+            "number": 24,
+            "name": "Aleix García",
+            "position": "MF"
+          },
+          {
+            "number": 9,
+            "name": "Afonso Moreira",
+            "position": "FW"
+          },
+          {
+            "number": 10,
+            "name": "Malik Tillman",
+            "position": "MF"
+          },
+          {
+            "number": 30,
+            "name": "Ibrahim Maza",
+            "position": "FW"
+          },
+          {
+            "number": 14,
+            "name": "Patrik Schick",
+            "position": "FW"
+          },
+          {
+            "number": 28,
+            "name": "Janis Blaswich",
+            "position": "GK"
+          },
+          {
+            "number": 17,
+            "name": "Lucas Vázquez",
+            "position": "DF"
+          },
+          {
+            "number": 15,
+            "name": "Tim Oermann",
+            "position": "DF"
+          },
+          {
+            "number": 5,
+            "name": "Loïc Badé",
+            "position": "DF"
+          },
+          {
+            "number": 8,
+            "name": "Robert Andrich",
+            "position": "MF"
+          },
+          {
+            "number": 42,
+            "name": "Montrell Culbreath",
+            "position": "MF"
+          },
+          {
+            "number": 7,
+            "name": "Jonas Hofmann",
+            "position": "MF"
+          },
+          {
+            "number": 22,
+            "name": "Victor Okoh Boniface",
+            "position": "FW"
+          },
+          {
+            "number": 29,
+            "name": "Eliesse Ben Seghir",
+            "position": "FW"
+          }
+        ],
+        "away": [
+          {
+            "number": 15,
+            "name": "Nahuel Noll",
+            "position": "GK"
+          },
+          {
+            "number": 21,
+            "name": "Jano ter Horst",
+            "position": "DF"
+          },
+          {
+            "number": 25,
+            "name": "Tjark Scheller",
+            "position": "DF"
+          },
+          {
+            "number": 22,
+            "name": "Mattes Hansen",
+            "position": "DF"
+          },
+          {
+            "number": 17,
+            "name": "Laurin Curda",
+            "position": "MF"
+          },
+          {
+            "number": 6,
+            "name": "Tom Baack",
+            "position": "MF"
+          },
+          {
+            "number": 5,
+            "name": "Santiago Castañeda",
+            "position": "MF"
+          },
+          {
+            "number": 40,
+            "name": "Gabriel Vidović",
+            "position": "MF"
+          },
+          {
+            "number": 23,
+            "name": "Raphael Obermair",
+            "position": "MF"
+          },
+          {
+            "number": 2,
+            "name": "Ruben Müller",
+            "position": "FW"
+          },
+          {
+            "number": 30,
+            "name": "Stefano Marino",
+            "position": "FW"
+          },
+          {
+            "number": 1,
+            "name": "Markus Schubert",
+            "position": "GK"
+          },
+          {
+            "number": 3,
+            "name": "Jonah Sticker",
+            "position": "DF"
+          },
+          {
+            "number": 29,
+            "name": "Clemens Lippmann",
+            "position": "DF"
+          },
+          {
+            "number": 20,
+            "name": "Felix Götze",
+            "position": "DF"
+          },
+          {
+            "number": 28,
+            "name": "Laurin Ulrich",
+            "position": "MF"
+          },
+          {
+            "number": 38,
+            "name": "Deniz Zeitler",
+            "position": "FW"
+          },
+          {
+            "number": 9,
+            "name": "Rayan Philippe",
+            "position": "FW"
+          },
+          {
+            "number": 27,
+            "name": "Steffen Tigges",
+            "position": "FW"
+          },
+          {
+            "number": 18,
+            "name": "Marvin Pieringer",
+            "position": "FW"
+          }
+        ]
+      },
+      "form": {
+        "home": [
+          "W",
+          "L",
+          "L",
+          "W",
+          "L"
+        ],
+        "away": [
+          "D",
+          "D",
+          "L",
+          "W",
+          "D"
+        ]
+      },
+      "strength": {
+        "home": {
+          "attack": 1.3,
+          "defence": 1.6
+        },
+        "away": {
+          "attack": 0.6,
+          "defence": 0.8
+        }
+      }
+    },
+    {
+      "id": "5881227",
+      "competition": {
+        "code": "BL1",
+        "name": "Bundesliga",
+        "country": "Germany",
+        "flag": "🇩🇪"
+      },
+      "home": {
+        "id": 9788,
+        "name": "Borussia Mönchengladbach",
+        "short": "M'GL",
+        "color": "#417E37"
+      },
+      "away": {
+        "id": 9789,
+        "name": "Borussia Dortmund",
+        "short": "DORT",
+        "color": "#d8a000"
+      },
+      "status": "SCHEDULED",
+      "kickoff": "2026-11-21T22:30:00+08:00",
+      "minute": null,
+      "score": {
+        "home": 0,
+        "away": 0
+      },
+      "halfTime": null,
+      "venue": "ista-Borussia-Park",
+      "stats": {
+        "possession": [
+          0,
+          0
+        ],
+        "shots": [
+          0,
+          0
+        ],
+        "shotsOnTarget": [
+          0,
+          0
+        ],
+        "corners": [
+          0,
+          0
+        ],
+        "fouls": [
+          0,
+          0
+        ],
+        "xg": [
+          0,
+          0
+        ],
+        "passAccuracy": [
+          0,
+          0
+        ]
+      },
+      "events": [],
+      "lineups": {
+        "home": [],
+        "away": []
+      },
+      "form": {
+        "home": [
+          "W",
+          "L",
+          "D",
+          "W",
+          "W"
+        ],
+        "away": [
+          "W",
+          "W",
+          "D",
+          "W",
+          "W"
+        ]
+      },
+      "strength": {
+        "home": {
+          "attack": 0.9,
+          "defence": 0.8
+        },
+        "away": {
+          "attack": 1.5,
+          "defence": 1
+        }
+      }
+    },
+    {
+      "id": "5881228",
+      "competition": {
+        "code": "BL1",
+        "name": "Bundesliga",
+        "country": "Germany",
+        "flag": "🇩🇪"
+      },
+      "home": {
+        "id": 9810,
+        "name": "Eintracht Frankfurt",
+        "short": "FRAN",
+        "color": "#000000"
+      },
+      "away": {
+        "id": 8226,
+        "name": "Hoffenheim",
+        "short": "HOFF",
+        "color": "#005098"
+      },
+      "status": "SCHEDULED",
+      "kickoff": "2026-11-21T22:30:00+08:00",
+      "minute": null,
+      "score": {
+        "home": 0,
+        "away": 0
+      },
+      "halfTime": null,
+      "venue": "Deutsche Bank Park",
+      "stats": {
+        "possession": [
+          0,
+          0
+        ],
+        "shots": [
+          0,
+          0
+        ],
+        "shotsOnTarget": [
+          0,
+          0
+        ],
+        "corners": [
+          0,
+          0
+        ],
+        "fouls": [
+          0,
+          0
+        ],
+        "xg": [
+          0,
+          0
+        ],
+        "passAccuracy": [
+          0,
+          0
+        ]
+      },
+      "events": [],
+      "lineups": {
+        "home": [
+          {
+            "number": 1,
+            "name": "Noah Atubolu",
+            "position": "GK"
+          },
+          {
+            "number": 7,
+            "name": "Ansgar Knauff",
+            "position": "DF"
+          },
+          {
+            "number": 4,
+            "name": "Robin Koch",
+            "position": "DF"
+          },
+          {
+            "number": 3,
+            "name": "Lilian Brassier",
+            "position": "DF"
+          },
+          {
+            "number": 2,
+            "name": "Elias Baum",
+            "position": "DF"
+          },
+          {
+            "number": 25,
+            "name": "Raphael Onyedika",
+            "position": "MF"
+          },
+          {
+            "number": 15,
+            "name": "Noël Aséko",
+            "position": "MF"
+          },
+          {
+            "number": 20,
+            "name": "Ritsu Doan",
+            "position": "FW"
+          },
+          {
+            "number": 42,
+            "name": "Can Uzun",
+            "position": "MF"
+          },
+          {
+            "number": 8,
+            "name": "Farès Chaïbi",
+            "position": "FW"
+          },
+          {
+            "number": 9,
+            "name": "Jonathan Burkardt",
+            "position": "FW"
+          },
+          {
+            "number": 40,
+            "name": "Kauã",
+            "position": "GK"
+          },
+          {
+            "number": 37,
+            "name": "Jeremiaha Maluze",
+            "position": "DF"
+          },
+          {
+            "number": 22,
+            "name": "Timothy Chandler",
+            "position": "DF"
+          },
+          {
+            "number": 34,
+            "name": "Nnamdi Collins",
+            "position": "DF"
+          },
+          {
+            "number": 6,
+            "name": "Oscar Højlund",
+            "position": "MF"
+          },
+          {
+            "number": 31,
+            "name": "Love Arrhov",
+            "position": "MF"
+          },
+          {
+            "number": 23,
+            "name": "Niko Iličević",
+            "position": "MF"
+          },
+          {
+            "number": 11,
+            "name": "Younes Ebnoutalib",
+            "position": "FW"
+          },
+          {
+            "number": 35,
+            "name": "Malik Pimpong",
+            "position": "FW"
+          }
+        ],
+        "away": [
+          {
+            "number": 1,
+            "name": "Oliver Baumann",
+            "position": "GK"
+          },
+          {
+            "number": 34,
+            "name": "Vladimír Coufal",
+            "position": "DF"
+          },
+          {
+            "number": 5,
+            "name": "Ozan Kabak",
+            "position": "DF"
+          },
+          {
+            "number": 28,
+            "name": "Koki Machida",
+            "position": "DF"
+          },
+          {
+            "number": 39,
+            "name": "Mats Rots",
+            "position": "DF"
+          },
+          {
+            "number": 7,
+            "name": "Leon Avdullahu",
+            "position": "MF"
+          },
+          {
+            "number": 18,
+            "name": "Wouter Burger",
+            "position": "MF"
+          },
+          {
+            "number": 27,
+            "name": "Andrej Kramarić",
+            "position": "FW"
+          },
+          {
+            "number": 11,
+            "name": "Fisnik Asllani",
+            "position": "MF"
+          },
+          {
+            "number": 22,
+            "name": "Alexander Prass",
+            "position": "FW"
+          },
+          {
+            "number": 19,
+            "name": "Tim Lemperle",
+            "position": "FW"
+          },
+          {
+            "number": 37,
+            "name": "Luca Philipp",
+            "position": "GK"
+          },
+          {
+            "number": 13,
+            "name": "Bernardo",
+            "position": "DF"
+          },
+          {
+            "number": 29,
+            "name": "Natnael Abraha",
+            "position": "DF"
+          },
+          {
+            "number": 47,
+            "name": "Valentin Lässig",
+            "position": "DF"
+          },
+          {
+            "number": 32,
+            "name": "Cajetan Lenz",
+            "position": "MF"
+          },
+          {
+            "number": 14,
+            "name": "Adam Daghim",
+            "position": "FW"
+          },
+          {
+            "number": 46,
+            "name": "Jykese Fields",
+            "position": "FW"
+          },
+          {
+            "number": 10,
+            "name": "Adam Hložek",
+            "position": "FW"
+          },
+          {
+            "number": 9,
+            "name": "Max Moerstedt",
+            "position": "FW"
+          }
+        ]
+      },
+      "form": {
+        "home": [
+          "D",
+          "W",
+          "W",
+          "L",
+          "W"
+        ],
+        "away": [
+          "W",
+          "D",
+          "L",
+          "D",
+          "W"
+        ]
+      },
+      "strength": {
+        "home": {
+          "attack": 1.3,
+          "defence": 0.8
+        },
+        "away": {
+          "attack": 0.9,
+          "defence": 0.8
+        }
+      }
+    },
+    {
+      "id": "5881229",
+      "competition": {
+        "code": "BL1",
+        "name": "Bundesliga",
+        "country": "Germany",
+        "flag": "🇩🇪"
+      },
+      "home": {
+        "id": 8232,
+        "name": "Elversberg",
+        "short": "ELV",
+        "color": "#141414"
+      },
+      "away": {
+        "id": 8358,
+        "name": "Freiburg",
+        "short": "FREI",
+        "color": "#BD1C2C"
+      },
+      "status": "SCHEDULED",
+      "kickoff": "2026-11-21T22:30:00+08:00",
+      "minute": null,
+      "score": {
+        "home": 0,
+        "away": 0
+      },
+      "halfTime": null,
+      "venue": "URSAPHARM-Arena an der Kaiserlinde",
+      "stats": {
+        "possession": [
+          0,
+          0
+        ],
+        "shots": [
+          0,
+          0
+        ],
+        "shotsOnTarget": [
+          0,
+          0
+        ],
+        "corners": [
+          0,
+          0
+        ],
+        "fouls": [
+          0,
+          0
+        ],
+        "xg": [
+          0,
+          0
+        ],
+        "passAccuracy": [
+          0,
+          0
+        ]
+      },
+      "events": [],
+      "lineups": {
+        "home": [
+          {
+            "number": 20,
+            "name": "Nicolas Kristof",
+            "position": "GK"
+          },
+          {
+            "number": 26,
+            "name": "Luca Sirch",
+            "position": "DF"
+          },
+          {
+            "number": 19,
+            "name": "Lukas Pinckert",
+            "position": "DF"
+          },
+          {
+            "number": 31,
+            "name": "Maximilian Rohr",
+            "position": "DF"
+          },
+          {
+            "number": 21,
+            "name": "Lasse Günther",
+            "position": "DF"
+          },
+          {
+            "number": 43,
+            "name": "Felix Keidel",
+            "position": "MF"
+          },
+          {
+            "number": 8,
+            "name": "Łukasz Poręba",
+            "position": "MF"
+          },
+          {
+            "number": 25,
+            "name": "Lukas Petkov",
+            "position": "FW"
+          },
+          {
+            "number": 40,
+            "name": "Francis Onyeka",
+            "position": "MF"
+          },
+          {
+            "number": 7,
+            "name": "Maurice Krattenmacher",
+            "position": "FW"
+          },
+          {
+            "number": 42,
+            "name": "David Mokwa",
+            "position": "FW"
+          },
+          {
+            "number": 28,
+            "name": "Tim Boss",
+            "position": "GK"
+          },
+          {
+            "number": 2,
+            "name": "Nicholas Mickelson",
+            "position": "DF"
+          },
+          {
+            "number": 3,
+            "name": "Florian Le Joncour",
+            "position": "DF"
+          },
+          {
+            "number": 24,
+            "name": "Luca Schnellbacher",
+            "position": "MF"
+          },
+          {
+            "number": 6,
+            "name": "Amara Condé",
+            "position": "MF"
+          },
+          {
+            "number": 17,
+            "name": "Frederik Schmahl",
+            "position": "MF"
+          },
+          {
+            "number": 39,
+            "name": "Cole Campbell",
+            "position": "FW"
+          },
+          {
+            "number": 15,
+            "name": "Raif Adam",
+            "position": "FW"
+          },
+          {
+            "number": 9,
+            "name": "Noel Futkeu",
+            "position": "FW"
+          }
+        ],
+        "away": [
+          {
+            "number": 1,
+            "name": "Mio Backhaus",
+            "position": "GK"
+          },
+          {
+            "number": 29,
+            "name": "Philipp Treu",
+            "position": "DF"
+          },
+          {
+            "number": 28,
+            "name": "Matthias Ginter",
+            "position": "DF"
+          },
+          {
+            "number": 3,
+            "name": "Philipp Lienhart",
+            "position": "DF"
+          },
+          {
+            "number": 33,
+            "name": "Jordy Makengo",
+            "position": "DF"
+          },
+          {
+            "number": 8,
+            "name": "Maximilian Eggestein",
+            "position": "MF"
+          },
+          {
+            "number": 16,
+            "name": "Yannik Engelhardt",
+            "position": "MF"
+          },
+          {
+            "number": 19,
+            "name": "Jan-Niklas Beste",
+            "position": "FW"
+          },
+          {
+            "number": 14,
+            "name": "Yuito Suzuki",
+            "position": "MF"
+          },
+          {
+            "number": 7,
+            "name": "Derry Scherhant",
+            "position": "FW"
+          },
+          {
+            "number": 31,
+            "name": "Igor Matanović",
+            "position": "FW"
+          },
+          {
+            "number": 21,
+            "name": "Florian Müller",
+            "position": "GK"
+          },
+          {
+            "number": 17,
+            "name": "Lukas Kübler",
+            "position": "DF"
+          },
+          {
+            "number": 30,
+            "name": "Christian Günter",
+            "position": "DF"
+          },
+          {
+            "number": 37,
+            "name": "Max Rosenfelder",
+            "position": "DF"
+          },
+          {
+            "number": 32,
+            "name": "Vincenzo Grifo",
+            "position": "MF"
+          },
+          {
+            "number": 6,
+            "name": "Patrick Osterhage",
+            "position": "MF"
+          },
+          {
+            "number": 42,
+            "name": "Keisuke Goto",
+            "position": "FW"
+          },
+          {
+            "number": 9,
+            "name": "Lucas Höler",
+            "position": "FW"
+          },
+          {
+            "number": 22,
+            "name": "Cyriaque Irié",
+            "position": "FW"
+          }
+        ]
+      },
+      "form": {
+        "home": [
+          "L",
+          "W",
+          "L",
+          "L",
+          "W"
+        ],
+        "away": [
+          "W",
+          "W",
+          "W",
+          "W",
+          "L"
+        ]
+      },
+      "strength": {
+        "home": {
+          "attack": 1.3,
+          "defence": 1.6
+        },
+        "away": {
+          "attack": 1.3,
+          "defence": 1
+        }
+      }
+    },
+    {
+      "id": "5881231",
+      "competition": {
+        "code": "BL1",
+        "name": "Bundesliga",
+        "country": "Germany",
+        "flag": "🇩🇪"
+      },
+      "home": {
+        "id": 8149,
+        "name": "Union Berlin",
+        "short": "UNIO",
+        "color": "#E30613"
+      },
+      "away": {
+        "id": 178475,
+        "name": "RB Leipzig",
+        "short": "RB L",
+        "color": "#001038"
+      },
+      "status": "SCHEDULED",
+      "kickoff": "2026-11-21T22:30:00+08:00",
+      "minute": null,
+      "score": {
+        "home": 0,
+        "away": 0
+      },
+      "halfTime": null,
+      "venue": "Stadion An der Alten Försterei",
+      "stats": {
+        "possession": [
+          0,
+          0
+        ],
+        "shots": [
+          0,
+          0
+        ],
+        "shotsOnTarget": [
+          0,
+          0
+        ],
+        "corners": [
+          0,
+          0
+        ],
+        "fouls": [
+          0,
+          0
+        ],
+        "xg": [
+          0,
+          0
+        ],
+        "passAccuracy": [
+          0,
+          0
+        ]
+      },
+      "events": [],
+      "lineups": {
+        "home": [],
+        "away": []
+      },
+      "form": {
+        "home": [
+          "L",
+          "L",
+          "D",
+          "L",
+          "D"
+        ],
+        "away": [
+          "L",
+          "W",
+          "L",
+          "W",
+          "W"
+        ]
+      },
+      "strength": {
+        "home": {
+          "attack": 0.6,
+          "defence": 1.6
+        },
+        "away": {
+          "attack": 1.6,
+          "defence": 1.6
+        }
+      }
+    },
+    {
+      "id": "5881230",
+      "competition": {
+        "code": "BL1",
+        "name": "Bundesliga",
+        "country": "Germany",
+        "flag": "🇩🇪"
+      },
+      "home": {
+        "id": 10189,
+        "name": "Schalke 04",
+        "short": "SCHA",
+        "color": "#083890"
+      },
+      "away": {
+        "id": 10269,
+        "name": "VfB Stuttgart",
+        "short": "VFB",
+        "color": "#D30029"
+      },
+      "status": "SCHEDULED",
+      "kickoff": "2026-11-22T01:30:00+08:00",
+      "minute": null,
+      "score": {
+        "home": 0,
+        "away": 0
+      },
+      "halfTime": null,
+      "venue": "VELTINS-Arena",
+      "stats": {
+        "possession": [
+          0,
+          0
+        ],
+        "shots": [
+          0,
+          0
+        ],
+        "shotsOnTarget": [
+          0,
+          0
+        ],
+        "corners": [
+          0,
+          0
+        ],
+        "fouls": [
+          0,
+          0
+        ],
+        "xg": [
+          0,
+          0
+        ],
+        "passAccuracy": [
+          0,
+          0
+        ]
+      },
+      "events": [],
+      "lineups": {
+        "home": [
+          {
+            "number": 1,
+            "name": "Loris Karius",
+            "position": "GK"
+          },
+          {
+            "number": 43,
+            "name": "Mertcan Ayhan",
+            "position": "DF"
+          },
+          {
+            "number": 25,
+            "name": "Nikola Katić",
+            "position": "DF"
+          },
+          {
+            "number": 4,
+            "name": "Hasan Kuruçay",
+            "position": "DF"
+          },
+          {
+            "number": 8,
+            "name": "Robin Gosens",
+            "position": "DF"
+          },
+          {
+            "number": 23,
+            "name": "Soufian El-Faouzi",
+            "position": "MF"
+          },
+          {
+            "number": 13,
+            "name": "Satoshi Tanaka",
+            "position": "MF"
+          },
+          {
+            "number": 21,
+            "name": "Dejan Ljubičić",
+            "position": "FW"
+          },
+          {
+            "number": 19,
+            "name": "Kenan Karaman",
+            "position": "MF"
+          },
+          {
+            "number": 24,
+            "name": "Adil Aouchiche",
+            "position": "FW"
+          },
+          {
+            "number": 7,
+            "name": "Hwang Hee-Chan",
+            "position": "FW"
+          },
+          {
+            "number": 22,
+            "name": "Kevin Müller",
+            "position": "GK"
+          },
+          {
+            "number": 33,
+            "name": "Vitalie Becker",
+            "position": "DF"
+          },
+          {
+            "number": 27,
+            "name": "Finn Porath",
+            "position": "MF"
+          },
+          {
+            "number": 40,
+            "name": "Edion Gashi",
+            "position": "MF"
+          },
+          {
+            "number": 38,
+            "name": "Luca Vozar",
+            "position": "MF"
+          },
+          {
+            "number": 29,
+            "name": "Junior Dina Ebimbe",
+            "position": "MF"
+          },
+          {
+            "number": 11,
+            "name": "Bryan Lasme",
+            "position": "FW"
+          },
+          {
+            "number": 10,
+            "name": "Edin Džeko",
+            "position": "FW"
+          },
+          {
+            "number": 20,
+            "name": "Chukwubuike Adamu",
+            "position": "FW"
+          }
+        ],
+        "away": [
+          {
+            "number": 41,
+            "name": "Dennis Seimen",
+            "position": "GK"
+          },
+          {
+            "number": 14,
+            "name": "Luca Jaquez",
+            "position": "DF"
+          },
+          {
+            "number": 24,
+            "name": "Jeff Chabot",
+            "position": "DF"
+          },
+          {
+            "number": 3,
+            "name": "Ramon Hendriks",
+            "position": "DF"
+          },
+          {
+            "number": 18,
+            "name": "Jamie Leweling",
+            "position": "MF"
+          },
+          {
+            "number": 21,
+            "name": "Grischa Prömel",
+            "position": "MF"
+          },
+          {
+            "number": 47,
+            "name": "Yanik Spalt",
+            "position": "MF"
+          },
+          {
+            "number": 7,
+            "name": "Maximilian Mittelstädt",
+            "position": "MF"
+          },
+          {
+            "number": 11,
+            "name": "Bilal El Khannouss",
+            "position": "MF"
+          },
+          {
+            "number": 10,
+            "name": "Chris Führich",
+            "position": "MF"
+          },
+          {
+            "number": 26,
+            "name": "Deniz Undav",
+            "position": "FW"
+          },
+          {
+            "number": 1,
+            "name": "Fabian Bredlow",
+            "position": "GK"
+          },
+          {
+            "number": 2,
+            "name": "Ameen Al Dakhil",
+            "position": "DF"
+          },
+          {
+            "number": 29,
+            "name": "Finn Jeltsch",
+            "position": "DF"
+          },
+          {
+            "number": 22,
+            "name": "Lorenz Assignon",
+            "position": "DF"
+          },
+          {
+            "number": 28,
+            "name": "Nikolas Nartey",
+            "position": "MF"
+          },
+          {
+            "number": 16,
+            "name": "Atakan Karazor",
+            "position": "MF"
+          },
+          {
+            "number": 17,
+            "name": "Dženan Pejčinović",
+            "position": "FW"
+          },
+          {
+            "number": 8,
+            "name": "Tiago Tomás",
+            "position": "FW"
+          },
+          {
+            "number": 9,
+            "name": "Ermedin Demirović",
+            "position": "FW"
+          }
+        ]
+      },
+      "form": {
+        "home": [
+          "L",
+          "L",
+          "L",
+          "D",
+          "L"
+        ],
+        "away": [
+          "W",
+          "L",
+          "W",
+          "W",
+          "L"
+        ]
+      },
+      "strength": {
+        "home": {
+          "attack": 0.6,
+          "defence": 1.2
+        },
+        "away": {
+          "attack": 1.1,
+          "defence": 1.2
+        }
+      }
+    },
+    {
+      "id": "5802996",
+      "competition": {
+        "code": "FL1",
+        "name": "Ligue 1",
+        "country": "France",
+        "flag": "🇫🇷"
+      },
+      "home": {
+        "id": 9831,
+        "name": "Nice",
+        "short": "NIC",
+        "color": "#181818"
+      },
+      "away": {
+        "id": 9847,
+        "name": "Paris Saint-Germain",
+        "short": "PSG",
+        "color": "#273F6D"
+      },
+      "status": "SCHEDULED",
+      "kickoff": "2026-11-22T00:15:00+08:00",
+      "minute": null,
+      "score": {
+        "home": 0,
+        "away": 0
+      },
+      "halfTime": null,
+      "venue": "Allianz Riviera",
+      "stats": {
+        "possession": [
+          0,
+          0
+        ],
+        "shots": [
+          0,
+          0
+        ],
+        "shotsOnTarget": [
+          0,
+          0
+        ],
+        "corners": [
+          0,
+          0
+        ],
+        "fouls": [
+          0,
+          0
+        ],
+        "xg": [
+          0,
+          0
+        ],
+        "passAccuracy": [
+          0,
+          0
+        ]
+      },
+      "events": [],
+      "lineups": {
+        "home": [
+          {
+            "number": 23,
+            "name": "Yéhvann Diouf",
+            "position": "GK"
+          },
+          {
+            "number": 36,
+            "name": "Alidu Seidu",
+            "position": "DF"
+          },
+          {
+            "number": 55,
+            "name": "Youssouf Ndayishimiye",
+            "position": "DF"
+          },
+          {
+            "number": 5,
+            "name": "Mohamed Abdelmonem",
+            "position": "DF"
+          },
+          {
+            "number": 92,
+            "name": "Jonathan Clauss",
+            "position": "MF"
+          },
+          {
+            "number": 39,
+            "name": "Djibril Coulibaly",
+            "position": "MF"
+          },
+          {
+            "number": 6,
+            "name": "Hicham Boudaoui",
+            "position": "MF"
+          },
+          {
+            "number": 27,
+            "name": "Niels Nkounkou",
+            "position": "MF"
+          },
+          {
+            "number": 10,
+            "name": "Sofiane Diop",
+            "position": "MF"
+          },
+          {
+            "number": 9,
+            "name": "Mohamed Amoura",
+            "position": "MF"
+          },
+          {
+            "number": 11,
+            "name": "Elye Wahi",
+            "position": "FW"
+          },
+          {
+            "number": 77,
+            "name": "Teddy Boulhendi",
+            "position": "GK"
+          },
+          {
+            "number": 84,
+            "name": "Hamza Koutoune",
+            "position": "DF"
+          },
+          {
+            "number": 35,
+            "name": "Xavier Mandza",
+            "position": "MF"
+          },
+          {
+            "number": 28,
+            "name": "Axel Witsel",
+            "position": "MF"
+          },
+          {
+            "number": 7,
+            "name": "Gauthier Hein",
+            "position": "MF"
+          },
+          {
+            "number": 8,
+            "name": "Morgan Sanson",
+            "position": "MF"
+          },
+          {
+            "number": 41,
+            "name": "Djelan Morana",
+            "position": "FW"
+          },
+          {
+            "number": 21,
+            "name": "Isak Jansson",
+            "position": "FW"
+          },
+          {
+            "number": 29,
+            "name": "Nathan N'Goumou",
+            "position": "FW"
+          }
+        ],
+        "away": [
+          {
+            "number": 39,
+            "name": "Matvey Safonov",
+            "position": "GK"
+          },
+          {
+            "number": 33,
+            "name": "Warren Zaïre-Emery",
+            "position": "DF"
+          },
+          {
+            "number": 6,
+            "name": "Ilya Zabarnyi",
+            "position": "DF"
+          },
+          {
+            "number": 51,
+            "name": "Willian Pacho",
+            "position": "DF"
+          },
+          {
+            "number": 21,
+            "name": "Lucas Hernández",
+            "position": "DF"
+          },
+          {
+            "number": 24,
+            "name": "Senny Mayulu",
+            "position": "MF"
+          },
+          {
+            "number": 17,
+            "name": "Vítinha",
+            "position": "MF"
+          },
+          {
+            "number": 8,
+            "name": "Fabián Ruiz",
+            "position": "MF"
+          },
+          {
+            "number": 14,
+            "name": "Désiré Doué",
+            "position": "FW"
+          },
+          {
+            "number": 9,
+            "name": "Ferrán Torres",
+            "position": "FW"
+          },
+          {
+            "number": 22,
+            "name": "Mika Godts",
+            "position": "FW"
+          },
+          {
+            "number": 30,
+            "name": "Lucas Chevalier",
+            "position": "GK"
+          },
+          {
+            "number": 16,
+            "name": "Alessandro Longoni",
+            "position": "GK"
+          },
+          {
+            "number": 4,
+            "name": "Beraldo",
+            "position": "DF"
+          },
+          {
+            "number": 42,
+            "name": "David Boly",
+            "position": "DF"
+          },
+          {
+            "number": 12,
+            "name": "Lucas Digne",
+            "position": "DF"
+          },
+          {
+            "number": 46,
+            "name": "Younes Idder",
+            "position": "MF"
+          },
+          {
+            "number": 87,
+            "name": "João Neves",
+            "position": "MF"
+          },
+          {
+            "number": 27,
+            "name": "Dro Fernández",
+            "position": "MF"
+          },
+          {
+            "number": 47,
+            "name": "Quentin Ndjantou",
+            "position": "FW"
+          }
+        ]
+      },
+      "form": {
+        "home": [
+          "W",
+          "W",
+          "W",
+          "L",
+          "W"
+        ],
+        "away": [
+          "W",
+          "W",
+          "W",
+          "W",
+          "W"
+        ]
+      },
+      "strength": {
+        "home": {
+          "attack": 1.6,
+          "defence": 1
+        },
+        "away": {
+          "attack": 1.6,
+          "defence": 0.6
+        }
+      }
+    },
+    {
+      "id": "5802991",
+      "competition": {
+        "code": "FL1",
+        "name": "Ligue 1",
+        "country": "France",
+        "flag": "🇫🇷"
+      },
+      "home": {
+        "id": 8588,
+        "name": "Lens",
+        "short": "LEN",
+        "color": "#d89f00"
+      },
+      "away": {
+        "id": 9941,
+        "name": "Toulouse",
+        "short": "TOU",
+        "color": "#5b417b"
+      },
+      "status": "SCHEDULED",
+      "kickoff": "2026-11-22T03:45:00+08:00",
+      "minute": null,
+      "score": {
+        "home": 0,
+        "away": 0
+      },
+      "halfTime": null,
+      "venue": "Stade Bollaert-Delelis",
+      "stats": {
+        "possession": [
+          0,
+          0
+        ],
+        "shots": [
+          0,
+          0
+        ],
+        "shotsOnTarget": [
+          0,
+          0
+        ],
+        "corners": [
+          0,
+          0
+        ],
+        "fouls": [
+          0,
+          0
+        ],
+        "xg": [
+          0,
+          0
+        ],
+        "passAccuracy": [
+          0,
+          0
+        ]
+      },
+      "events": [],
+      "lineups": {
+        "home": [],
+        "away": []
+      },
+      "form": {
+        "home": [
+          "L",
+          "L",
+          "L",
+          "W",
+          "L"
+        ],
+        "away": [
+          "W",
+          "L",
+          "D",
+          "W",
+          "D"
+        ]
+      },
+      "strength": {
+        "home": {
+          "attack": 0.6,
+          "defence": 1.6
+        },
+        "away": {
+          "attack": 1.1,
+          "defence": 0.8
+        }
+      }
+    },
+    {
+      "id": "5802992",
+      "competition": {
+        "code": "FL1",
+        "name": "Ligue 1",
+        "country": "France",
+        "flag": "🇫🇷"
+      },
+      "home": {
+        "id": 8639,
+        "name": "Lille",
+        "short": "LIL",
+        "color": "#E01D13"
+      },
+      "away": {
+        "id": 9748,
+        "name": "Lyon",
+        "short": "LYO",
+        "color": "#0160A0"
+      },
+      "status": "SCHEDULED",
+      "kickoff": "2026-11-22T03:45:00+08:00",
+      "minute": null,
+      "score": {
+        "home": 0,
+        "away": 0
+      },
+      "halfTime": null,
+      "venue": "Decathlon Arena - Stade Pierre-Mauroy",
+      "stats": {
+        "possession": [
+          0,
+          0
+        ],
+        "shots": [
+          0,
+          0
+        ],
+        "shotsOnTarget": [
+          0,
+          0
+        ],
+        "corners": [
+          0,
+          0
+        ],
+        "fouls": [
+          0,
+          0
+        ],
+        "xg": [
+          0,
+          0
+        ],
+        "passAccuracy": [
+          0,
+          0
+        ]
+      },
+      "events": [],
+      "lineups": {
+        "home": [
+          {
+            "number": 1,
+            "name": "Berke Özer",
+            "position": "GK"
+          },
+          {
+            "number": 3,
+            "name": "Nathan Ngoy",
+            "position": "DF"
+          },
+          {
+            "number": 23,
+            "name": "Tanguy Nianzou",
+            "position": "DF"
+          },
+          {
+            "number": 4,
+            "name": "Alexsandro",
+            "position": "DF"
+          },
+          {
+            "number": 24,
+            "name": "Calvin Verdonk",
+            "position": "DF"
+          },
+          {
+            "number": 17,
+            "name": "Ngal Ayel Mukau",
+            "position": "MF"
+          },
+          {
+            "number": 6,
+            "name": "Nabil Bentaleb",
+            "position": "MF"
+          },
+          {
+            "number": 21,
+            "name": "Benjamin André",
+            "position": "MF"
+          },
+          {
+            "number": 8,
+            "name": "Ethan Mbappé",
+            "position": "FW"
+          },
+          {
+            "number": 10,
+            "name": "Hákon Arnar Haraldsson",
+            "position": "FW"
+          },
+          {
+            "number": 35,
+            "name": "Soriba Diaoune",
+            "position": "FW"
+          },
+          {
+            "number": 12,
+            "name": "Orlando Gill",
+            "position": "GK"
+          },
+          {
+            "number": 38,
+            "name": "Maxima Goffi",
+            "position": "DF"
+          },
+          {
+            "number": 15,
+            "name": "Romain Perraud",
+            "position": "DF"
+          },
+          {
+            "number": 26,
+            "name": "Isaac Cossier",
+            "position": "DF"
+          },
+          {
+            "number": 14,
+            "name": "Maurits Kjærgaard",
+            "position": "MF"
+          },
+          {
+            "number": 11,
+            "name": "Osame Sahraoui",
+            "position": "FW"
+          },
+          {
+            "number": 9,
+            "name": "Olivier Giroud",
+            "position": "FW"
+          },
+          {
+            "number": 28,
+            "name": "Gaëtan Perrin",
+            "position": "FW"
+          },
+          {
+            "number": 7,
+            "name": "Dilane Bakwa",
+            "position": "FW"
+          }
+        ],
+        "away": [
+          {
+            "number": 1,
+            "name": "Dominik Greif",
+            "position": "GK"
+          },
+          {
+            "number": 13,
+            "name": "Zachary Athekame",
+            "position": "DF"
+          },
+          {
+            "number": 21,
+            "name": "Ruben Kluivert",
+            "position": "DF"
+          },
+          {
+            "number": 19,
+            "name": "Moussa Niakhaté",
+            "position": "DF"
+          },
+          {
+            "number": 3,
+            "name": "Nicolás Tagliafico",
+            "position": "DF"
+          },
+          {
+            "number": 99,
+            "name": "Noah Nartey",
+            "position": "MF"
+          },
+          {
+            "number": 6,
+            "name": "Tanner Tessmann",
+            "position": "MF"
+          },
+          {
+            "number": 8,
+            "name": "Corentin Tolisso",
+            "position": "MF"
+          },
+          {
+            "number": 26,
+            "name": "Kaïl Boudache",
+            "position": "FW"
+          },
+          {
+            "number": 18,
+            "name": "Khalis Merah",
+            "position": "FW"
+          },
+          {
+            "number": 11,
+            "name": "Keito Nakamura",
+            "position": "FW"
+          },
+          {
+            "number": 40,
+            "name": "Rémy Descamps",
+            "position": "GK"
+          },
+          {
+            "number": 85,
+            "name": "Noham Kamara",
+            "position": "DF"
+          },
+          {
+            "number": 22,
+            "name": "Clinton Mata",
+            "position": "DF"
+          },
+          {
+            "number": 20,
+            "name": "Felix Bacher",
+            "position": "DF"
+          },
+          {
+            "number": 16,
+            "name": "Abner",
+            "position": "DF"
+          },
+          {
+            "number": 2,
+            "name": "Mads Bidstrup",
+            "position": "MF"
+          },
+          {
+            "number": 32,
+            "name": "Alejandro Gomes Rodríguez",
+            "position": "FW"
+          },
+          {
+            "number": 7,
+            "name": "Ernest Nuamah",
+            "position": "FW"
+          },
+          {
+            "number": 24,
+            "name": "Julien Duranville",
+            "position": "FW"
+          }
+        ]
+      },
+      "form": {
+        "home": [
+          "W",
+          "D",
+          "W",
+          "D",
+          "L"
+        ],
+        "away": [
+          "L",
+          "D",
+          "W",
+          "L",
+          "L"
+        ]
+      },
+      "strength": {
+        "home": {
+          "attack": 0.7,
+          "defence": 1
+        },
+        "away": {
+          "attack": 0.6,
+          "defence": 1.4
+        }
+      }
+    },
+    {
+      "id": "5802995",
+      "competition": {
+        "code": "FL1",
+        "name": "Ligue 1",
+        "country": "France",
+        "flag": "🇫🇷"
+      },
+      "home": {
+        "id": 9829,
+        "name": "Monaco",
+        "short": "MON",
+        "color": "#C80C13"
+      },
+      "away": {
+        "id": 8583,
+        "name": "Auxerre",
+        "short": "AUX",
+        "color": "#055DC6"
+      },
+      "status": "SCHEDULED",
+      "kickoff": "2026-11-22T03:45:00+08:00",
+      "minute": null,
+      "score": {
+        "home": 0,
+        "away": 0
+      },
+      "halfTime": null,
+      "venue": "Stade Louis-II",
+      "stats": {
+        "possession": [
+          0,
+          0
+        ],
+        "shots": [
+          0,
+          0
+        ],
+        "shotsOnTarget": [
+          0,
+          0
+        ],
+        "corners": [
+          0,
+          0
+        ],
+        "fouls": [
+          0,
+          0
+        ],
+        "xg": [
+          0,
+          0
+        ],
+        "passAccuracy": [
+          0,
+          0
+        ]
+      },
+      "events": [],
+      "lineups": {
+        "home": [],
+        "away": []
+      },
+      "form": {
+        "home": [
+          "D",
+          "W",
+          "L",
+          "D",
+          "W"
+        ],
+        "away": [
+          "L",
+          "L",
+          "D",
+          "W",
+          "L"
+        ]
+      },
+      "strength": {
+        "home": {
+          "attack": 1.1,
+          "defence": 0.8
+        },
+        "away": {
+          "attack": 0.7,
+          "defence": 1.6
+        }
+      }
+    },
+    {
+      "id": "5802998",
+      "competition": {
+        "code": "FL1",
+        "name": "Ligue 1",
+        "country": "France",
+        "flag": "🇫🇷"
+      },
+      "home": {
+        "id": 9848,
+        "name": "Strasbourg",
+        "short": "STR",
+        "color": "#294A92"
+      },
+      "away": {
+        "id": 8521,
+        "name": "Brest",
+        "short": "BRE",
+        "color": "#ED1C24"
+      },
+      "status": "SCHEDULED",
+      "kickoff": "2026-11-22T03:45:00+08:00",
+      "minute": null,
+      "score": {
+        "home": 0,
+        "away": 0
+      },
+      "halfTime": null,
+      "venue": "Stade de la Meinau",
+      "stats": {
+        "possession": [
+          0,
+          0
+        ],
+        "shots": [
+          0,
+          0
+        ],
+        "shotsOnTarget": [
+          0,
+          0
+        ],
+        "corners": [
+          0,
+          0
+        ],
+        "fouls": [
+          0,
+          0
+        ],
+        "xg": [
+          0,
+          0
+        ],
+        "passAccuracy": [
+          0,
+          0
+        ]
+      },
+      "events": [],
+      "lineups": {
+        "home": [],
+        "away": []
+      },
+      "form": {
+        "home": [
+          "L",
+          "W",
+          "L",
+          "L",
+          "L"
+        ],
+        "away": [
+          "W",
+          "W",
+          "L",
+          "D",
+          "W"
+        ]
+      },
+      "strength": {
+        "home": {
+          "attack": 1.1,
+          "defence": 1.6
+        },
+        "away": {
+          "attack": 1.6,
+          "defence": 0.6
+        }
+      }
+    }
+  ]
 }
