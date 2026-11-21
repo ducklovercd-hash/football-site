@@ -1,3 +1,6 @@
+"use client";
+
+import { useEffect, useRef, useState } from "react";
 import type { Team } from "@/lib/types";
 
 function readableText(hex: string): string {
@@ -10,15 +13,24 @@ function readableText(hex: string): string {
 }
 
 export function TeamCrest({ team, size = 34 }: { team: Team; size?: number }) {
-  return (
-    <span
-      className="relative inline-flex shrink-0 items-center justify-center"
-      style={{ width: size, height: size }}
-    >
+  const [failed, setFailed] = useState(false);
+  const imgRef = useRef<HTMLImageElement>(null);
+
+  useEffect(() => {
+    const el = imgRef.current;
+    if (el && el.complete && el.naturalWidth === 0) {
+      setFailed(true);
+    }
+  }, []);
+
+  if (failed) {
+    return (
       <span
         aria-hidden="true"
-        className="absolute inset-0 inline-flex items-center justify-center rounded-full font-bold tracking-tight"
+        className="inline-flex shrink-0 items-center justify-center rounded-full font-bold tracking-tight"
         style={{
+          width: size,
+          height: size,
           fontSize: Math.max(9, size * 0.29),
           backgroundColor: team.color,
           color: readableText(team.color),
@@ -27,14 +39,19 @@ export function TeamCrest({ team, size = 34 }: { team: Team; size?: number }) {
       >
         {team.short.slice(0, 3)}
       </span>
-      <img
-        src={`/crests/${team.id}.png`}
-        alt={`${team.name} club crest`}
-        width={size}
-        height={size}
-        decoding="async"
-        className="relative h-full w-full object-contain"
-      />
-    </span>
+    );
+  }
+
+  return (
+    <img
+      ref={imgRef}
+      src={`/crests/${team.id}.png`}
+      alt={`${team.name} club crest`}
+      width={size}
+      height={size}
+      decoding="async"
+      onError={() => setFailed(true)}
+      className="inline-block shrink-0 object-contain"
+    />
   );
 }
