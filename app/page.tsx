@@ -1,3 +1,4 @@
+import { DateNav } from "@/components/date-nav";
 import { LeagueFilter } from "@/components/league-filter";
 import { MatchCard } from "@/components/match-card";
 import { getMatches } from "@/lib/data/matches";
@@ -16,16 +17,26 @@ function parseSelection(raw: string | undefined): string[] {
   return requested.length > 0 ? requested : all;
 }
 
+/** Accepts only a real YYYY-MM-DD calendar date; anything else is ignored. */
+function parseDate(raw: string | undefined): string | null {
+  if (!raw || !/^\d{4}-\d{2}-\d{2}$/.test(raw)) return null;
+  const parsed = new Date(raw);
+  if (Number.isNaN(parsed.getTime())) return null;
+  return raw;
+}
+
 export default async function TodayPage({
   searchParams,
 }: {
-  searchParams: Promise<{ comps?: string }>;
+  searchParams: Promise<{ comps?: string; date?: string }>;
 }) {
   const params = await searchParams;
   const selected = parseSelection(params.comps);
+  const dateIso = parseDate(params.date);
+  const isToday = dateIso === null;
+  const activeDate = dateIso ? new Date(`${dateIso}T00:00:00Z`) : new Date();
 
-  const now = new Date();
-  const allMatches = await getMatches(now);
+  const allMatches = await getMatches(activeDate);
   const matches = allMatches.filter((match) =>
     selected.includes(match.competition.code),
   );
@@ -55,10 +66,10 @@ export default async function TodayPage({
         <div className="flex flex-wrap items-end justify-between gap-4">
           <div>
             <p className="text-[11px] font-semibold uppercase tracking-[0.2em] text-brand-500">
-              {formatLongDay(now.toISOString())}
+              {formatLongDay(activeDate.toISOString())}
             </p>
             <h1 className="mt-1 text-3xl font-extrabold tracking-tight text-fg sm:text-4xl">
-              Today&apos;s matches
+              {isToday ? "Today's matches" : "Matchday"}
             </h1>
             <p className="mt-2 max-w-xl text-sm text-fg-muted">
               Every fixture across Europe&apos;s top five leagues, with scores
@@ -95,15 +106,22 @@ export default async function TodayPage({
         </div>
       </section>
 
-      <div className="mb-5">
-        <LeagueFilter selected={selected} />
+      <div className="mb-5 flex flex-wrap items-center justify-between gap-3">
+        <DateNav date={dateIso} />
+        <LeagueFilter selected={selected} date={dateIso} />
       </div>
 
       {grouped.length === 0 ? (
         <div className="card p-10 text-center">
-          <p className="text-sm font-semibold text-fg">No fixtures found</p>
+          <p className="text-sm font-semibold text-fg">
+            {allMatches.length === 0
+              ? "No fixtures on this date"
+              : "No fixtures found"}
+          </p>
           <p className="mt-1 text-xs text-fg-dim">
-            Try selecting a different league.
+            {allMatches.length === 0
+              ? "Pick another day with the date controls."
+              : "Try selecting a different league."}
           </p>
         </div>
       ) : (
@@ -126,7 +144,7 @@ export default async function TodayPage({
               </div>
               <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
                 {group.matches.map((match) => (
-                  <MatchCard key={match.id} match={match} />
+                  <MatchCard key={match.id} match={match} date={dateIso} />
                 ))}
               </div>
             </section>

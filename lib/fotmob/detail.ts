@@ -78,12 +78,19 @@ interface FotMobLineupTeam {
 }
 
 interface FotMobPlayer {
+  id?: number | string;
   name?: string;
   shirtNumber?: number | string;
   usualPlayingPositionId?: number;
   countryName?: string;
   performance?: { rating?: number };
 }
+
+/** FotMob's public headshot CDN, keyed by the player id from the lineup. */
+const playerPhotoUrl = (id: number | string | undefined): string | undefined =>
+  id === undefined || id === null || `${id}`.length === 0
+    ? undefined
+    : `https://images.fotmob.com/image/player/${id}/small`;
 
 export type DetailResult =
   | { ok: true; detail: FotMobDetail }
@@ -188,13 +195,17 @@ function mapLineupTeam(team: FotMobLineupTeam | undefined): TeamLineup | null {
   const starters = team?.starters ?? [];
   const subs = team?.subs ?? [];
   if (starters.length === 0 && subs.length === 0) return null;
-  const players = [...starters, ...subs].map((player) => ({
-    number: toInt(player.shirtNumber),
-    name: player.name ?? "Unknown",
-    position: POSITION_BY_ID[player.usualPlayingPositionId ?? 2] ?? "MF",
-    rating: Number(toFloat(player.performance?.rating).toFixed(1)),
-    nationality: player.countryName ?? "",
-  }));
+  const players = [...starters, ...subs].map((player) => {
+    const photoUrl = playerPhotoUrl(player.id);
+    return {
+      number: toInt(player.shirtNumber),
+      name: player.name ?? "Unknown",
+      position: POSITION_BY_ID[player.usualPlayingPositionId ?? 2] ?? "MF",
+      rating: Number(toFloat(player.performance?.rating).toFixed(1)),
+      nationality: player.countryName ?? "",
+      ...(photoUrl ? { photoUrl } : {}),
+    };
+  });
   return { formation: team?.formation ?? "4-3-3", players };
 }
 

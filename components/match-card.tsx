@@ -5,7 +5,7 @@ import { FormPills } from "@/components/primitives/form-pills";
 import { StatusBadge } from "./status-badge";
 import { TeamCrest } from "./team-crest";
 
-export function MatchCard({ match }: { match: Match }) {
+export function MatchCard({ match, date }: { match: Match; date?: string | null }) {
   const isScheduled = match.status === "SCHEDULED";
   const homeWinning =
     !isScheduled &&
@@ -13,10 +13,15 @@ export function MatchCard({ match }: { match: Match }) {
   const awayWinning =
     !isScheduled &&
     (match.score.away ?? 0) > (match.score.home ?? 0);
+  // Non-today matches resolve through ?date=, otherwise the detail page
+  // would look the fixture up on today's list and not find it.
+  const href = date
+    ? `/matches/${match.id}?date=${date}`
+    : `/matches/${match.id}`;
 
   return (
     <Link
-      href={`/matches/${match.id}`}
+      href={href}
       className="card card-hover block p-4 focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-500"
     >
       <div className="flex items-center justify-between gap-2">

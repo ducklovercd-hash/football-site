@@ -1,3 +1,6 @@
+import { PlayerAvatar } from "@/components/player-avatar";
+import { RatingBadge } from "@/components/primitives/rating-badge";
+import { shortPlayerName } from "@/lib/format";
 import type { Position, TeamLineup } from "@/lib/types";
 
 /**
@@ -26,13 +29,6 @@ const ROW_LABEL: Record<Position, string> = {
   FW: "ATT",
 };
 
-function ratingTone(rating: number): string {
-  if (rating >= 7.8) return "bg-brand-500 text-black";
-  if (rating >= 7.2) return "bg-emerald-500 text-black";
-  if (rating >= 6.6) return "bg-pitch-700 text-fg";
-  return "bg-live/80 text-white";
-}
-
 function PlayerChip({
   player,
   compact,
@@ -43,18 +39,17 @@ function PlayerChip({
   return (
     <div className="flex w-16 flex-col items-center gap-1 text-center">
       <span className="relative flex flex-col items-center">
-        <span className="flex h-8 w-8 items-center justify-center rounded-full border border-pitch-600 bg-pitch-900 text-[11px] font-bold text-fg">
-          {player.number}
-        </span>
-        <span
-          className={`mt-1 rounded px-1 py-px text-[9px] font-extrabold ${ratingTone(player.rating)}`}
-        >
-          {player.rating.toFixed(1)}
-        </span>
+        <PlayerAvatar
+          name={player.name}
+          photoUrl={player.photoUrl}
+          className="size-9"
+        />
+        <RatingBadge rating={player.rating} className="mt-1" />
       </span>
       {compact ? null : (
         <span className="line-clamp-2 text-[9px] font-semibold leading-tight text-fg-muted">
-          {player.name.split(" ").slice(-1)[0]}
+          <span className="tnum text-fg-dim">{player.number}</span>{" "}
+          {shortPlayerName(player.name)}
         </span>
       )}
       <span className="sr-only">

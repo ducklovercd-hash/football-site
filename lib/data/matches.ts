@@ -427,21 +427,22 @@ function buildMatch(plan: FixturePlan, now: Date): Match {
 }
 
 /**
- * All matches for "today".
+ * Matches for a day (default: today).
  *
  * Prefers live FotMob data (fetched server-side while the site is in use,
  * see lib/data/live.ts). When FotMob is unreachable, falls back to the
  * committed snapshot, then to the deterministic demo fixtures, so the site
- * always renders something.
+ * always renders something. `date` also anchors the demo fixtures so a past
+ * or future day renders a coherent demo.
  */
-export async function getMatches(now: Date = new Date()): Promise<Match[]> {
-  const live = await getLiveData();
+export async function getMatches(date: Date = new Date()): Promise<Match[]> {
+  const live = await getLiveData(date);
   const source =
     live.source === "fotmob-live"
       ? live.matches
       : live.matches.length > 0
         ? live.matches
-        : PLAN.map((plan) => buildMatch(plan, now));
+        : PLAN.map((plan) => buildMatch(plan, date));
 
   return [...source].sort(
     (a, b) => new Date(a.kickoff).getTime() - new Date(b.kickoff).getTime(),
@@ -456,7 +457,7 @@ export async function getLiveMatches(now: Date = new Date()): Promise<Match[]> {
 
 export async function getMatchById(
   id: string,
-  now: Date = new Date(),
+  date: Date = new Date(),
 ): Promise<Match | undefined> {
-  return (await getMatches(now)).find((match) => match.id === id);
+  return (await getMatches(date)).find((match) => match.id === id);
 }

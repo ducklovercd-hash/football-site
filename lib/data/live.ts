@@ -48,10 +48,11 @@ function hasRealStats(stats: Match["stats"]): boolean {
  * snapshot when FotMob cannot be reached. React cache() dedupes the fetches
  * within one request/render pass; the Next Data Cache dedupes them across
  * requests and viewers, revalidating only while someone is actually on the
- * site.
+ * site. Any calendar date works: FotMob archives past fixtures and publishes
+ * future ones on the same endpoint.
  */
-export const getLiveData = cache(async (): Promise<LiveData> => {
-  const fixtures = await fetchFixtures(new Date());
+export const getLiveData = cache(async (date?: Date): Promise<LiveData> => {
+  const fixtures = await fetchFixtures(date ?? new Date());
   if (!fixtures.ok) {
     const snapshot = getSnapshot();
     if (snapshot.matches.length > 0) {

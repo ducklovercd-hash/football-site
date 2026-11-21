@@ -8,7 +8,13 @@ import { COMPETITIONS } from "@/lib/data/teams";
  * Filter state lives in the URL (?comps=PL,SA) so it is shareable,
  * survives refresh, and lets the server render the filtered list.
  */
-export function LeagueFilter({ selected }: { selected: string[] }) {
+export function LeagueFilter({
+  selected,
+  date,
+}: {
+  selected: string[];
+  date?: string | null;
+}) {
   const router = useRouter();
   const pathname = usePathname();
   const [isPending, startTransition] = useTransition();
@@ -17,6 +23,10 @@ export function LeagueFilter({ selected }: { selected: string[] }) {
     const params = new URLSearchParams();
     if (next.length > 0 && next.length < COMPETITIONS.length) {
       params.set("comps", next.join(","));
+    }
+    // Date and league filters combine; neither drops the other.
+    if (date) {
+      params.set("date", date);
     }
     const query = params.toString();
     startTransition(() => {

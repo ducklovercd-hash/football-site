@@ -32,6 +32,21 @@
   /* 7.31:1 on the page, 6.82:1 on the raised card surface. Measured, not guessed. */
   --color-fg-dim: #9a9aa4;
 
+  /* Match-rating scale (lib/rating.ts), same hues in two AA-verified
+     renderings: solid badge backgrounds (white/black text) and text tints
+     for dark surfaces. Ratings are status data, not brand palette. */
+  --color-rating-low: #dc2626;    /* badge: white text, 4.83:1 */
+  --color-rating-caution: #c2410c; /* badge: white text, 5.18:1 */
+  --color-rating-good: #15803d;   /* badge: white text, 5.02:1 */
+  --color-rating-great: #38bdf8;  /* badge: black text, 9.80:1 */
+  --color-rating-elite: #1d4ed8;  /* badge: white text, 6.70:1 */
+
+  --color-rating-low-text: #f87171;    /* 7.11:1 on card */
+  --color-rating-caution-text: #fb923c; /* 8.69:1 on card */
+  --color-rating-good-text: #4ade80;   /* 11.29:1 on card */
+  --color-rating-great-text: #38bdf8;  /* 9.18:1 on card */
+  --color-rating-elite-text: #60a5fa;  /* 7.74:1 on card */
+
   --font-display: "Geist", "Inter", ui-sans-serif, system-ui, -apple-system,
     "Segoe UI", Roboto, sans-serif;
   --font-mono: ui-monospace, "SF Mono", "Geist Mono", Menlo, monospace;

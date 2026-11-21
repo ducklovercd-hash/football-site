@@ -1,8 +1,10 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { FormationPitch } from "@/components/formation-pitch";
+import { PlayerAvatar } from "@/components/player-avatar";
 import { PredictionPanel } from "@/components/prediction-panel";
 import { PanelCard } from "@/components/primitives/panel-card";
+import { RatingBadge } from "@/components/primitives/rating-badge";
 import { StatBar } from "@/components/stat-bar";
 import { StatusBadge } from "@/components/status-badge";
 import { TeamCrest } from "@/components/team-crest";
@@ -23,11 +25,13 @@ const EVENT_ICON: Record<MatchEvent["type"], string> = {
 
 export async function generateMetadata({
   params,
+  searchParams,
 }: {
   params: Promise<{ id: string }>;
+  searchParams: Promise<{ date?: string }>;
 }) {
-  const { id } = await params;
-  const match = await getMatchById(id);
+  const [{ id }, { date }] = await Promise.all([params, searchParams]);
+  const match = await getMatchById(id, date ? new Date(`${date}T00:00:00Z`) : new Date());
   if (!match) return { title: "Match not found | PitchSide" };
   return {
     title: `${match.home.name} vs ${match.away.name} | PitchSide`,
@@ -37,11 +41,13 @@ export async function generateMetadata({
 
 export default async function MatchPage({
   params,
+  searchParams,
 }: {
   params: Promise<{ id: string }>;
+  searchParams: Promise<{ date?: string }>;
 }) {
-  const { id } = await params;
-  const match = await getMatchById(id);
+  const [{ id }, { date }] = await Promise.all([params, searchParams]);
+  const match = await getMatchById(id, date ? new Date(`${date}T00:00:00Z`) : new Date());
   if (!match) notFound();
 
   const prediction = predictMatch(match);
@@ -50,7 +56,7 @@ export default async function MatchPage({
   return (
     <div>
       <Link
-        href="/"
+        href={date ? `/?date=${date}` : "/"}
         className="text-[11px] font-semibold uppercase tracking-wider text-fg-dim hover:text-brand-500"
       >
         ← All matches
@@ -232,23 +238,19 @@ export default async function MatchPage({
                   <span className="tnum w-5 text-right text-fg-dim">
                     {player.number}
                   </span>
+                  <PlayerAvatar
+                    name={player.name}
+                    photoUrl={player.photoUrl}
+                    className="size-7"
+                  />
                   <span className="rounded bg-pitch-800 px-1 py-0.5 text-[9px] font-bold text-fg-dim">
                     {player.position}
                   </span>
                   <span className="truncate text-fg-muted">{player.name}</span>
-                  <span className="ml-auto shrink-0 text-[11px] font-semibold text-fg-dim">
+                  <span className="ml-auto shrink-0 text-[10px] uppercase tracking-wider text-fg-dim">
                     {player.nationality}
                   </span>
-                  <span
-                    className={`tnum shrink-0 rounded px-1 py-0.5 text-[10px] font-bold ${
-                      player.rating >= 7.2
-                        ? "bg-brand-500/15 text-brand-500"
-                        : "bg-pitch-800 text-fg-muted"
-                    }`}
-                  >
-                    {player.rating > 0 ? player.rating.toFixed(1) : "–"}
-                  </span>
-                </li>
+                  <RatingBadge rating={player.rating} className="shrink-0" />                </li>
               ))}
             </ul>
           </PanelCard>

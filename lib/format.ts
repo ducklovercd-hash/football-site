@@ -64,3 +64,18 @@ export function statusLabel(status: string, minute: number | null): string {
   if (status === "FT") return "FT";
   return "Upcoming";
 }
+
+/** "Steven Bergwijn" -> "S. Bergwijn", the broadcast lineup label style. */
+export function shortPlayerName(name: string): string {
+  const parts = name.trim().split(/\s+/);
+  if (parts.length === 1) return parts[0];
+  return `${parts[0][0]}. ${parts.slice(1).join(" ")}`;
+}
+
+/** "Steven Bergwijn" -> "SB", for the avatar initials fallback. */
+export function playerInitials(name: string): string {
+  const parts = name.trim().split(/\s+/);
+  const first = parts[0]?.[0] ?? "?";
+  const last = parts.length > 1 ? parts[parts.length - 1][0] : "";
+  return `${first}${last}`.toUpperCase();
+}

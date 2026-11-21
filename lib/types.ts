@@ -45,6 +45,8 @@ export interface LineupPlayer {
   /** Match rating out of 10, derived from performance (see buildMatch). */
   rating: number;
   nationality: string;
+  /** Headshot URL when the data source provides one; absent for demo data. */
+  photoUrl?: string;
 }
 
 export interface TeamLineup {
@@ -107,6 +109,8 @@ export interface Player {
   assists: number;
   rating: number;
   contractExpires: string;
+  /** Headshot URL when the data source provides one; absent in the sample set. */
+  photoUrl?: string;
 }
 
 export interface Prediction {
